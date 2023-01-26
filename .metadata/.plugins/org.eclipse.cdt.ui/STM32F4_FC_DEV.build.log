@@ -1,0 +1,17 @@
+01:08:07 **** Incremental Build of configuration Debug for project STM32F4_FC_DEV ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32F405xx -DUSE_FULL_LL_DRIVER -DHSE_VALUE=8000000 -DHSE_STARTUP_TIMEOUT=100 -DLSE_STARTUP_TIMEOUT=5000 -DLSE_VALUE=32768 -DEXTERNAL_CLOCK_VALUE=12288000 -DHSI_VALUE=16000000 -DLSI_VALUE=32000 -DVDD_VALUE=3300 -DPREFETCH_ENABLE=1 -DINSTRUCTION_CACHE_ENABLE=1 -DDATA_CACHE_ENABLE=1 -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "STM32F4_FC_DEV.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/STM32F405RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="STM32F4_FC_DEV.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: STM32F4_FC_DEV.elf
+ 
+arm-none-eabi-size   STM32F4_FC_DEV.elf 
+arm-none-eabi-objdump -h -S  STM32F4_FC_DEV.elf  > "STM32F4_FC_DEV.list"
+   text	   data	    bss	    dec	    hex	filename
+   3036	     12	   1564	   4612	   1204	STM32F4_FC_DEV.elf
+Finished building: default.size.stdout
+ 
+Finished building: STM32F4_FC_DEV.list
+ 
+
+01:08:07 Build Finished. 0 errors, 0 warnings. (took 783ms)
+
