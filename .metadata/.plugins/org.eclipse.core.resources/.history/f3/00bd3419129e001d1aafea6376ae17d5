@@ -95,9 +95,12 @@ int main(void)
   MX_GPIO_Init();
   MX_USART6_UART_Init();
   /* USER CODE BEGIN 2 */
-  LL_USART_EnableIT_RXNE(USART6);	// 인터럽트 활성화
-
-
+  if(LL_USART_IsActiveFlag_RXNE(USART6)) // 인터럽트중 USART6인지 확인
+  {
+	  LL_USART_ClearFlag_RXNE(USART6); // 맞으면 비트 클리어
+	  rxd = LL_USART_ReceiveData8(USART6); // 데이터 수신
+	  flag_INT_USART6 = 1; // flag 클리어
+  }
 
   /* USER CODE END 2 */
 
@@ -105,17 +108,7 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-  //	  LL_GPIO_TogglePin(GPIOB, LL_GPIO_PIN_5);
-  //	  LL_mDelay(1000);
-  //	  LL_USART_TransmitData8(USART6,'B');
-
-	  if(flag_INT_USART6 == 1){
-		  flag_INT_USART6 =0;
-		  LL_USART_TransmitData8(USART6,rxd); // 호스트로부터 수신한 데이터를 그대로 다시 보냄
-		  LL_GPIO_TogglePin(GPIOB, LL_GPIO_PIN_5);
-	   }
     /* USER CODE END WHILE */
-
 
     /* USER CODE BEGIN 3 */
   }

@@ -41,8 +41,7 @@
 
 /* Private variables ---------------------------------------------------------*/
 /* USER CODE BEGIN PV */
-uint8_t flag_INT_USART6;
-uint8_t rxd;
+
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/

@@ -41,8 +41,7 @@
 
 /* Private variables ---------------------------------------------------------*/
 /* USER CODE BEGIN PV */
-uint8_t flag_INT_USART6;
-uint8_t rxd;
+
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -205,13 +204,7 @@ void SysTick_Handler(void)
 void USART6_IRQHandler(void)
 {
   /* USER CODE BEGIN USART6_IRQn 0 */
-	if(LL_USART_IsActiveFlag_RXNE(USART6)) // 인터럽트중 USART6인지 확인
-	{
-			LL_USART_ClearFlag_RXNE(USART6); // 맞으면 비트 클리어
-			rxd = LL_USART_ReceiveData8(USART6); // 데이터 수신
-			flag_INT_USART6 = 1; // flag 클리어
 
-	}
   /* USER CODE END USART6_IRQn 0 */
   /* USER CODE BEGIN USART6_IRQn 1 */
 
