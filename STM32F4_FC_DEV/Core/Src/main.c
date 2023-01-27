@@ -18,17 +18,28 @@
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
+#include "spi.h"
+#include "tim.h"
 #include "usart.h"
 #include "gpio.h"
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include "ICM20602.h"
+#include "Quaternion.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
 /* USER CODE BEGIN PTD */
-
+int _write(int file, char* p, int len)
+{
+	for(int i=0;i<len;i++)
+	{
+		LL_USART_TransmitData8(USART6, *(p+i));
+		LL_mDelay(1);
+	}
+	return len;
+}
 /* USER CODE END PTD */
 
 /* Private define ------------------------------------------------------------*/
@@ -43,8 +54,9 @@
 /* Private variables ---------------------------------------------------------*/
 
 /* USER CODE BEGIN PV */
-extern uint8_t flag_INT_USART6;
-extern uint8_t rxd;
+extern uint8_t flag_INT_USART6;		// UART6 인터럽트 플래그 변수
+extern uint8_t rxd;					// UART 수신데이터 버퍼
+
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -94,8 +106,24 @@ int main(void)
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
   MX_USART6_UART_Init();
+  MX_SPI1_Init();
+  MX_TIM3_Init();
   /* USER CODE BEGIN 2 */
-  LL_USART_EnableIT_RXNE(USART6);	// 인터럽트 활성화
+
+  LL_TIM_EnableCounter(TIM3);
+  LL_TIM_CC_EnableChannel(TIM3, LL_TIM_CHANNEL_CH1);
+
+  TIM3->PSC = 2000;
+  LL_mDelay(100);
+  TIM3->PSC = 1500;
+  LL_mDelay(100);
+  TIM3->PSC = 1000;
+  LL_mDelay(100);
+
+  LL_TIM_CC_DisableChannel(TIM3, LL_TIM_CHANNEL_CH1);
+
+  LL_USART_EnableIT_RXNE(USART6);	// UART6 인터럽트 활성화
+  ICM20602_Initialization();
 
 
 
@@ -113,9 +141,35 @@ int main(void)
 		  flag_INT_USART6 =0;
 		  LL_USART_TransmitData8(USART6,rxd); // 호스트로부터 수신한 데이터를 그대로 다시 보냄
 		  LL_GPIO_TogglePin(GPIOB, LL_GPIO_PIN_5);
-	   }
-    /* USER CODE END WHILE */
+//		  printf("Hello!!!\n\r");
 
+	   }
+
+
+	  if(ICM20602_DataReady() == 1)
+	  {
+		  LL_GPIO_TogglePin(GPIOC, LL_GPIO_PIN_1);
+
+//		  ICM20602_Get3AxisGyroRawData(&ICM20602.gyro_x_raw);
+		  ICM20602_Get6AxisRawData(&ICM20602.acc_x_raw, &ICM20602.gyro_x_raw);
+
+		  ICM20602.gyro_x = ICM20602.gyro_x_raw * 2000.f / 32768.f;
+		  ICM20602.gyro_y = ICM20602.gyro_y_raw * 2000.f / 32768.f;
+		  ICM20602.gyro_z = ICM20602.gyro_z_raw * 2000.f / 32768.f;
+
+		  ICM20602.acc_x = ICM20602.acc_x_raw * 16.f / 32768.f;
+		  ICM20602.acc_y = ICM20602.acc_y_raw * 16.f / 32768.f;
+		  ICM20602.acc_z = ICM20602.acc_z_raw * 16.f / 32768.f;
+
+//		  printf("%d,%d,%d\n", ICM20602.gyro_x_raw, ICM20602.gyro_y_raw, ICM20602.gyro_z_raw);
+//		  printf("%d,%d,%d\n", ICM20602.acc_x_raw, ICM20602.acc_y_raw, ICM20602.acc_z_raw);
+//		  printf("%d,%d,%d\n", (int)(ICM20602.gyro_x*100), (int)(ICM20602.gyro_y*100), (int)(ICM20602.gyro_z*100));
+		  printf("%d,%d,%d\n", (int)(ICM20602.acc_x*100), (int)(ICM20602.acc_y*100), (int)(ICM20602.acc_z*100));
+
+
+	  }
+
+    /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
   }
@@ -162,6 +216,9 @@ void SystemClock_Config(void)
   LL_SetSystemCoreClock(168000000);
 }
 
+/* USER CODE BEGIN 4 */
+
+/* USER CODE END 4 */
 
 /**
   * @brief  This function is executed in case of error occurrence.

@@ -9,6 +9,8 @@ C_SRCS += \
 ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_exti.c \
 ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_gpio.c \
 ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_rcc.c \
+../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_spi.c \
+../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_tim.c \
 ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_usart.c \
 ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_utils.c 
 
@@ -17,6 +19,8 @@ OBJS += \
 ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_exti.o \
 ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_gpio.o \
 ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_rcc.o \
+./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_spi.o \
+./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_tim.o \
 ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_usart.o \
 ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_utils.o 
 
@@ -25,6 +29,8 @@ C_DEPS += \
 ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_exti.d \
 ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_gpio.d \
 ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_rcc.d \
+./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_spi.d \
+./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_tim.d \
 ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_usart.d \
 ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_utils.d 
 
@@ -36,7 +42,7 @@ Drivers/STM32F4xx_HAL_Driver/Src/%.o Drivers/STM32F4xx_HAL_Driver/Src/%.su: ../D
 clean: clean-Drivers-2f-STM32F4xx_HAL_Driver-2f-Src
 
 clean-Drivers-2f-STM32F4xx_HAL_Driver-2f-Src:
-	-$(RM) ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_dma.d ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_dma.o ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_dma.su ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_exti.d ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_exti.o ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_exti.su ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_gpio.d ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_gpio.o ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_gpio.su ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_rcc.d ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_rcc.o ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_rcc.su ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_usart.d ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_usart.o ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_usart.su ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_utils.d ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_utils.o ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_utils.su
+	-$(RM) ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_dma.d ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_dma.o ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_dma.su ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_exti.d ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_exti.o ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_exti.su ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_gpio.d ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_gpio.o ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_gpio.su ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_rcc.d ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_rcc.o ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_rcc.su ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_spi.d ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_spi.o ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_spi.su ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_tim.d ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_tim.o ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_tim.su ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_usart.d ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_usart.o ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_usart.su ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_utils.d ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_utils.o ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_utils.su
 
 .PHONY: clean-Drivers-2f-STM32F4xx_HAL_Driver-2f-Src
 

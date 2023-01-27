@@ -1,10 +1,10 @@
-16:41:24 **** Incremental Build of configuration Debug for project STM32F4_FC_DEV ****
+00:33:19 **** Incremental Build of configuration Debug for project STM32F4_FC_DEV ****
 make -j8 all 
 arm-none-eabi-size   STM32F4_FC_DEV.elf 
    text	   data	    bss	    dec	    hex	filename
-   6816	     12	   1572	   8400	   20d0	STM32F4_FC_DEV.elf
+  17944	    112	   1632	  19688	   4ce8	STM32F4_FC_DEV.elf
 Finished building: default.size.stdout
  
 
-16:41:25 Build Finished. 0 errors, 0 warnings. (took 525ms)
+00:33:19 Build Finished. 0 errors, 0 warnings. (took 588ms)
 

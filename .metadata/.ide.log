@@ -1837,3 +1837,850 @@
 2023-01-27 16:41:25,960 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
 2023-01-27 16:41:25,961 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
 2023-01-27 16:41:25,962 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 17:01:58,518 [INFO] NvicIntPanel:100 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2023-01-27 17:02:17,502 [INFO] NvicIntPanel:100 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2023-01-27 17:02:28,911 [INFO] NvicIntPanel:100 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2023-01-27 17:03:15,674 [INFO] NvicIntPanel:100 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2023-01-27 17:03:15,956 [INFO] NvicIntPanel:100 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2023-01-27 17:03:34,046 [INFO] NvicIntPanel:100 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2023-01-27 17:03:34,228 [INFO] NvicIntPanel:100 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2023-01-27 17:04:08,079 [INFO] NvicIntPanel:100 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2023-01-27 17:04:47,152 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 440854872 Bytes (883949568)
+2023-01-27 17:04:47,261 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 460777816 Bytes (883949568)
+2023-01-27 17:04:47,683 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 499048792 Bytes (883949568)
+2023-01-27 17:04:47,923 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SPI
+2023-01-27 17:04:47,923 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RCC
+2023-01-27 17:04:47,924 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC
+2023-01-27 17:04:47,924 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USART
+2023-01-27 17:04:47,924 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: GPIO
+2023-01-27 17:04:47,925 [INFO] CodeGenerator:692 - code generatio: config db path: /opt/st/stm32cubeide_1.11.2/plugins/com.st.stm32cube.common.mx_6.7.0.202301130839//db/
+2023-01-27 17:04:48,251 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/MXTmpFiles/license.tmp_save
+2023-01-27 17:04:48,387 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/MXTmpFiles/license.tmp
+2023-01-27 17:04:48,424 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/gpio.c_save
+2023-01-27 17:04:48,541 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/gpio.c
+2023-01-27 17:04:48,543 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/gpio.h_save
+2023-01-27 17:04:48,628 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/gpio.h
+2023-01-27 17:04:48,735 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/spi.c_save
+2023-01-27 17:04:48,887 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/spi.c
+2023-01-27 17:04:48,888 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/spi.h_save
+2023-01-27 17:04:48,966 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/spi.h
+2023-01-27 17:04:48,969 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/usart.c_save
+2023-01-27 17:04:49,084 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/usart.c
+2023-01-27 17:04:49,086 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/usart.h_save
+2023-01-27 17:04:49,163 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/usart.h
+2023-01-27 17:04:49,167 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/stm32f4xx_it.c_save
+2023-01-27 17:04:49,424 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/stm32f4xx_it.c
+2023-01-27 17:04:49,426 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/stm32f4xx_it.h_save
+2023-01-27 17:04:49,509 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/stm32f4xx_it.h
+2023-01-27 17:04:49,511 [WARN] IPConfigManager:4122 - WARNING: Missing Config File for SYS ip!!
+2023-01-27 17:04:49,548 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/MXTmpFiles/system.tmp_save
+2023-01-27 17:04:49,619 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/MXTmpFiles/system.tmp
+2023-01-27 17:04:49,621 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/stm32_assert.h_save
+2023-01-27 17:04:49,694 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/stm32_assert.h
+2023-01-27 17:04:49,695 [WARN] IPConfigManager:2928 - Warning: the RefConfig RCC_PLL_PLLM_CONFIG is not available in your config.xml file
+2023-01-27 17:04:49,696 [WARN] IPConfigManager:2928 - Warning: the RefConfig RCC_PLL_PLLSOURCE_CONFIG is not available in your config.xml file
+2023-01-27 17:04:49,696 [WARN] IPConfigManager:2928 - Warning: the RefConfig RCC_ConfigVoltageScaling is not available in your config.xml file
+2023-01-27 17:04:49,704 [WARN] IPConfigManager:2928 - Warning: the RefConfig RCC_ClockConfig is not available in your config.xml file
+2023-01-27 17:04:49,704 [WARN] IPConfigManager:2928 - Warning: the RefConfig RCC_MCO1Config is not available in your config.xml file
+2023-01-27 17:04:49,704 [WARN] IPConfigManager:2928 - Warning: the RefConfig RCC_MCO2Config is not available in your config.xml file
+2023-01-27 17:04:49,705 [WARN] IPConfigManager:2928 - Warning: the RefConfig RCC_interrupt_Time_SYSTICK_Config is not available in your config.xml file
+2023-01-27 17:04:49,705 [WARN] IPConfigManager:2928 - Warning: the RefConfig RCC_SYSTICK_CONFIG is not available in your config.xml file
+2023-01-27 17:04:49,710 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/main.h_save
+2023-01-27 17:04:49,871 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/main.h
+2023-01-27 17:04:49,874 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/main.c_save
+2023-01-27 17:04:50,088 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/main.c
+2023-01-27 17:04:50,670 [INFO] ProjectBuilder:2919 - Time for Copy HAL[1] : 17mS.
+2023-01-27 17:04:50,672 [INFO] ProjectBuilder:4183 - Project Generator version: 3.18.0-B7
+2023-01-27 17:04:50,963 [INFO] ConfigFileManager:1396 - The Die is : DIE413
+2023-01-27 17:04:52,391 [INFO] ProjectBuilder:4351 - Time for Generating toolchain IDE Files: 1719mS.
+2023-01-27 17:04:52,391 [INFO] ProjectBuilder:2790 - Time for Copy CMSIS : 0mS.
+2023-01-27 17:04:52,392 [INFO] ProjectBuilder:2790 - Time for Copy CMSIS : 0mS.
+2023-01-27 17:05:08,912 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 17:05:08,913 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 17:05:08,913 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 17:05:09,450 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 17:05:09,451 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 17:05:09,452 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 20:46:20,567 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 20:46:20,569 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 20:46:20,570 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 20:46:20,957 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 20:46:20,958 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 20:46:20,958 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 20:47:28,080 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 20:47:28,081 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 20:47:28,082 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 20:47:28,499 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 20:47:28,499 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 20:47:28,499 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 21:03:37,830 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 454700920 Bytes (968884224)
+2023-01-27 21:03:37,929 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 475245104 Bytes (968884224)
+2023-01-27 21:03:38,411 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 542567016 Bytes (968884224)
+2023-01-27 21:03:38,649 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SPI
+2023-01-27 21:03:38,649 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RCC
+2023-01-27 21:03:38,649 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC
+2023-01-27 21:03:38,649 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USART
+2023-01-27 21:03:38,650 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: GPIO
+2023-01-27 21:03:38,650 [INFO] CodeGenerator:692 - code generatio: config db path: /opt/st/stm32cubeide_1.11.2/plugins/com.st.stm32cube.common.mx_6.7.0.202301130839//db/
+2023-01-27 21:03:38,868 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/MXTmpFiles/license.tmp_save
+2023-01-27 21:03:38,964 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/MXTmpFiles/license.tmp
+2023-01-27 21:03:38,987 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/gpio.c_save
+2023-01-27 21:03:39,077 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/gpio.c
+2023-01-27 21:03:39,078 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/gpio.h_save
+2023-01-27 21:03:39,151 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/gpio.h
+2023-01-27 21:03:39,365 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/spi.c_save
+2023-01-27 21:03:39,496 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/spi.c
+2023-01-27 21:03:39,497 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/spi.h_save
+2023-01-27 21:03:39,570 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/spi.h
+2023-01-27 21:03:39,573 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/usart.c_save
+2023-01-27 21:03:39,673 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/usart.c
+2023-01-27 21:03:39,675 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/usart.h_save
+2023-01-27 21:03:39,746 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/usart.h
+2023-01-27 21:03:39,750 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/stm32f4xx_it.c_save
+2023-01-27 21:03:39,931 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/stm32f4xx_it.c
+2023-01-27 21:03:39,933 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/stm32f4xx_it.h_save
+2023-01-27 21:03:40,000 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/stm32f4xx_it.h
+2023-01-27 21:03:40,021 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/stm32f4xx_hal_msp.c_save
+2023-01-27 21:03:40,123 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/stm32f4xx_hal_msp.c
+2023-01-27 21:03:40,124 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/MXTmpFiles/system.tmp_save
+2023-01-27 21:03:40,193 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/MXTmpFiles/system.tmp
+2023-01-27 21:03:40,194 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/stm32_assert.h_save
+2023-01-27 21:03:40,264 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/stm32_assert.h
+2023-01-27 21:03:40,269 [INFO] CodeEngine:303 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/stm32f4xx_hal_conf.h_save
+2023-01-27 21:03:40,355 [INFO] CodeEngine:327 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/stm32f4xx_hal_conf.h
+2023-01-27 21:03:40,379 [WARN] IPConfigManager:2928 - Warning: the RefConfig RCC_PLL_PLLM_CONFIG is not available in your config.xml file
+2023-01-27 21:03:40,379 [WARN] IPConfigManager:2928 - Warning: the RefConfig RCC_PLL_PLLSOURCE_CONFIG is not available in your config.xml file
+2023-01-27 21:03:40,379 [WARN] IPConfigManager:2928 - Warning: the RefConfig RCC_ConfigVoltageScaling is not available in your config.xml file
+2023-01-27 21:03:40,387 [WARN] IPConfigManager:2928 - Warning: the RefConfig RCC_ClockConfig is not available in your config.xml file
+2023-01-27 21:03:40,387 [WARN] IPConfigManager:2928 - Warning: the RefConfig RCC_MCO1Config is not available in your config.xml file
+2023-01-27 21:03:40,388 [WARN] IPConfigManager:2928 - Warning: the RefConfig RCC_MCO2Config is not available in your config.xml file
+2023-01-27 21:03:40,388 [WARN] IPConfigManager:2928 - Warning: the RefConfig RCC_interrupt_Time_SYSTICK_Config is not available in your config.xml file
+2023-01-27 21:03:40,388 [WARN] IPConfigManager:2928 - Warning: the RefConfig RCC_SYSTICK_CONFIG is not available in your config.xml file
+2023-01-27 21:03:40,403 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/main.h_save
+2023-01-27 21:03:40,504 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/main.h
+2023-01-27 21:03:40,506 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/main.c_save
+2023-01-27 21:03:40,611 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/main.c
+2023-01-27 21:03:41,218 [INFO] ProjectBuilder:2919 - Time for Copy HAL[1] : 37mS.
+2023-01-27 21:03:41,222 [INFO] ProjectBuilder:4183 - Project Generator version: 3.18.0-B7
+2023-01-27 21:03:41,516 [INFO] ConfigFileManager:1396 - The Die is : DIE413
+2023-01-27 21:03:42,837 [INFO] ProjectBuilder:4351 - Time for Generating toolchain IDE Files: 1615mS.
+2023-01-27 21:03:42,837 [INFO] ProjectBuilder:2790 - Time for Copy CMSIS : 0mS.
+2023-01-27 21:03:42,838 [INFO] ProjectBuilder:2790 - Time for Copy CMSIS : 0mS.
+2023-01-27 21:04:27,435 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 522287320 Bytes (998244352)
+2023-01-27 21:04:27,538 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 543781080 Bytes (998244352)
+2023-01-27 21:04:28,005 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 614562008 Bytes (998244352)
+2023-01-27 21:04:28,284 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SPI
+2023-01-27 21:04:28,284 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RCC
+2023-01-27 21:04:28,284 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC
+2023-01-27 21:04:28,284 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USART
+2023-01-27 21:04:28,285 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: GPIO
+2023-01-27 21:04:28,285 [INFO] CodeGenerator:692 - code generatio: config db path: /opt/st/stm32cubeide_1.11.2/plugins/com.st.stm32cube.common.mx_6.7.0.202301130839//db/
+2023-01-27 21:04:28,531 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/MXTmpFiles/license.tmp_save
+2023-01-27 21:04:28,601 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/MXTmpFiles/license.tmp
+2023-01-27 21:04:28,633 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/gpio.c_save
+2023-01-27 21:04:28,712 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/gpio.c
+2023-01-27 21:04:28,713 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/gpio.h_save
+2023-01-27 21:04:28,778 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/gpio.h
+2023-01-27 21:04:28,865 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/spi.c_save
+2023-01-27 21:04:28,967 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/spi.c
+2023-01-27 21:04:28,968 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/spi.h_save
+2023-01-27 21:04:29,037 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/spi.h
+2023-01-27 21:04:29,040 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/usart.c_save
+2023-01-27 21:04:29,141 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/usart.c
+2023-01-27 21:04:29,143 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/usart.h_save
+2023-01-27 21:04:29,214 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/usart.h
+2023-01-27 21:04:29,219 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/stm32f4xx_it.c_save
+2023-01-27 21:04:29,302 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/stm32f4xx_it.c
+2023-01-27 21:04:29,304 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/stm32f4xx_it.h_save
+2023-01-27 21:04:29,371 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/stm32f4xx_it.h
+2023-01-27 21:04:29,372 [WARN] IPConfigManager:4122 - WARNING: Missing Config File for SYS ip!!
+2023-01-27 21:04:29,396 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/MXTmpFiles/system.tmp_save
+2023-01-27 21:04:29,463 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/MXTmpFiles/system.tmp
+2023-01-27 21:04:29,464 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/stm32_assert.h_save
+2023-01-27 21:04:29,531 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/stm32_assert.h
+2023-01-27 21:04:29,532 [WARN] IPConfigManager:2928 - Warning: the RefConfig RCC_PLL_PLLM_CONFIG is not available in your config.xml file
+2023-01-27 21:04:29,532 [WARN] IPConfigManager:2928 - Warning: the RefConfig RCC_PLL_PLLSOURCE_CONFIG is not available in your config.xml file
+2023-01-27 21:04:29,532 [WARN] IPConfigManager:2928 - Warning: the RefConfig RCC_ConfigVoltageScaling is not available in your config.xml file
+2023-01-27 21:04:29,539 [WARN] IPConfigManager:2928 - Warning: the RefConfig RCC_ClockConfig is not available in your config.xml file
+2023-01-27 21:04:29,540 [WARN] IPConfigManager:2928 - Warning: the RefConfig RCC_MCO1Config is not available in your config.xml file
+2023-01-27 21:04:29,540 [WARN] IPConfigManager:2928 - Warning: the RefConfig RCC_MCO2Config is not available in your config.xml file
+2023-01-27 21:04:29,540 [WARN] IPConfigManager:2928 - Warning: the RefConfig RCC_interrupt_Time_SYSTICK_Config is not available in your config.xml file
+2023-01-27 21:04:29,540 [WARN] IPConfigManager:2928 - Warning: the RefConfig RCC_SYSTICK_CONFIG is not available in your config.xml file
+2023-01-27 21:04:29,544 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/main.h_save
+2023-01-27 21:04:29,617 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/main.h
+2023-01-27 21:04:29,618 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/main.c_save
+2023-01-27 21:04:29,722 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/main.c
+2023-01-27 21:04:30,381 [INFO] ProjectBuilder:2919 - Time for Copy HAL[1] : 16mS.
+2023-01-27 21:04:30,384 [INFO] ProjectBuilder:4183 - Project Generator version: 3.18.0-B7
+2023-01-27 21:04:30,656 [INFO] ConfigFileManager:1396 - The Die is : DIE413
+2023-01-27 21:04:31,826 [INFO] ProjectBuilder:4351 - Time for Generating toolchain IDE Files: 1442mS.
+2023-01-27 21:04:31,827 [INFO] ProjectBuilder:2790 - Time for Copy CMSIS : 1mS.
+2023-01-27 21:04:31,828 [INFO] ProjectBuilder:2790 - Time for Copy CMSIS : 1mS.
+2023-01-27 21:05:32,175 [INFO] Gpio:272 - dependency for GPIO [RCC, SPI1, USART6]
+2023-01-27 21:05:40,067 [INFO] Gpio:272 - dependency for GPIO [RCC, SPI1, USART6]
+2023-01-27 21:06:22,256 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 705471680 Bytes (998244352)
+2023-01-27 21:06:22,393 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 267857720 Bytes (998244352)
+2023-01-27 21:06:22,824 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 254198616 Bytes (998244352)
+2023-01-27 21:06:23,085 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SPI
+2023-01-27 21:06:23,086 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RCC
+2023-01-27 21:06:23,086 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC
+2023-01-27 21:06:23,086 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USART
+2023-01-27 21:06:23,086 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: GPIO
+2023-01-27 21:06:23,087 [INFO] CodeGenerator:692 - code generatio: config db path: /opt/st/stm32cubeide_1.11.2/plugins/com.st.stm32cube.common.mx_6.7.0.202301130839//db/
+2023-01-27 21:06:23,357 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/MXTmpFiles/license.tmp_save
+2023-01-27 21:06:23,430 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/MXTmpFiles/license.tmp
+2023-01-27 21:06:23,456 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/gpio.c_save
+2023-01-27 21:06:23,532 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/gpio.c
+2023-01-27 21:06:23,534 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/gpio.h_save
+2023-01-27 21:06:23,606 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/gpio.h
+2023-01-27 21:06:23,672 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/spi.c_save
+2023-01-27 21:06:23,771 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/spi.c
+2023-01-27 21:06:23,773 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/spi.h_save
+2023-01-27 21:06:23,844 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/spi.h
+2023-01-27 21:06:23,847 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/usart.c_save
+2023-01-27 21:06:23,943 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/usart.c
+2023-01-27 21:06:23,945 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/usart.h_save
+2023-01-27 21:06:24,016 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/usart.h
+2023-01-27 21:06:24,020 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/stm32f4xx_it.c_save
+2023-01-27 21:06:24,107 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/stm32f4xx_it.c
+2023-01-27 21:06:24,108 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/stm32f4xx_it.h_save
+2023-01-27 21:06:24,176 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/stm32f4xx_it.h
+2023-01-27 21:06:24,177 [WARN] IPConfigManager:4122 - WARNING: Missing Config File for SYS ip!!
+2023-01-27 21:06:24,213 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/MXTmpFiles/system.tmp_save
+2023-01-27 21:06:24,282 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/MXTmpFiles/system.tmp
+2023-01-27 21:06:24,283 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/stm32_assert.h_save
+2023-01-27 21:06:24,352 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/stm32_assert.h
+2023-01-27 21:06:24,353 [WARN] IPConfigManager:2928 - Warning: the RefConfig RCC_PLL_PLLM_CONFIG is not available in your config.xml file
+2023-01-27 21:06:24,353 [WARN] IPConfigManager:2928 - Warning: the RefConfig RCC_PLL_PLLSOURCE_CONFIG is not available in your config.xml file
+2023-01-27 21:06:24,353 [WARN] IPConfigManager:2928 - Warning: the RefConfig RCC_ConfigVoltageScaling is not available in your config.xml file
+2023-01-27 21:06:24,360 [WARN] IPConfigManager:2928 - Warning: the RefConfig RCC_ClockConfig is not available in your config.xml file
+2023-01-27 21:06:24,360 [WARN] IPConfigManager:2928 - Warning: the RefConfig RCC_MCO1Config is not available in your config.xml file
+2023-01-27 21:06:24,360 [WARN] IPConfigManager:2928 - Warning: the RefConfig RCC_MCO2Config is not available in your config.xml file
+2023-01-27 21:06:24,360 [WARN] IPConfigManager:2928 - Warning: the RefConfig RCC_interrupt_Time_SYSTICK_Config is not available in your config.xml file
+2023-01-27 21:06:24,360 [WARN] IPConfigManager:2928 - Warning: the RefConfig RCC_SYSTICK_CONFIG is not available in your config.xml file
+2023-01-27 21:06:24,364 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/main.h_save
+2023-01-27 21:06:24,438 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/main.h
+2023-01-27 21:06:24,439 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/main.c_save
+2023-01-27 21:06:24,536 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/main.c
+2023-01-27 21:06:25,237 [INFO] ProjectBuilder:2919 - Time for Copy HAL[1] : 14mS.
+2023-01-27 21:06:25,239 [INFO] ProjectBuilder:4183 - Project Generator version: 3.18.0-B7
+2023-01-27 21:06:25,513 [INFO] ConfigFileManager:1396 - The Die is : DIE413
+2023-01-27 21:06:26,638 [INFO] ProjectBuilder:4351 - Time for Generating toolchain IDE Files: 1399mS.
+2023-01-27 21:06:26,638 [INFO] ProjectBuilder:2790 - Time for Copy CMSIS : 0mS.
+2023-01-27 21:06:26,639 [INFO] ProjectBuilder:2790 - Time for Copy CMSIS : 0mS.
+2023-01-27 21:06:47,846 [INFO] Gpio:272 - dependency for GPIO [RCC, SPI1, USART6]
+2023-01-27 21:06:53,947 [INFO] NvicIntPanel:100 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,2,26,543x661,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2023-01-27 21:07:37,180 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 425517760 Bytes (998244352)
+2023-01-27 21:07:37,286 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 447011520 Bytes (998244352)
+2023-01-27 21:07:37,649 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 484760256 Bytes (998244352)
+2023-01-27 21:07:37,870 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SPI
+2023-01-27 21:07:37,870 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RCC
+2023-01-27 21:07:37,870 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC
+2023-01-27 21:07:37,870 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: WWDG
+2023-01-27 21:07:37,870 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USART
+2023-01-27 21:07:37,871 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: GPIO
+2023-01-27 21:07:37,871 [INFO] CodeGenerator:692 - code generatio: config db path: /opt/st/stm32cubeide_1.11.2/plugins/com.st.stm32cube.common.mx_6.7.0.202301130839//db/
+2023-01-27 21:07:38,094 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/MXTmpFiles/license.tmp_save
+2023-01-27 21:07:38,169 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/MXTmpFiles/license.tmp
+2023-01-27 21:07:38,193 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/gpio.c_save
+2023-01-27 21:07:38,266 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/gpio.c
+2023-01-27 21:07:38,267 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/gpio.h_save
+2023-01-27 21:07:38,336 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/gpio.h
+2023-01-27 21:07:38,453 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/spi.c_save
+2023-01-27 21:07:38,553 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/spi.c
+2023-01-27 21:07:38,554 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/spi.h_save
+2023-01-27 21:07:38,623 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/spi.h
+2023-01-27 21:07:38,625 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/usart.c_save
+2023-01-27 21:07:38,723 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/usart.c
+2023-01-27 21:07:38,725 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/usart.h_save
+2023-01-27 21:07:38,794 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/usart.h
+2023-01-27 21:07:38,796 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/wwdg.c_save
+2023-01-27 21:07:38,893 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/wwdg.c
+2023-01-27 21:07:38,894 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/wwdg.h_save
+2023-01-27 21:07:38,963 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/wwdg.h
+2023-01-27 21:07:38,967 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/stm32f4xx_it.c_save
+2023-01-27 21:07:39,053 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/stm32f4xx_it.c
+2023-01-27 21:07:39,055 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/stm32f4xx_it.h_save
+2023-01-27 21:07:39,123 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/stm32f4xx_it.h
+2023-01-27 21:07:39,135 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/stm32f4xx_hal_msp.c_save
+2023-01-27 21:07:39,229 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/stm32f4xx_hal_msp.c
+2023-01-27 21:07:39,230 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/MXTmpFiles/system.tmp_save
+2023-01-27 21:07:39,298 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/MXTmpFiles/system.tmp
+2023-01-27 21:07:39,300 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/stm32_assert.h_save
+2023-01-27 21:07:39,370 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/stm32_assert.h
+2023-01-27 21:07:39,372 [INFO] CodeEngine:303 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/stm32f4xx_hal_conf.h_save
+2023-01-27 21:07:39,454 [INFO] CodeEngine:327 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/stm32f4xx_hal_conf.h
+2023-01-27 21:07:39,470 [WARN] IPConfigManager:2928 - Warning: the RefConfig RCC_PLL_PLLM_CONFIG is not available in your config.xml file
+2023-01-27 21:07:39,470 [WARN] IPConfigManager:2928 - Warning: the RefConfig RCC_PLL_PLLSOURCE_CONFIG is not available in your config.xml file
+2023-01-27 21:07:39,470 [WARN] IPConfigManager:2928 - Warning: the RefConfig RCC_ConfigVoltageScaling is not available in your config.xml file
+2023-01-27 21:07:39,476 [WARN] IPConfigManager:2928 - Warning: the RefConfig RCC_ClockConfig is not available in your config.xml file
+2023-01-27 21:07:39,477 [WARN] IPConfigManager:2928 - Warning: the RefConfig RCC_MCO1Config is not available in your config.xml file
+2023-01-27 21:07:39,477 [WARN] IPConfigManager:2928 - Warning: the RefConfig RCC_MCO2Config is not available in your config.xml file
+2023-01-27 21:07:39,477 [WARN] IPConfigManager:2928 - Warning: the RefConfig RCC_interrupt_Time_SYSTICK_Config is not available in your config.xml file
+2023-01-27 21:07:39,477 [WARN] IPConfigManager:2928 - Warning: the RefConfig RCC_SYSTICK_CONFIG is not available in your config.xml file
+2023-01-27 21:07:39,491 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/main.h_save
+2023-01-27 21:07:39,566 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/main.h
+2023-01-27 21:07:39,568 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/main.c_save
+2023-01-27 21:07:39,665 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/main.c
+2023-01-27 21:07:40,322 [INFO] ProjectBuilder:2919 - Time for Copy HAL[1] : 22mS.
+2023-01-27 21:07:40,324 [INFO] ProjectBuilder:4183 - Project Generator version: 3.18.0-B7
+2023-01-27 21:07:40,596 [INFO] ConfigFileManager:1396 - The Die is : DIE413
+2023-01-27 21:07:41,776 [INFO] ProjectBuilder:4351 - Time for Generating toolchain IDE Files: 1452mS.
+2023-01-27 21:07:41,776 [INFO] ProjectBuilder:2790 - Time for Copy CMSIS : 0mS.
+2023-01-27 21:07:41,779 [INFO] ProjectBuilder:2790 - Time for Copy CMSIS : 0mS.
+2023-01-27 21:08:08,343 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 21:08:08,344 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 21:08:08,345 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 21:08:08,945 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 21:08:08,945 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 21:08:08,945 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 21:09:28,699 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 21:09:28,700 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 21:09:28,701 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 21:09:29,301 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 21:09:29,302 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 21:09:29,302 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 21:11:32,712 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 21:11:32,715 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 21:11:32,718 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 21:11:33,128 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 21:11:33,129 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 21:11:33,129 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 21:12:54,644 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 21:12:54,647 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 21:12:54,648 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 21:12:55,189 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 21:12:55,190 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 21:12:55,190 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 21:14:01,910 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 21:14:01,911 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 21:14:01,912 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 21:14:02,412 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 21:14:02,412 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 21:14:02,412 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 21:14:53,597 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 21:14:53,598 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 21:14:53,599 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 21:14:54,143 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 21:14:54,144 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 21:14:54,144 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 21:15:57,361 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 21:15:57,362 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 21:15:57,363 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 21:15:57,823 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 21:15:57,825 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 21:15:57,825 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 21:22:25,492 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 21:22:25,493 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 21:22:25,494 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 21:22:26,130 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 21:22:26,131 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 21:22:26,131 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 21:23:39,244 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 21:23:39,246 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 21:23:39,247 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 21:23:39,698 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 21:23:39,698 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 21:23:39,699 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 21:24:58,584 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 21:24:58,586 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 21:24:58,587 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 21:24:59,054 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 21:24:59,054 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 21:24:59,054 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 21:26:04,987 [INFO] NvicIntPanel:100 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,543x284,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2023-01-27 21:26:51,971 [INFO] NvicIntPanel:100 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2023-01-27 21:26:58,367 [INFO] NvicIntPanel:100 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2023-01-27 21:28:18,875 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 21:28:18,878 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 21:28:18,879 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 21:28:19,427 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 21:28:19,428 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 21:28:19,428 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 21:28:50,478 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 21:28:50,480 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 21:28:50,480 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 21:28:50,976 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 21:28:50,977 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 21:28:50,977 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 21:31:55,155 [INFO] NvicIntPanel:100 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2023-01-27 21:31:58,007 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 743480896 Bytes (998244352)
+2023-01-27 21:31:58,096 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 763403840 Bytes (998244352)
+2023-01-27 21:31:58,490 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 293098144 Bytes (998244352)
+2023-01-27 21:31:58,768 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SPI
+2023-01-27 21:31:58,769 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RCC
+2023-01-27 21:31:58,769 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC
+2023-01-27 21:31:58,769 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: WWDG
+2023-01-27 21:31:58,769 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USART
+2023-01-27 21:31:58,770 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: GPIO
+2023-01-27 21:31:58,770 [INFO] CodeGenerator:692 - code generatio: config db path: /opt/st/stm32cubeide_1.11.2/plugins/com.st.stm32cube.common.mx_6.7.0.202301130839//db/
+2023-01-27 21:31:59,047 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/MXTmpFiles/license.tmp_save
+2023-01-27 21:31:59,132 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/MXTmpFiles/license.tmp
+2023-01-27 21:31:59,156 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/gpio.c_save
+2023-01-27 21:31:59,235 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/gpio.c
+2023-01-27 21:31:59,236 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/gpio.h_save
+2023-01-27 21:31:59,302 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/gpio.h
+2023-01-27 21:31:59,396 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/spi.c_save
+2023-01-27 21:31:59,512 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/spi.c
+2023-01-27 21:31:59,513 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/spi.h_save
+2023-01-27 21:31:59,580 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/spi.h
+2023-01-27 21:31:59,582 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/usart.c_save
+2023-01-27 21:31:59,676 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/usart.c
+2023-01-27 21:31:59,677 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/usart.h_save
+2023-01-27 21:31:59,743 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/usart.h
+2023-01-27 21:31:59,745 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/wwdg.c_save
+2023-01-27 21:31:59,838 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/wwdg.c
+2023-01-27 21:31:59,839 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/wwdg.h_save
+2023-01-27 21:31:59,906 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/wwdg.h
+2023-01-27 21:31:59,910 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/stm32f4xx_it.c_save
+2023-01-27 21:32:00,075 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/stm32f4xx_it.c
+2023-01-27 21:32:00,076 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/stm32f4xx_it.h_save
+2023-01-27 21:32:00,144 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/stm32f4xx_it.h
+2023-01-27 21:32:00,155 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/stm32f4xx_hal_msp.c_save
+2023-01-27 21:32:00,247 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/stm32f4xx_hal_msp.c
+2023-01-27 21:32:00,248 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/MXTmpFiles/system.tmp_save
+2023-01-27 21:32:00,313 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/MXTmpFiles/system.tmp
+2023-01-27 21:32:00,314 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/stm32_assert.h_save
+2023-01-27 21:32:00,379 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/stm32_assert.h
+2023-01-27 21:32:00,381 [INFO] CodeEngine:303 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/stm32f4xx_hal_conf.h_save
+2023-01-27 21:32:00,457 [INFO] CodeEngine:327 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/stm32f4xx_hal_conf.h
+2023-01-27 21:32:00,564 [WARN] IPConfigManager:2928 - Warning: the RefConfig RCC_PLL_PLLM_CONFIG is not available in your config.xml file
+2023-01-27 21:32:00,564 [WARN] IPConfigManager:2928 - Warning: the RefConfig RCC_PLL_PLLSOURCE_CONFIG is not available in your config.xml file
+2023-01-27 21:32:00,564 [WARN] IPConfigManager:2928 - Warning: the RefConfig RCC_ConfigVoltageScaling is not available in your config.xml file
+2023-01-27 21:32:00,571 [WARN] IPConfigManager:2928 - Warning: the RefConfig RCC_ClockConfig is not available in your config.xml file
+2023-01-27 21:32:00,571 [WARN] IPConfigManager:2928 - Warning: the RefConfig RCC_MCO1Config is not available in your config.xml file
+2023-01-27 21:32:00,571 [WARN] IPConfigManager:2928 - Warning: the RefConfig RCC_MCO2Config is not available in your config.xml file
+2023-01-27 21:32:00,571 [WARN] IPConfigManager:2928 - Warning: the RefConfig RCC_interrupt_Time_SYSTICK_Config is not available in your config.xml file
+2023-01-27 21:32:00,571 [WARN] IPConfigManager:2928 - Warning: the RefConfig RCC_SYSTICK_CONFIG is not available in your config.xml file
+2023-01-27 21:32:00,586 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/main.h_save
+2023-01-27 21:32:00,682 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/main.h
+2023-01-27 21:32:00,683 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/main.c_save
+2023-01-27 21:32:00,784 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/main.c
+2023-01-27 21:32:01,352 [INFO] ProjectBuilder:2919 - Time for Copy HAL[1] : 21mS.
+2023-01-27 21:32:01,354 [INFO] ProjectBuilder:4183 - Project Generator version: 3.18.0-B7
+2023-01-27 21:32:01,626 [INFO] ConfigFileManager:1396 - The Die is : DIE413
+2023-01-27 21:32:02,741 [INFO] ProjectBuilder:4351 - Time for Generating toolchain IDE Files: 1387mS.
+2023-01-27 21:32:02,741 [INFO] ProjectBuilder:2790 - Time for Copy CMSIS : 0mS.
+2023-01-27 21:32:02,742 [INFO] ProjectBuilder:2790 - Time for Copy CMSIS : 0mS.
+2023-01-27 21:32:21,040 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 21:32:21,042 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 21:32:21,043 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 21:32:21,633 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 21:32:21,633 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 21:32:21,634 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 21:32:53,934 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 21:32:53,937 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 21:32:53,938 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 21:32:54,477 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 21:32:54,478 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 21:32:54,478 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 21:33:31,263 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 21:33:31,266 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 21:33:31,266 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 21:33:31,621 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 21:33:31,622 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 21:33:31,622 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 21:34:08,381 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 21:34:08,382 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 21:34:08,382 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 21:34:08,801 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 21:34:08,802 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 21:34:08,802 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 21:34:37,715 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 21:34:37,716 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 21:34:37,717 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 21:34:38,298 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 21:34:38,299 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 21:34:38,300 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 21:35:19,581 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 21:35:19,584 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 21:35:19,586 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 21:35:19,966 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 21:35:19,967 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 21:35:19,968 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 21:43:04,907 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 21:43:04,908 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 21:43:04,908 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 21:43:05,282 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 21:43:05,283 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 21:43:05,283 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 21:44:42,397 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 21:44:42,399 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 21:44:42,400 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 21:44:42,995 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 21:44:42,996 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 21:44:42,996 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 21:53:05,807 [INFO] NvicIntPanel:100 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,543x266,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2023-01-27 21:53:09,922 [INFO] NvicIntPanel:100 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2023-01-27 21:53:16,486 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 529287504 Bytes (1018167296)
+2023-01-27 21:53:16,588 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 549732688 Bytes (1018167296)
+2023-01-27 21:53:16,987 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 585384272 Bytes (1018167296)
+2023-01-27 21:53:17,183 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SPI
+2023-01-27 21:53:17,183 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RCC
+2023-01-27 21:53:17,184 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC
+2023-01-27 21:53:17,184 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USART
+2023-01-27 21:53:17,184 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: GPIO
+2023-01-27 21:53:17,184 [INFO] CodeGenerator:692 - code generatio: config db path: /opt/st/stm32cubeide_1.11.2/plugins/com.st.stm32cube.common.mx_6.7.0.202301130839//db/
+2023-01-27 21:53:17,396 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/MXTmpFiles/license.tmp_save
+2023-01-27 21:53:17,618 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/MXTmpFiles/license.tmp
+2023-01-27 21:53:17,660 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/gpio.c_save
+2023-01-27 21:53:17,741 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/gpio.c
+2023-01-27 21:53:17,742 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/gpio.h_save
+2023-01-27 21:53:17,808 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/gpio.h
+2023-01-27 21:53:17,861 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/spi.c_save
+2023-01-27 21:53:17,976 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/spi.c
+2023-01-27 21:53:17,978 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/spi.h_save
+2023-01-27 21:53:18,045 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/spi.h
+2023-01-27 21:53:18,047 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/usart.c_save
+2023-01-27 21:53:18,143 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/usart.c
+2023-01-27 21:53:18,144 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/usart.h_save
+2023-01-27 21:53:18,211 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/usart.h
+2023-01-27 21:53:18,214 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/stm32f4xx_it.c_save
+2023-01-27 21:53:18,380 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/stm32f4xx_it.c
+2023-01-27 21:53:18,382 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/stm32f4xx_it.h_save
+2023-01-27 21:53:18,448 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/stm32f4xx_it.h
+2023-01-27 21:53:18,449 [WARN] IPConfigManager:4122 - WARNING: Missing Config File for SYS ip!!
+2023-01-27 21:53:18,471 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/MXTmpFiles/system.tmp_save
+2023-01-27 21:53:18,538 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/MXTmpFiles/system.tmp
+2023-01-27 21:53:18,539 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/stm32_assert.h_save
+2023-01-27 21:53:18,606 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/stm32_assert.h
+2023-01-27 21:53:18,607 [WARN] IPConfigManager:2928 - Warning: the RefConfig RCC_PLL_PLLM_CONFIG is not available in your config.xml file
+2023-01-27 21:53:18,607 [WARN] IPConfigManager:2928 - Warning: the RefConfig RCC_PLL_PLLSOURCE_CONFIG is not available in your config.xml file
+2023-01-27 21:53:18,607 [WARN] IPConfigManager:2928 - Warning: the RefConfig RCC_ConfigVoltageScaling is not available in your config.xml file
+2023-01-27 21:53:18,613 [WARN] IPConfigManager:2928 - Warning: the RefConfig RCC_ClockConfig is not available in your config.xml file
+2023-01-27 21:53:18,614 [WARN] IPConfigManager:2928 - Warning: the RefConfig RCC_MCO1Config is not available in your config.xml file
+2023-01-27 21:53:18,614 [WARN] IPConfigManager:2928 - Warning: the RefConfig RCC_MCO2Config is not available in your config.xml file
+2023-01-27 21:53:18,614 [WARN] IPConfigManager:2928 - Warning: the RefConfig RCC_interrupt_Time_SYSTICK_Config is not available in your config.xml file
+2023-01-27 21:53:18,614 [WARN] IPConfigManager:2928 - Warning: the RefConfig RCC_SYSTICK_CONFIG is not available in your config.xml file
+2023-01-27 21:53:18,617 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/main.h_save
+2023-01-27 21:53:18,710 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/main.h
+2023-01-27 21:53:18,711 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/main.c_save
+2023-01-27 21:53:18,807 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/main.c
+2023-01-27 21:53:19,361 [INFO] ProjectBuilder:2919 - Time for Copy HAL[1] : 13mS.
+2023-01-27 21:53:19,363 [INFO] ProjectBuilder:4183 - Project Generator version: 3.18.0-B7
+2023-01-27 21:53:19,638 [INFO] ConfigFileManager:1396 - The Die is : DIE413
+2023-01-27 21:53:20,931 [INFO] ProjectBuilder:4351 - Time for Generating toolchain IDE Files: 1568mS.
+2023-01-27 21:53:20,969 [INFO] ProjectBuilder:2790 - Time for Copy CMSIS : 0mS.
+2023-01-27 21:53:20,970 [INFO] ProjectBuilder:2790 - Time for Copy CMSIS : 0mS.
+2023-01-27 21:55:56,998 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 21:55:57,000 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 21:55:57,001 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 21:55:57,523 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 21:55:57,523 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 21:55:57,523 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 21:56:36,834 [INFO] NvicIntPanel:100 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2023-01-27 21:56:38,472 [INFO] NvicIntPanel:100 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2023-01-27 21:56:41,174 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 629401664 Bytes (1018167296)
+2023-01-27 21:56:41,268 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 649846848 Bytes (1018167296)
+2023-01-27 21:56:41,655 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 692838464 Bytes (1018167296)
+2023-01-27 21:56:41,888 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SPI
+2023-01-27 21:56:41,888 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RCC
+2023-01-27 21:56:41,888 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC
+2023-01-27 21:56:41,888 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USART
+2023-01-27 21:56:41,888 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: GPIO
+2023-01-27 21:56:41,888 [INFO] CodeGenerator:692 - code generatio: config db path: /opt/st/stm32cubeide_1.11.2/plugins/com.st.stm32cube.common.mx_6.7.0.202301130839//db/
+2023-01-27 21:56:42,124 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/MXTmpFiles/license.tmp_save
+2023-01-27 21:56:42,193 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/MXTmpFiles/license.tmp
+2023-01-27 21:56:42,216 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/gpio.c_save
+2023-01-27 21:56:42,288 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/gpio.c
+2023-01-27 21:56:42,289 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/gpio.h_save
+2023-01-27 21:56:42,356 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/gpio.h
+2023-01-27 21:56:42,413 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/spi.c_save
+2023-01-27 21:56:42,511 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/spi.c
+2023-01-27 21:56:42,513 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/spi.h_save
+2023-01-27 21:56:42,580 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/spi.h
+2023-01-27 21:56:42,582 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/usart.c_save
+2023-01-27 21:56:42,675 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/usart.c
+2023-01-27 21:56:42,676 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/usart.h_save
+2023-01-27 21:56:42,743 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/usart.h
+2023-01-27 21:56:42,746 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/stm32f4xx_it.c_save
+2023-01-27 21:56:42,828 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/stm32f4xx_it.c
+2023-01-27 21:56:42,829 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/stm32f4xx_it.h_save
+2023-01-27 21:56:42,897 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/stm32f4xx_it.h
+2023-01-27 21:56:42,898 [WARN] IPConfigManager:4122 - WARNING: Missing Config File for SYS ip!!
+2023-01-27 21:56:42,920 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/MXTmpFiles/system.tmp_save
+2023-01-27 21:56:42,986 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/MXTmpFiles/system.tmp
+2023-01-27 21:56:42,987 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/stm32_assert.h_save
+2023-01-27 21:56:43,053 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/stm32_assert.h
+2023-01-27 21:56:43,054 [WARN] IPConfigManager:2928 - Warning: the RefConfig RCC_PLL_PLLM_CONFIG is not available in your config.xml file
+2023-01-27 21:56:43,054 [WARN] IPConfigManager:2928 - Warning: the RefConfig RCC_PLL_PLLSOURCE_CONFIG is not available in your config.xml file
+2023-01-27 21:56:43,054 [WARN] IPConfigManager:2928 - Warning: the RefConfig RCC_ConfigVoltageScaling is not available in your config.xml file
+2023-01-27 21:56:43,060 [WARN] IPConfigManager:2928 - Warning: the RefConfig RCC_ClockConfig is not available in your config.xml file
+2023-01-27 21:56:43,060 [WARN] IPConfigManager:2928 - Warning: the RefConfig RCC_MCO1Config is not available in your config.xml file
+2023-01-27 21:56:43,060 [WARN] IPConfigManager:2928 - Warning: the RefConfig RCC_MCO2Config is not available in your config.xml file
+2023-01-27 21:56:43,060 [WARN] IPConfigManager:2928 - Warning: the RefConfig RCC_interrupt_Time_SYSTICK_Config is not available in your config.xml file
+2023-01-27 21:56:43,060 [WARN] IPConfigManager:2928 - Warning: the RefConfig RCC_SYSTICK_CONFIG is not available in your config.xml file
+2023-01-27 21:56:43,064 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/main.h_save
+2023-01-27 21:56:43,135 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/main.h
+2023-01-27 21:56:43,136 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/main.c_save
+2023-01-27 21:56:43,229 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/main.c
+2023-01-27 21:56:43,912 [INFO] ProjectBuilder:2919 - Time for Copy HAL[1] : 14mS.
+2023-01-27 21:56:43,914 [INFO] ProjectBuilder:4183 - Project Generator version: 3.18.0-B7
+2023-01-27 21:56:44,244 [INFO] ConfigFileManager:1396 - The Die is : DIE413
+2023-01-27 21:56:45,321 [INFO] ProjectBuilder:4351 - Time for Generating toolchain IDE Files: 1407mS.
+2023-01-27 21:56:45,321 [INFO] ProjectBuilder:2790 - Time for Copy CMSIS : 0mS.
+2023-01-27 21:56:45,322 [INFO] ProjectBuilder:2790 - Time for Copy CMSIS : 0mS.
+2023-01-27 21:57:03,011 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 21:57:03,012 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 21:57:03,012 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 21:57:03,301 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 21:57:03,301 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 21:57:03,302 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 22:09:08,233 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 22:09:08,235 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 22:09:08,235 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 22:09:51,779 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 22:09:51,781 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 22:09:51,783 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 22:09:52,300 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 22:09:52,300 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 22:09:52,301 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 22:15:31,536 [INFO] Gpio:272 - dependency for GPIO [RCC, SPI1, USART6]
+2023-01-27 22:16:03,961 [INFO] NvicIntPanel:100 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,2,26,549x661,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2023-01-27 22:45:36,131 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 22:45:36,132 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 22:45:36,132 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 22:45:36,507 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 22:45:36,508 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 22:45:36,508 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 22:46:01,416 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 22:46:01,417 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 22:46:01,417 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 22:46:02,007 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 22:46:02,008 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 22:46:02,008 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 22:47:11,000 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 22:47:11,001 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 22:47:11,001 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 22:47:11,686 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 22:47:11,686 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 22:47:11,687 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 22:49:53,524 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] Exception in thread "AWT-EventQueue-0" java.awt.IllegalComponentStateException: component must be showing on the screen to determine its location
+2023-01-27 22:49:53,524 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/java.awt.Component.getLocationOnScreen_NoTreeLock(Component.java:2101)
+2023-01-27 22:49:53,525 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/java.awt.Component.getLocationOnScreen(Component.java:2075)
+2023-01-27 22:49:53,525 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/javax.swing.JPopupMenu.show(JPopupMenu.java:940)
+2023-01-27 22:49:53,525 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/javax.swing.plaf.basic.BasicComboPopup.show(BasicComboPopup.java:235)
+2023-01-27 22:49:53,525 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/javax.swing.plaf.basic.BasicComboPopup.togglePopup(BasicComboPopup.java:1218)
+2023-01-27 22:49:53,526 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/javax.swing.plaf.basic.BasicComboPopup$Handler.mousePressed(BasicComboPopup.java:897)
+2023-01-27 22:49:53,526 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/java.awt.Component.processMouseEvent(Component.java:6632)
+2023-01-27 22:49:53,526 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/javax.swing.JComponent.processMouseEvent(JComponent.java:3342)
+2023-01-27 22:49:53,526 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/java.awt.Component.processEvent(Component.java:6400)
+2023-01-27 22:49:53,526 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/java.awt.Container.processEvent(Container.java:2263)
+2023-01-27 22:49:53,526 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/java.awt.Component.dispatchEventImpl(Component.java:5011)
+2023-01-27 22:49:53,527 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/java.awt.Container.dispatchEventImpl(Container.java:2321)
+2023-01-27 22:49:53,527 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/java.awt.Component.dispatchEvent(Component.java:4843)
+2023-01-27 22:49:53,527 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/javax.swing.plaf.basic.BasicTableUI$Handler.repostEvent(BasicTableUI.java:967)
+2023-01-27 22:49:53,527 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/javax.swing.plaf.basic.BasicTableUI$Handler.adjustSelection(BasicTableUI.java:1129)
+2023-01-27 22:49:53,527 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/javax.swing.plaf.basic.BasicTableUI$Handler.mousePressed(BasicTableUI.java:1057)
+2023-01-27 22:49:53,527 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/java.awt.AWTEventMulticaster.mousePressed(AWTEventMulticaster.java:288)
+2023-01-27 22:49:53,527 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/java.awt.AWTEventMulticaster.mousePressed(AWTEventMulticaster.java:287)
+2023-01-27 22:49:53,527 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/java.awt.AWTEventMulticaster.mousePressed(AWTEventMulticaster.java:287)
+2023-01-27 22:49:53,528 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/java.awt.AWTEventMulticaster.mousePressed(AWTEventMulticaster.java:287)
+2023-01-27 22:49:53,528 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/java.awt.Component.processMouseEvent(Component.java:6632)
+2023-01-27 22:49:53,528 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/javax.swing.JComponent.processMouseEvent(JComponent.java:3342)
+2023-01-27 22:49:53,528 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/java.awt.Component.processEvent(Component.java:6400)
+2023-01-27 22:49:53,528 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/java.awt.Container.processEvent(Container.java:2263)
+2023-01-27 22:49:53,528 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/java.awt.Component.dispatchEventImpl(Component.java:5011)
+2023-01-27 22:49:53,528 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/java.awt.Container.dispatchEventImpl(Container.java:2321)
+2023-01-27 22:49:53,528 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/java.awt.Component.dispatchEvent(Component.java:4843)
+2023-01-27 22:49:53,528 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4918)
+2023-01-27 22:49:53,529 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/java.awt.LightweightDispatcher.processMouseEvent(Container.java:4544)
+2023-01-27 22:49:53,529 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/java.awt.LightweightDispatcher.dispatchEvent(Container.java:4488)
+2023-01-27 22:49:53,529 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/java.awt.Container.dispatchEventImpl(Container.java:2307)
+2023-01-27 22:49:53,529 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/java.awt.Component.dispatchEvent(Component.java:4843)
+2023-01-27 22:49:53,529 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/java.awt.EventQueue.dispatchEventImpl(EventQueue.java:772)
+2023-01-27 22:49:53,529 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:721)
+2023-01-27 22:49:53,529 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:715)
+2023-01-27 22:49:53,529 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.base/java.security.AccessController.doPrivileged(Native Method)
+2023-01-27 22:49:53,529 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:85)
+2023-01-27 22:49:53,529 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:95)
+2023-01-27 22:49:53,530 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/java.awt.EventQueue$5.run(EventQueue.java:745)
+2023-01-27 22:49:53,530 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/java.awt.EventQueue$5.run(EventQueue.java:743)
+2023-01-27 22:49:53,530 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.base/java.security.AccessController.doPrivileged(Native Method)
+2023-01-27 22:49:53,530 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:85)
+2023-01-27 22:49:53,530 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/java.awt.EventQueue.dispatchEvent(EventQueue.java:742)
+2023-01-27 22:49:53,530 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:203)
+2023-01-27 22:49:53,530 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124)
+2023-01-27 22:49:53,530 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:113)
+2023-01-27 22:49:53,531 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:109)
+2023-01-27 22:49:53,531 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+2023-01-27 22:49:53,531 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/java.awt.EventDispatchThread.run(EventDispatchThread.java:90)
+2023-01-27 22:50:12,033 [INFO] NvicIntPanel:100 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2023-01-27 22:50:18,412 [INFO] NvicIntPanel:100 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2023-01-27 22:50:33,435 [INFO] NvicIntPanel:100 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2023-01-27 22:51:23,595 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 266707912 Bytes (1018167296)
+2023-01-27 22:51:23,702 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 286630856 Bytes (1018167296)
+2023-01-27 22:51:24,180 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 279167840 Bytes (1018167296)
+2023-01-27 22:51:24,405 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SPI
+2023-01-27 22:51:24,405 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM1_8
+2023-01-27 22:51:24,405 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RCC
+2023-01-27 22:51:24,405 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC
+2023-01-27 22:51:24,405 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USART
+2023-01-27 22:51:24,405 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: GPIO
+2023-01-27 22:51:24,406 [INFO] CodeGenerator:692 - code generatio: config db path: /opt/st/stm32cubeide_1.11.2/plugins/com.st.stm32cube.common.mx_6.7.0.202301130839//db/
+2023-01-27 22:51:24,673 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/MXTmpFiles/license.tmp_save
+2023-01-27 22:51:24,767 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/MXTmpFiles/license.tmp
+2023-01-27 22:51:24,794 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/gpio.c_save
+2023-01-27 22:51:24,874 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/gpio.c
+2023-01-27 22:51:24,875 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/gpio.h_save
+2023-01-27 22:51:24,942 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/gpio.h
+2023-01-27 22:51:25,160 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/spi.c_save
+2023-01-27 22:51:25,282 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/spi.c
+2023-01-27 22:51:25,283 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/spi.h_save
+2023-01-27 22:51:25,355 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/spi.h
+2023-01-27 22:51:25,358 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/tim.c_save
+2023-01-27 22:51:25,475 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/tim.c
+2023-01-27 22:51:25,476 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/tim.h_save
+2023-01-27 22:51:25,545 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/tim.h
+2023-01-27 22:51:25,547 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/usart.c_save
+2023-01-27 22:51:25,644 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/usart.c
+2023-01-27 22:51:25,645 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/usart.h_save
+2023-01-27 22:51:25,712 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/usart.h
+2023-01-27 22:51:25,716 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/stm32f4xx_it.c_save
+2023-01-27 22:51:25,964 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/stm32f4xx_it.c
+2023-01-27 22:51:25,965 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/stm32f4xx_it.h_save
+2023-01-27 22:51:26,035 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/stm32f4xx_it.h
+2023-01-27 22:51:26,036 [WARN] IPConfigManager:4122 - WARNING: Missing Config File for SYS ip!!
+2023-01-27 22:51:26,061 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/MXTmpFiles/system.tmp_save
+2023-01-27 22:51:26,130 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/MXTmpFiles/system.tmp
+2023-01-27 22:51:26,131 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/stm32_assert.h_save
+2023-01-27 22:51:26,199 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/stm32_assert.h
+2023-01-27 22:51:26,200 [WARN] IPConfigManager:2928 - Warning: the RefConfig RCC_PLL_PLLM_CONFIG is not available in your config.xml file
+2023-01-27 22:51:26,200 [WARN] IPConfigManager:2928 - Warning: the RefConfig RCC_PLL_PLLSOURCE_CONFIG is not available in your config.xml file
+2023-01-27 22:51:26,200 [WARN] IPConfigManager:2928 - Warning: the RefConfig RCC_ConfigVoltageScaling is not available in your config.xml file
+2023-01-27 22:51:26,207 [WARN] IPConfigManager:2928 - Warning: the RefConfig RCC_ClockConfig is not available in your config.xml file
+2023-01-27 22:51:26,207 [WARN] IPConfigManager:2928 - Warning: the RefConfig RCC_MCO1Config is not available in your config.xml file
+2023-01-27 22:51:26,207 [WARN] IPConfigManager:2928 - Warning: the RefConfig RCC_MCO2Config is not available in your config.xml file
+2023-01-27 22:51:26,207 [WARN] IPConfigManager:2928 - Warning: the RefConfig RCC_interrupt_Time_SYSTICK_Config is not available in your config.xml file
+2023-01-27 22:51:26,207 [WARN] IPConfigManager:2928 - Warning: the RefConfig RCC_SYSTICK_CONFIG is not available in your config.xml file
+2023-01-27 22:51:26,211 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/main.h_save
+2023-01-27 22:51:26,309 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/main.h
+2023-01-27 22:51:26,310 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/main.c_save
+2023-01-27 22:51:26,406 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/main.c
+2023-01-27 22:51:26,983 [INFO] ProjectBuilder:2919 - Time for Copy HAL[1] : 19mS.
+2023-01-27 22:51:26,985 [INFO] ProjectBuilder:4183 - Project Generator version: 3.18.0-B7
+2023-01-27 22:51:27,268 [INFO] ConfigFileManager:1396 - The Die is : DIE413
+2023-01-27 22:51:28,405 [INFO] ProjectBuilder:4351 - Time for Generating toolchain IDE Files: 1420mS.
+2023-01-27 22:51:28,406 [INFO] ProjectBuilder:2790 - Time for Copy CMSIS : 0mS.
+2023-01-27 22:51:28,407 [INFO] ProjectBuilder:2790 - Time for Copy CMSIS : 0mS.
+2023-01-27 22:54:57,960 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 22:54:57,962 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 22:54:57,963 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 22:54:58,573 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 22:54:58,574 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 22:54:58,574 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 22:58:27,637 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 22:58:27,640 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 22:58:27,641 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 22:58:28,142 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 22:58:28,143 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 22:58:28,143 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 22:58:45,323 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 22:58:45,324 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 22:58:45,324 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 23:00:00,910 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 23:00:00,911 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 23:00:00,912 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 23:00:01,803 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 23:00:01,803 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 23:00:01,803 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 23:01:14,075 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 23:01:14,076 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 23:01:14,077 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 23:01:14,453 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 23:01:14,454 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 23:01:14,454 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 23:32:32,177 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 23:32:32,179 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 23:32:32,179 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 23:32:32,575 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 23:32:32,576 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 23:32:32,576 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 23:37:49,249 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 23:37:49,250 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 23:37:49,251 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 23:37:49,861 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 23:37:49,861 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 23:37:49,861 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 23:44:54,907 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 23:44:54,909 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 23:44:54,910 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 23:44:55,416 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 23:44:55,417 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-27 23:44:55,417 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-28 00:02:22,306 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-28 00:02:22,307 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-28 00:02:22,308 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-28 00:02:22,736 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-28 00:02:22,736 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-28 00:02:22,737 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-28 00:03:52,926 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-28 00:03:52,927 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-28 00:03:52,927 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-28 00:03:55,597 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-28 00:03:55,597 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-28 00:03:55,598 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-28 00:04:23,366 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-28 00:04:23,367 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-28 00:04:23,368 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-28 00:04:23,950 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-28 00:04:23,951 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-28 00:04:23,951 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-28 00:06:37,797 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-28 00:06:37,798 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-28 00:06:37,799 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-28 00:06:38,198 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-28 00:06:38,199 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-28 00:06:38,199 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-28 00:07:51,146 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-28 00:07:51,147 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-28 00:07:51,147 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-28 00:07:51,612 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-28 00:07:51,613 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-28 00:07:51,613 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-28 00:09:55,750 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-28 00:09:55,752 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-28 00:09:55,753 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-28 00:09:56,265 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-28 00:09:56,265 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-28 00:09:56,266 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-28 00:13:25,771 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-28 00:13:25,773 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-28 00:13:25,774 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-28 00:13:26,262 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-28 00:13:26,263 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-28 00:13:26,263 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-28 00:20:59,181 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-28 00:20:59,184 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-28 00:20:59,184 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-28 00:20:59,663 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-28 00:20:59,664 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-28 00:20:59,664 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-28 00:27:40,959 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-28 00:27:40,960 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-28 00:27:40,961 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-28 00:27:41,455 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-28 00:27:41,456 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-28 00:27:41,494 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-28 00:31:08,276 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-28 00:31:08,278 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-28 00:31:08,279 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-28 00:31:08,782 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-28 00:31:08,783 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-28 00:31:08,783 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-28 00:31:58,242 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-28 00:31:58,244 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-28 00:31:58,244 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-28 00:31:58,942 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-28 00:31:58,942 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-28 00:31:58,942 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-28 00:33:20,398 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-28 00:33:20,398 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-28 00:33:20,399 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-28 00:33:46,729 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-28 00:33:46,730 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-28 00:33:46,731 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-01-28 00:33:47,122 [INFO] JxBrowserEngine:114 - Initiate JxBrowser Engine with user profile folder
+2023-01-28 00:33:48,389 [INFO] WebAppUi:459 - Close the Jxbrowser engine manually
+2023-01-28 00:33:48,392 [INFO] WebAppUi:462 - Profiles folder deleted
+2023-01-28 00:33:48,728 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
