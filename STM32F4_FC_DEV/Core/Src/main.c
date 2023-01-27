@@ -36,10 +36,12 @@ int _write(int file, char* p, int len)
 	for(int i=0;i<len;i++)
 	{
 		LL_USART_TransmitData8(USART6, *(p+i));
-		LL_mDelay(1);
+		usDelay(100);
 	}
 	return len;
 }
+
+
 /* USER CODE END PTD */
 
 /* Private define ------------------------------------------------------------*/
@@ -56,6 +58,7 @@ int _write(int file, char* p, int len)
 /* USER CODE BEGIN PV */
 extern uint8_t flag_INT_USART6;		// UART6 인터럽트 플래그 변수
 extern uint8_t rxd;					// UART 수신데이터 버퍼
+extern unsigned int TimingDelay;
 
 /* USER CODE END PV */
 
@@ -100,7 +103,7 @@ int main(void)
   SystemClock_Config();
 
   /* USER CODE BEGIN SysInit */
-
+  LL_InitTick(168000000, 1000000U);		//	Clock을 1us단위로 조정, 1ms함수 사용할 수 없음
   /* USER CODE END SysInit */
 
   /* Initialize all configured peripherals */
@@ -114,11 +117,11 @@ int main(void)
   LL_TIM_CC_EnableChannel(TIM3, LL_TIM_CHANNEL_CH1);
 
   TIM3->PSC = 2000;
-  LL_mDelay(100);
+  usDelay(100000);
   TIM3->PSC = 1500;
-  LL_mDelay(100);
+  usDelay(100000);
   TIM3->PSC = 1000;
-  LL_mDelay(100);
+  usDelay(100000);
 
   LL_TIM_CC_DisableChannel(TIM3, LL_TIM_CHANNEL_CH1);
 
@@ -134,7 +137,7 @@ int main(void)
   while (1)
   {
   //	  LL_GPIO_TogglePin(GPIOB, LL_GPIO_PIN_5);
-  //	  LL_mDelay(1000);
+  //	  usDelay(1000000);
   //	  LL_USART_TransmitData8(USART6,'B');
 
 	  if(flag_INT_USART6 == 1){
@@ -148,7 +151,7 @@ int main(void)
 
 	  if(ICM20602_DataReady() == 1)
 	  {
-		  LL_GPIO_TogglePin(GPIOC, LL_GPIO_PIN_1);
+		  LL_GPIO_TogglePin(GPIOB, LL_GPIO_PIN_5);
 
 //		  ICM20602_Get3AxisGyroRawData(&ICM20602.gyro_x_raw);
 		  ICM20602_Get6AxisRawData(&ICM20602.acc_x_raw, &ICM20602.gyro_x_raw);
@@ -217,7 +220,22 @@ void SystemClock_Config(void)
 }
 
 /* USER CODE BEGIN 4 */
+void usDelay(unsigned int nTime)
+{
+	__IO unsigned int  tmp = SysTick->CTRL;
+	((void)tmp);
 
+	SysTick->VAL = 0;
+
+	SysTick->CTRL = SysTick->CTRL | SysTick_CTRL_CLKSOURCE_Msk | SysTick_CTRL_TICKINT_Msk | SysTick_CTRL_ENABLE_Msk; // clock source
+
+	TimingDelay = nTime-1;
+
+	while(TimingDelay);
+
+	SysTick->CTRL = 0;
+
+}
 /* USER CODE END 4 */
 
 /**
