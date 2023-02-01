@@ -1,26 +1,43 @@
-08:49:35 **** Incremental Build of configuration Debug for project STM32F4_FC_DEV ****
+01:25:24 **** Incremental Build of configuration Debug for project STM32F4_FC_DEV ****
 make -j8 all 
 arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32F405xx -DUSE_FULL_LL_DRIVER -DHSE_VALUE=8000000 -DHSE_STARTUP_TIMEOUT=100 -DLSE_STARTUP_TIMEOUT=5000 -DLSE_VALUE=32768 -DEXTERNAL_CLOCK_VALUE=12288000 -DHSI_VALUE=16000000 -DLSI_VALUE=32000 -DVDD_VALUE=3300 -DPREFETCH_ENABLE=1 -DINSTRUCTION_CACHE_ENABLE=1 -DDATA_CACHE_ENABLE=1 -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:72:37: warning: data definition has no type or storage class
+   72 | float gx_cal=0, gy_cal=0, gz_cal=0; ax_cal=0; ay_cal=0;
+      |                                     ^~~~~~
+../Core/Src/main.c:72:37: warning: type defaults to 'int' in declaration of 'ax_cal' [-Wimplicit-int]
+../Core/Src/main.c:72:47: warning: data definition has no type or storage class
+   72 | float gx_cal=0, gy_cal=0, gz_cal=0; ax_cal=0; ay_cal=0;
+      |                                               ^~~~~~
+../Core/Src/main.c:72:47: warning: type defaults to 'int' in declaration of 'ay_cal' [-Wimplicit-int]
 ../Core/Src/main.c: In function 'main':
-../Core/Src/main.c:170:5: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
-  170 |     printf("%d,%d,%d\n", (int)(ICM20602.acc_x*100), (int)(ICM20602.acc_y*100), (int)(ICM20602.acc_z*100));
+../Core/Src/main.c:192:23: warning: passing argument 1 of 'Quaternion_Update' from incompatible pointer type [-Wincompatible-pointer-types]
+  192 |     Quaternion_Update(&q); //10us
+      |                       ^~
+      |                       |
+      |                       float (*)[4]
+In file included from ../Core/Src/main.c:29:
+../Core/Inc/Quaternion.h:25:31: note: expected 'float *' but argument is of type 'float (*)[4]'
+   25 | void Quaternion_Update(float* q);
+      |                        ~~~~~~~^
+../Core/Src/main.c:195:5: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+  195 |     printf("%d %d %d\n", (int)(Roll), (int)(Pitch), (int)(Yaw));
       |     ^~~~~~
-../Core/Src/main.c:170:5: warning: incompatible implicit declaration of built-in function 'printf'
+../Core/Src/main.c:195:5: warning: incompatible implicit declaration of built-in function 'printf'
 ../Core/Src/main.c:30:1: note: include '<stdio.h>' or provide a declaration of 'printf'
    29 | #include "Quaternion.h"
   +++ |+#include <stdio.h>
    30 | /* USER CODE END Includes */
-arm-none-eabi-gcc -o "STM32F4_FC_DEV.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/STM32F405RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="STM32F4_FC_DEV.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+arm-none-eabi-gcc -o "STM32F4_FC_DEV.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/STM32F405RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="STM32F4_FC_DEV.map" -Wl,--gc-sections -static -u_printf_float --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 Finished building target: STM32F4_FC_DEV.elf
  
 arm-none-eabi-size   STM32F4_FC_DEV.elf 
 arm-none-eabi-objdump -h -S  STM32F4_FC_DEV.elf  > "STM32F4_FC_DEV.list"
    text	   data	    bss	    dec	    hex	filename
-  18056	    112	   1632	  19800	   4d58	STM32F4_FC_DEV.elf
+  32532	    480	   1736	  34748	   87bc	STM32F4_FC_DEV.elf
 Finished building: default.size.stdout
  
 Finished building: STM32F4_FC_DEV.list
  
 
-08:49:36 Build Finished. 0 errors, 2 warnings. (took 886ms)
+01:25:26 Build Finished. 0 errors, 7 warnings. (took 1s.184ms)
 

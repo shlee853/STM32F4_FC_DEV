@@ -36,7 +36,7 @@ int _write(int file, char* p, int len)
 	for(int i=0;i<len;i++)
 	{
 		LL_USART_TransmitData8(USART6, *(p+i));
-		usDelay(100);
+		usDelay(100);	// 문자 1개 출력당 약 100us 소요, Float, int형 차이 없음
 	}
 	return len;
 }
@@ -46,6 +46,7 @@ int _write(int file, char* p, int len)
 
 /* Private define ------------------------------------------------------------*/
 /* USER CODE BEGIN PD */
+
 /* USER CODE END PD */
 
 /* Private macro -------------------------------------------------------------*/
@@ -59,6 +60,17 @@ int _write(int file, char* p, int len)
 extern uint8_t flag_INT_USART6;		// UART6 인터럽트 플래그 변수
 extern uint8_t rxd;					// UART 수신데이터 버퍼
 extern unsigned int TimingDelay;
+extern float sampleFreq;
+extern float Roll;
+extern float Pitch;
+extern float Yaw;
+extern float q[4];       // vector to hold quaternion
+
+
+unsigned long  t1=0;
+unsigned long  t2=0;
+float gx_cal=0, gy_cal=0, gz_cal=0;	ax_cal=0; ay_cal=0;
+float GYROX_RATE, GYROY_RATE, GYROZ_RATE, ACCX_RATE, ACCY_RATE, ACCZ_RATE;
 
 /* USER CODE END PV */
 
@@ -128,6 +140,16 @@ int main(void)
   LL_USART_EnableIT_RXNE(USART6);	// UART6 인터럽트 활성화
   ICM20602_Initialization();
 
+  q[0] = 1.0f;
+  q[1] = 0.0f;
+  q[2] = 0.0f;
+  q[3] = 0.0f;
+
+  // 시간측정을 위한 레지스터 초기화 값
+  CoreDebug->DEMCR |= CoreDebug_DEMCR_TRCENA_Msk;
+  DWT->CYCCNT = 0;
+  DWT->CTRL |= DWT_CTRL_CYCCNTENA_Msk;
+
 
 
   /* USER CODE END 2 */
@@ -144,31 +166,43 @@ int main(void)
 		  flag_INT_USART6 =0;
 		  LL_USART_TransmitData8(USART6,rxd); // 호스트로부터 수신한 데이터를 그대로 다시 보냄
 		  LL_GPIO_TogglePin(GPIOB, LL_GPIO_PIN_5);
-//		  printf("Hello!!!\n\r");
 
-	   }
-
+	  }
 
 	  if(ICM20602_DataReady() == 1)
 	  {
-		  LL_GPIO_TogglePin(GPIOB, LL_GPIO_PIN_5);
 
-//		  ICM20602_Get3AxisGyroRawData(&ICM20602.gyro_x_raw);
-		  ICM20602_Get6AxisRawData(&ICM20602.acc_x_raw, &ICM20602.gyro_x_raw);
+		  t2 = DWT->CYCCNT;
+		  sampleFreq = (1000000.0f /(((float)(t2-t1))/CLOCK_PER_USEC)); // set integration time by time elapsed since last filter update
+		  t1 = t2;
 
-		  ICM20602.gyro_x = ICM20602.gyro_x_raw * 2000.f / 32768.f;
-		  ICM20602.gyro_y = ICM20602.gyro_y_raw * 2000.f / 32768.f;
-		  ICM20602.gyro_z = ICM20602.gyro_z_raw * 2000.f / 32768.f;
+		  LL_GPIO_TogglePin(GPIOB, LL_GPIO_PIN_5);		// 0.5us
+		  ICM20602_Get6AxisRawData(&ICM20602.acc_x_raw, &ICM20602.gyro_x_raw);	//	39.11us
+		  //		  GYROX_RATE = (ICM20602.gyro_x_raw - gx_cal) * 0.06103515625 * 0.017453289;
+		  GYROX_RATE = (ICM20602.gyro_x_raw - gx_cal) * 0.06103515625 * 0.017453289;
+		  GYROY_RATE = (ICM20602.gyro_y_raw - gy_cal) * 0.06103515625 * 0.017453289;
+		  GYROZ_RATE = (ICM20602.gyro_z_raw - gz_cal) * 0.06103515625 * 0.017453289;
 
-		  ICM20602.acc_x = ICM20602.acc_x_raw * 16.f / 32768.f;
-		  ICM20602.acc_y = ICM20602.acc_y_raw * 16.f / 32768.f;
-		  ICM20602.acc_z = ICM20602.acc_z_raw * 16.f / 32768.f;
+		  ACCX_RATE = (ICM20602.acc_x_raw - ax_cal) * 0.00048828125;
+		  ACCY_RATE = (ICM20602.acc_y_raw - ay_cal) * 0.00048828125;
+		  ACCZ_RATE = (ICM20602.acc_z_raw) * 0.00048828125;
 
-//		  printf("%d,%d,%d\n", ICM20602.gyro_x_raw, ICM20602.gyro_y_raw, ICM20602.gyro_z_raw);
-//		  printf("%d,%d,%d\n", ICM20602.acc_x_raw, ICM20602.acc_y_raw, ICM20602.acc_z_raw);
-//		  printf("%d,%d,%d\n", (int)(ICM20602.gyro_x*100), (int)(ICM20602.gyro_y*100), (int)(ICM20602.gyro_z*100));
-		  printf("%d,%d,%d\n", (int)(ICM20602.acc_x*100), (int)(ICM20602.acc_y*100), (int)(ICM20602.acc_z*100));
+//		  MadgwickQuaternionUpdate(&ACCX_RATE,&ACCY_RATE,&ACCZ_RATE,&GYROX_RATE,&GYROY_RATE,&GYROZ_RATE);	//57us
+		  MahonyAHRSupdateIMU(&GYROX_RATE,&GYROY_RATE,&GYROZ_RATE, &ACCX_RATE,&ACCY_RATE,&ACCZ_RATE);		//42us
+		  Quaternion_Update(&q);	//10us
 
+//		  printf("%d %d %d\n", (int)(q[0]*100), (int)(q[1]*100),(int)(q[2]*100));
+		  printf("%d %d %d\n", (int)(Roll), (int)(Pitch), (int)(Yaw));
+//		  printf("%.2f\n",(sampleFreq));
+//		  printf("%.d %.d %.d\n", ICM20602.gyro_x_raw, ICM20602.gyro_y_raw, ICM20602.gyro_z_raw);
+//		  printf("%.1f %.1f %.1f\n", ACCX_RATE, ACCY_RATE, ACCZ_RATE);
+
+		  // overall 230us time consumption
+		  // Loop 수행시간 계산시 소수점 세자리 출력(약 400u) 더해주어야 함
+
+//		  t2 = DWT->CYCCNT;
+//		  printf("%.0f\n",((float)(t2-t1))/CLOCK_PER_USEC);
+//		  t1 = DWT->CYCCNT;
 
 	  }
 

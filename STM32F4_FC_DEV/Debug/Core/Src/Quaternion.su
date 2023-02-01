@@ -1,2 +1,4 @@
-../Core/Src/Quaternion.c:9:6:Quaternion_Update	40	static
-../Core/Src/Quaternion.c:44:7:invSqrt	32	static
+../Core/Src/Quaternion.c:23:6:Quaternion_Update	32	static
+../Core/Src/Quaternion.c:51:7:invSqrt	32	static
+../Core/Src/Quaternion.c:66:6:MadgwickQuaternionUpdate	176	static
+../Core/Src/Quaternion.c:155:6:MahonyAHRSupdateIMU	64	static

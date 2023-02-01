@@ -87,6 +87,8 @@ void usDelay(unsigned int nTime);
 #endif
 
 /* USER CODE BEGIN Private defines */
+#define CLOCK_PER_USEC 				168
+
 
 /* USER CODE END Private defines */
 
