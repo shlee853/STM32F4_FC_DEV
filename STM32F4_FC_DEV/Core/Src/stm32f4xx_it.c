@@ -20,7 +20,6 @@
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
 #include "stm32f4xx_it.h"
-
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 /* USER CODE END Includes */
@@ -42,8 +41,9 @@
 
 /* Private variables ---------------------------------------------------------*/
 /* USER CODE BEGIN PV */
-uint8_t flag_INT_USART6;
-uint8_t rxd;
+uint8_t flag_INT_USART6, flag_INT_UART3_GPS;
+uint8_t rxd, rxd_gps;
+
 unsigned int TimingDelay;
 /* USER CODE END PV */
 
@@ -209,7 +209,7 @@ void SysTick_Handler(void)
 void EXTI4_IRQHandler(void)
 {
   /* USER CODE BEGIN EXTI4_IRQn 0 */
-
+	// IMU SPI External interrupt
   /* USER CODE END EXTI4_IRQn 0 */
   if (LL_EXTI_IsActiveFlag_0_31(LL_EXTI_LINE_4) != RESET)
   {
@@ -234,6 +234,26 @@ void SPI1_IRQHandler(void)
   /* USER CODE BEGIN SPI1_IRQn 1 */
 
   /* USER CODE END SPI1_IRQn 1 */
+}
+
+/**
+  * @brief This function handles USART3 global interrupt.
+  */
+void USART3_IRQHandler(void)
+{
+  /* USER CODE BEGIN USART3_IRQn 0 */
+	if(LL_USART_IsActiveFlag_RXNE(USART3)) // 인터럽트중 USART3인지 확인
+	{
+			LL_USART_ClearFlag_RXNE(USART3); // 맞으면 비트 클리어
+			rxd_gps = LL_USART_ReceiveData8(USART3); // 데이터 수신
+			flag_INT_UART3_GPS = 1; // flag 클리어
+
+	}
+
+  /* USER CODE END USART3_IRQn 0 */
+  /* USER CODE BEGIN USART3_IRQn 1 */
+
+  /* USER CODE END USART3_IRQn 1 */
 }
 
 /**

@@ -73,6 +73,10 @@ void usDelay(unsigned int nTime);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
+#define UART3_GPS_TX_Pin LL_GPIO_PIN_10
+#define UART3_GPS_TX_GPIO_Port GPIOB
+#define UART3_GPS_RX_Pin LL_GPIO_PIN_11
+#define UART3_GPS_RX_GPIO_Port GPIOB
 #ifndef NVIC_PRIORITYGROUP_0
 #define NVIC_PRIORITYGROUP_0         ((uint32_t)0x00000007) /*!< 0 bit  for pre-emption priority,
                                                                  4 bits for subpriority */
