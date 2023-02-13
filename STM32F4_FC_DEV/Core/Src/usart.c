@@ -53,14 +53,36 @@ void MX_USART3_UART_Init(void)
   GPIO_InitStruct.Alternate = LL_GPIO_AF_7;
   LL_GPIO_Init(GPIOB, &GPIO_InitStruct);
 
+  /* USART3 DMA Init */
+
+  /* USART3_RX Init */
+  LL_DMA_SetChannelSelection(DMA1, LL_DMA_STREAM_1, LL_DMA_CHANNEL_4);
+
+  LL_DMA_SetDataTransferDirection(DMA1, LL_DMA_STREAM_1, LL_DMA_DIRECTION_PERIPH_TO_MEMORY);
+
+  LL_DMA_SetStreamPriorityLevel(DMA1, LL_DMA_STREAM_1, LL_DMA_PRIORITY_LOW);
+
+  LL_DMA_SetMode(DMA1, LL_DMA_STREAM_1, LL_DMA_MODE_CIRCULAR);
+
+  LL_DMA_SetPeriphIncMode(DMA1, LL_DMA_STREAM_1, LL_DMA_PERIPH_NOINCREMENT);
+
+  LL_DMA_SetMemoryIncMode(DMA1, LL_DMA_STREAM_1, LL_DMA_MEMORY_INCREMENT);
+
+  LL_DMA_SetPeriphSize(DMA1, LL_DMA_STREAM_1, LL_DMA_PDATAALIGN_BYTE);
+
+  LL_DMA_SetMemorySize(DMA1, LL_DMA_STREAM_1, LL_DMA_MDATAALIGN_BYTE);
+
+  LL_DMA_DisableFifoMode(DMA1, LL_DMA_STREAM_1);
+
   /* USART3 interrupt Init */
   NVIC_SetPriority(USART3_IRQn, NVIC_EncodePriority(NVIC_GetPriorityGrouping(),0, 0));
   NVIC_EnableIRQ(USART3_IRQn);
 
   /* USER CODE BEGIN USART3_Init 1 */
 
+
   /* USER CODE END USART3_Init 1 */
-  USART_InitStruct.BaudRate = 38400;
+  USART_InitStruct.BaudRate = 115200;
   USART_InitStruct.DataWidth = LL_USART_DATAWIDTH_8B;
   USART_InitStruct.StopBits = LL_USART_STOPBITS_1;
   USART_InitStruct.Parity = LL_USART_PARITY_NONE;
@@ -128,5 +150,23 @@ void MX_USART6_UART_Init(void)
 }
 
 /* USER CODE BEGIN 1 */
+int _write(int file, char* p, int len)
+{
+	for(int i=0;i<len;i++)
+	{
+		LL_USART_TransmitData8(USART6, *(p+i));
+		while(!LL_USART_IsActiveFlag_TXE(USART6));
+//		usDelay(100);	// 문자 1개 출력당 약 100us 소요, Float, int형 차이 없음
+	}
+	return len;
+}
+
+void USART_Transmit(USART_TypeDef *USARTx, uint8_t * data, uint16_t length){
+    uint16_t i=0;
+    for(i=0;i<length;i++){
+        LL_USART_TransmitData8(USARTx,*(data+i));
+        while(!LL_USART_IsActiveFlag_TXE(USARTx));
+    }
+}
 
 /* USER CODE END 1 */

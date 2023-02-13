@@ -1,35 +1,52 @@
-01:43:51 **** Incremental Build of configuration Debug for project STM32F4_FC_DEV ****
+05:51:05 **** Incremental Build of configuration Debug for project STM32F4_FC_DEV ****
 make -j8 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32F405xx -DUSE_FULL_LL_DRIVER -DHSE_VALUE=8000000 -DHSE_STARTUP_TIMEOUT=100 -DLSE_STARTUP_TIMEOUT=5000 -DLSE_VALUE=32768 -DEXTERNAL_CLOCK_VALUE=12288000 -DHSI_VALUE=16000000 -DLSI_VALUE=32000 -DVDD_VALUE=3300 -DPREFETCH_ENABLE=1 -DINSTRUCTION_CACHE_ENABLE=1 -DDATA_CACHE_ENABLE=1 -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-../Core/Src/main.c:84:37: warning: data definition has no type or storage class
-   84 | float gx_cal=0, gy_cal=0, gz_cal=0; ax_cal=0; ay_cal=0;
-      |                                     ^~~~~~
-../Core/Src/main.c:84:37: warning: type defaults to 'int' in declaration of 'ax_cal' [-Wimplicit-int]
-../Core/Src/main.c:84:47: warning: data definition has no type or storage class
-   84 | float gx_cal=0, gy_cal=0, gz_cal=0; ax_cal=0; ay_cal=0;
-      |                                               ^~~~~~
-../Core/Src/main.c:84:47: warning: type defaults to 'int' in declaration of 'ay_cal' [-Wimplicit-int]
-../Core/Src/main.c: In function 'main':
-../Core/Src/main.c:240:23: warning: passing argument 1 of 'Quaternion_Update' from incompatible pointer type [-Wincompatible-pointer-types]
-  240 |     Quaternion_Update(&q); //10us
-      |                       ^~
-      |                       |
-      |                       float (*)[4]
-In file included from ../Core/Src/main.c:29:
-../Core/Inc/Quaternion.h:25:31: note: expected 'float *' but argument is of type 'float (*)[4]'
-   25 | void Quaternion_Update(float* q);
+arm-none-eabi-gcc "../Core/Src/Quaternion.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32F405xx -DUSE_FULL_LL_DRIVER -DHSE_VALUE=8000000 -DHSE_STARTUP_TIMEOUT=100 -DLSE_STARTUP_TIMEOUT=5000 -DLSE_VALUE=32768 -DEXTERNAL_CLOCK_VALUE=12288000 -DHSI_VALUE=16000000 -DLSI_VALUE=32000 -DVDD_VALUE=3300 -DPREFETCH_ENABLE=1 -DINSTRUCTION_CACHE_ENABLE=1 -DDATA_CACHE_ENABLE=1 -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/Quaternion.d" -MT"Core/Src/Quaternion.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/Quaternion.o"
+../Core/Src/Quaternion.c: In function 'GetRPY':
+../Core/Src/Quaternion.c:41:22: warning: passing argument 1 of 'Quaternion_Update' from incompatible pointer type [-Wincompatible-pointer-types]
+   41 |    Quaternion_Update(&q); //10us
+      |                      ^~
+      |                      |
+      |                      float (*)[4]
+In file included from ../Core/Src/Quaternion.c:1:
+../Core/Inc/Quaternion.h:26:31: note: expected 'float *' but argument is of type 'float (*)[4]'
+   26 | void Quaternion_Update(float* q);
       |                        ~~~~~~~^
+../Core/Src/Quaternion.c: In function 'Quaternion_Update':
+../Core/Src/Quaternion.c:72:3: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+   72 |   printf("%d %d %d\n", (int)(Roll), (int)(Pitch), (int)(Yaw));
+      |   ^~~~~~
+../Core/Src/Quaternion.c:72:3: warning: incompatible implicit declaration of built-in function 'printf'
+../Core/Src/Quaternion.c:2:1: note: include '<stdio.h>' or provide a declaration of 'printf'
+    1 | #include "Quaternion.h"
+  +++ |+#include <stdio.h>
+    2 | 
+../Core/Src/Quaternion.c: In function 'MadgwickQuaternionUpdate':
+../Core/Src/Quaternion.c:116:11: warning: unused variable '_2q3q4' [-Wunused-variable]
+  116 |     float _2q3q4 = 2.0f * q3 * q4;
+      |           ^~~~~~
+../Core/Src/Quaternion.c:115:11: warning: unused variable '_2q1q3' [-Wunused-variable]
+  115 |     float _2q1q3 = 2.0f * q1 * q3;
+      |           ^~~~~~
+../Core/Src/Quaternion.c:156:12: warning: 'gbiasx' may be used uninitialized in this function [-Wmaybe-uninitialized]
+  156 |     gbiasx += gerrx / sampleFreq * zeta;
+      |     ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/Quaternion.c:157:12: warning: 'gbiasy' may be used uninitialized in this function [-Wmaybe-uninitialized]
+  157 |     gbiasy += gerry / sampleFreq * zeta;
+      |     ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/Quaternion.c:158:12: warning: 'gbiasz' may be used uninitialized in this function [-Wmaybe-uninitialized]
+  158 |     gbiasz += gerrz / sampleFreq * zeta;
+      |     ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~
 arm-none-eabi-gcc -o "STM32F4_FC_DEV.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/STM32F405RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="STM32F4_FC_DEV.map" -Wl,--gc-sections -static -u_printf_float --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 Finished building target: STM32F4_FC_DEV.elf
  
 arm-none-eabi-size   STM32F4_FC_DEV.elf 
 arm-none-eabi-objdump -h -S  STM32F4_FC_DEV.elf  > "STM32F4_FC_DEV.list"
    text	   data	    bss	    dec	    hex	filename
-  32804	    480	   1736	  35020	   88cc	STM32F4_FC_DEV.elf
+  35176	    496	   1824	  37496	   9278	STM32F4_FC_DEV.elf
 Finished building: default.size.stdout
  
 Finished building: STM32F4_FC_DEV.list
  
 
-01:43:51 Build Finished. 0 errors, 5 warnings. (took 944ms)
+05:51:06 Build Finished. 0 errors, 8 warnings. (took 942ms)
 

@@ -1,5 +1,7 @@
+"./Core/Src/GPS_Receiver.o"
 "./Core/Src/ICM20602.o"
 "./Core/Src/Quaternion.o"
+"./Core/Src/dma.o"
 "./Core/Src/gpio.o"
 "./Core/Src/main.o"
 "./Core/Src/spi.o"

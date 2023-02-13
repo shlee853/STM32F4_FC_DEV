@@ -1,12 +1,15 @@
 #include "Quaternion.h"
 
 
+
+
 float Roll;
 float Pitch;
 float Yaw;
-float q[4];            			// vector to hold quaternion
-float sampleFreq;                // integration interval for both filter schemes
+float q[4] = {1.0f, 0.0f, 0.0f, 0.0f};            			// vector to hold quaternion
 
+float GYROX_RATE=0.0f, GYROY_RATE=0.0f, GYROZ_RATE=0.0f, ACCX_RATE=0.0f, ACCY_RATE=0.0f, ACCZ_RATE=0.0f;
+float gx_cal=0.0f, gy_cal=0.0f, gz_cal=0.0f,	ax_cal=0.0f, ay_cal=0.0f;
 
 
 float gyroBias[3] 			= {0, 0, 0};
@@ -19,6 +22,29 @@ float twoKp = 1;                      // 2 * proportional gain (Kp)
 float twoKi = 0.0f;                      // 2 * integral gain (Ki)
 float integralFBx = 0.0f,  integralFBy = 0.0f, integralFBz = 0.0f; // integral error terms scaled by Ki
 
+
+void GetRPY(float* sampleFreq)
+{
+
+
+	  ICM20602_Get6AxisRawData(&ICM20602.acc_x_raw, &ICM20602.gyro_x_raw);	//	39.11us
+	  GYROX_RATE = (ICM20602.gyro_x_raw - gx_cal) * 0.06103515625 * 0.017453289;
+	  GYROY_RATE = (ICM20602.gyro_y_raw - gy_cal) * 0.06103515625 * 0.017453289;
+	  GYROZ_RATE = (ICM20602.gyro_z_raw - gz_cal) * 0.06103515625 * 0.017453289;
+
+	  ACCX_RATE = (ICM20602.acc_x_raw - ax_cal) * 0.00048828125;
+	  ACCY_RATE = (ICM20602.acc_y_raw - ay_cal) * 0.00048828125;
+	  ACCZ_RATE = (ICM20602.acc_z_raw) * 0.00048828125;
+
+//		  MadgwickQuaternionUpdate(&ACCX_RATE,&ACCY_RATE,&ACCZ_RATE,&GYROX_RATE,&GYROY_RATE,&GYROZ_RATE);	//57us
+	  MahonyAHRSupdateIMU(&GYROX_RATE,&GYROY_RATE,&GYROZ_RATE, &ACCX_RATE,&ACCY_RATE,&ACCZ_RATE, *sampleFreq);		//42us
+	  Quaternion_Update(&q);	//10us
+
+//		  printf("%.2f\n",(sampleFreq[0]));
+//		  printf("%.d %.d %.d\n", ICM20602.gyro_x_raw, ICM20602.gyro_y_raw, ICM20602.gyro_z_raw);
+//		  printf("%.1f %.1f %.1f\n", GYROX_RATE, GYROY_RATE, GYROZ_RATE);
+//		  printf("%.1f %.1f %.1f\n", ACCX_RATE, ACCY_RATE, ACCZ_RATE);
+}
 
 void Quaternion_Update(float* q)
 {
@@ -43,6 +69,10 @@ void Quaternion_Update(float* q)
 	else	
 		Yaw = -Yaw;
 	
+	 printf("%d %d %d\n", (int)(Roll), (int)(Pitch), (int)(Yaw));
+//	 printf("%d %d %d\n", (int)(q[0]*100), (int)(q[1]*100),(int)(q[2]*100));
+
+
 }
 
 // Fast inverse square-root
@@ -63,7 +93,7 @@ float invSqrt(float x)
 
 
 
-void MadgwickQuaternionUpdate(float* ax, float* ay, float* az, float* gx, float* gy, float* gz)
+void MadgwickQuaternionUpdate(float* ax, float* ay, float* az, float* gx, float* gy, float* gz, float sampleFreq)
 {
     float q1 = q[0], q2 = q[1], q3 = q[2], q4 = q[3];         // short name local variable for readability
     float norm;                                               // vector norm
@@ -152,7 +182,7 @@ void MadgwickQuaternionUpdate(float* ax, float* ay, float* az, float* gx, float*
 }
 
 
-void MahonyAHRSupdateIMU(float* gx, float* gy, float* gz, float* ax, float* ay, float* az) {
+void MahonyAHRSupdateIMU(float* gx, float* gy, float* gz, float* ax, float* ay, float* az, float sampleFreq) {
 
   float norm;
   float halfvx, halfvy, halfvz;

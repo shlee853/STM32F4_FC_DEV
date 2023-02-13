@@ -1,0 +1,28 @@
+#include main.h
+
+
+#ifndef INC_GPS_H_
+
+	#define INC_GPS_H_
+	#define GPS_MESSAGE_LENGTH 36
+	#define LATITUDE_OFFSET 33
+	#define LONGITUDE_OFFSET 124
+
+
+
+	typedef struct{
+		int32_t lon;
+		int32_t lat;
+
+		int32_t longitude_deg,longitude_min;
+		float longitude_sec;
+
+		int32_t latitude_deg,latitude_min;
+		float latitude_sec;
+
+		float sec_lon;
+		float sec_lat;
+	}GPS_DATA;
+
+
+#endif /* INC_GPS_H_ */

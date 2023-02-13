@@ -18,6 +18,7 @@
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
+#include "dma.h"
 #include "spi.h"
 #include "tim.h"
 #include "usart.h"
@@ -27,29 +28,12 @@
 /* USER CODE BEGIN Includes */
 #include "ICM20602.h"
 #include "Quaternion.h"
+#include "GPS_Receiver.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
 /* USER CODE BEGIN PTD */
-int _write(int file, char* p, int len)
-{
-	for(int i=0;i<len;i++)
-	{
-		LL_USART_TransmitData8(USART6, *(p+i));
-		usDelay(100);	// 문자 1개 출력당 약 100us 소요, Float, int형 차이 없음
-	}
-	return len;
-}
 
-void UART3_GPS_TransmitDataString(char* p, int len)
-{
-	for(int i=0;i<len;i++)
-	{
-		LL_USART_TransmitData8(USART3, *(p+i));
-		usDelay(10000);	// 문자 1개 출력당 약 100us 소요, Float, int형 차이 없음
-	}
-
-}
 
 
 /* USER CODE END PTD */
@@ -69,28 +53,27 @@ void UART3_GPS_TransmitDataString(char* p, int len)
 /* USER CODE BEGIN PV */
 extern uint8_t flag_INT_USART6;		// UART6 인터럽트 플래그 변수
 extern uint8_t flag_INT_UART3_GPS;	// UART3 인터럽트 플래그 변수
+extern uint8_t flag_DMA1_DONE;		// DMA1_STREAM1 DMA완료 플래그
+
 extern uint8_t rxd, rxd_gps;		// UART 수신데이터 버퍼
 
 extern unsigned int TimingDelay;
-extern float sampleFreq;
-extern float Roll;
-extern float Pitch;
-extern float Yaw;
-extern float q[4];       // vector to hold quaternion
-
 
 unsigned long  t1=0;
 unsigned long  t2=0;
-float gx_cal=0, gy_cal=0, gz_cal=0;	ax_cal=0; ay_cal=0;
-float GYROX_RATE, GYROY_RATE, GYROZ_RATE, ACCX_RATE, ACCY_RATE, ACCZ_RATE;
 
-int recv_pack_gps=0;
-unsigned char buf_gps[100];
+float sampleFreq;
 
-unsigned char M8N_CFG_PRT[28] = {0xB5, 0x62, 0x06, 0x00, 0x14, 0x00, 0x01, 0x00, 0x00, 0x00, 0xD0, 0x08, 0x00, 0x00, 0x00, 0x96, 0x00, 0x00, 0x01, 0x00, 0x01, 0x00, 0x00, 0x00, 0x00, 0x00, 0x8B, 0x54};
-unsigned char M8N_CFG_MSG[16] = {0xB5, 0x62, 0x06, 0x01, 0x08, 0x00, 0x29, 0x02, 0x00, 0x01, 0x00, 0x00, 0x00, 0x00, 0x3B, 0xFE};
-unsigned char M8N_CFG_RAT[14] = {0xB5, 0x62, 0x06, 0x08, 0x06, 0x00, 0xC8, 0x00, 0x01, 0x00, 0x01, 0x00, 0xDE, 0x6A};
-unsigned char M8N_CFG_CFG[21] = {0xB5, 0x62, 0x06, 0x09, 0x0D, 0x00, 0x00, 0x00, 0x00, 0x00, 0xFF, 0xFF, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x17, 0x31, 0xBF};
+extern int recv_cnt;
+extern int err_cnt;
+
+GPS_RAW_MESSAGE recv_msg;
+MSG_NAV 		msg_nav;
+
+//unsigned char M8N_CFG_PRT[28] = {0xB5, 0x62, 0x06, 0x00, 0x14, 0x00, 0x01, 0x00, 0x00, 0x00, 0xD0, 0x08, 0x00, 0x00, 0x00, 0x96, 0x00, 0x00, 0x01, 0x00, 0x01, 0x00, 0x00, 0x00, 0x00, 0x00, 0x8B, 0x54};
+//unsigned char M8N_CFG_MSG[16] = {0xB5, 0x62, 0x06, 0x01, 0x08, 0x00, 0x29, 0x02, 0x00, 0x01, 0x00, 0x00, 0x00, 0x00, 0x3B, 0xFE};
+//unsigned char M8N_CFG_RAT[14] = {0xB5, 0x62, 0x06, 0x08, 0x06, 0x00, 0xC8, 0x00, 0x01, 0x00, 0x01, 0x00, 0xDE, 0x6A};
+//unsigned char M8N_CFG_CFG[21] = {0xB5, 0x62, 0x06, 0x09, 0x0D, 0x00, 0x00, 0x00, 0x00, 0x00, 0xFF, 0xFF, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x17, 0x31, 0xBF};
 
 
 
@@ -142,11 +125,13 @@ int main(void)
 
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
+  MX_DMA_Init();
   MX_USART6_UART_Init();
   MX_SPI1_Init();
   MX_TIM3_Init();
   MX_USART3_UART_Init();
   /* USER CODE BEGIN 2 */
+
 
   LL_TIM_EnableCounter(TIM3);
   LL_TIM_CC_EnableChannel(TIM3, LL_TIM_CHANNEL_CH1);
@@ -159,32 +144,14 @@ int main(void)
   usDelay(100000);
 
 
-
   LL_TIM_CC_DisableChannel(TIM3, LL_TIM_CHANNEL_CH1);
 
+//  LL_USART_EnableIT_RXNE(USART3);	// UART3 인터럽트 활성화
   LL_USART_EnableIT_RXNE(USART6);	// UART6 인터럽트 활성화
-  LL_USART_EnableIT_RXNE(USART3);	// UART3 인터럽트 활성화
   ICM20602_Initialization();
-
-  q[0] = 1.0f;
-  q[1] = 0.0f;
-  q[2] = 0.0f;
-  q[3] = 0.0f;
+  GPS_DMA_init(&recv_msg, USART3, DMA1, LL_DMA_STREAM_1);
 
 
-
-  // GPS UBX 모드 초기화: 동작 확인 안됨
-/*  UART3_GPS_TransmitDataString(&M8N_CFG_PRT[0], 28);
-  usDelay(200000);
-  UART3_GPS_TransmitDataString(&M8N_CFG_MSG[0], 16);
-  usDelay(200000);
-  UART3_GPS_TransmitDataString(&M8N_CFG_RAT[0], 14);
-  usDelay(200000);
-  UART3_GPS_TransmitDataString(&M8N_CFG_CFG[0], 21);
-  usDelay(200000);
-*/
-
-//  memset(&buf_gps, 0, 100);
 
   // 시간측정을 위한 레지스터 초기화 값
   CoreDebug->DEMCR |= CoreDebug_DEMCR_TRCENA_Msk;
@@ -192,6 +159,9 @@ int main(void)
   DWT->CTRL |= DWT_CTRL_CYCCNTENA_Msk;
 
 
+  DMA1->LIFCR |= DMA_LIFCR_CTCIF1|DMA_LIFCR_CHTIF1|DMA_LIFCR_CTEIF1|DMA_LIFCR_CDMEIF1|DMA_LIFCR_CFEIF1;
+  LL_DMA_EnableStream(DMA1,LL_DMA_STREAM_1);
+  LL_USART_EnableIT_IDLE(USART3);
 
   /* USER CODE END 2 */
 
@@ -205,17 +175,29 @@ int main(void)
 
 	  if(flag_INT_USART6 == 1){
 		  flag_INT_USART6 =0;
-		  LL_USART_TransmitData8(USART3,rxd); // 터미널에서 수신된 데이터를 GPS로 전달
+//		  LL_USART_TransmitData8(USART3,rxd); // 터미널에서 수신된 데이터를 GPS로 전달
 //		  LL_USART_TransmitData8(USART6,rxd); // 호스트로부터 수신한 데이터를 그대로 다시 보냄
 //		  LL_GPIO_TogglePin(GPIOB, LL_GPIO_PIN_5);
 
 	  }
 
+	  // UART3에서 한 프레임 GPS 데이터 수신완료에 인터럽트 발생, GPS데이터가 수신될 때마다 DMA는 데이터카운트를 하나씩 감소하면서 0이 될 때까지 전송
 	  if(flag_INT_UART3_GPS == 1){
+		  LL_DMA_DisableStream(DMA1,LL_DMA_STREAM_1);
+		  LL_DMA_ClearFlag_TC1(DMA1);
 		  flag_INT_UART3_GPS =0;
-		  LL_USART_TransmitData8(USART6,rxd_gps); // GPS에서 수신된 데이터를 터미널로 전달
-
 	  }
+
+	  // DMA 데이터카운트가 0이되면 인터럽트 발생, 데이터를 버퍼로 수신 완료
+	  if(flag_DMA1_DONE == 1)
+	  {
+		  GPS_Parsing(&recv_msg, &msg_nav, &recv_cnt, &err_cnt);
+		  LL_DMA_EnableStream(DMA1,LL_DMA_STREAM_1);
+		  flag_DMA1_DONE = 0;
+	  }
+
+
+
 
 	  if(ICM20602_DataReady() == 1)
 	  {
@@ -223,34 +205,10 @@ int main(void)
 		  t2 = DWT->CYCCNT;
 		  sampleFreq = (1000000.0f /(((float)(t2-t1))/CLOCK_PER_USEC)); // set integration time by time elapsed since last filter update
 		  t1 = t2;
-
-		  LL_GPIO_TogglePin(GPIOB, LL_GPIO_PIN_5);		// 0.5us
-		  ICM20602_Get6AxisRawData(&ICM20602.acc_x_raw, &ICM20602.gyro_x_raw);	//	39.11us
-		  //		  GYROX_RATE = (ICM20602.gyro_x_raw - gx_cal) * 0.06103515625 * 0.017453289;
-		  GYROX_RATE = (ICM20602.gyro_x_raw - gx_cal) * 0.06103515625 * 0.017453289;
-		  GYROY_RATE = (ICM20602.gyro_y_raw - gy_cal) * 0.06103515625 * 0.017453289;
-		  GYROZ_RATE = (ICM20602.gyro_z_raw - gz_cal) * 0.06103515625 * 0.017453289;
-
-		  ACCX_RATE = (ICM20602.acc_x_raw - ax_cal) * 0.00048828125;
-		  ACCY_RATE = (ICM20602.acc_y_raw - ay_cal) * 0.00048828125;
-		  ACCZ_RATE = (ICM20602.acc_z_raw) * 0.00048828125;
-
-//		  MadgwickQuaternionUpdate(&ACCX_RATE,&ACCY_RATE,&ACCZ_RATE,&GYROX_RATE,&GYROY_RATE,&GYROZ_RATE);	//57us
-		  MahonyAHRSupdateIMU(&GYROX_RATE,&GYROY_RATE,&GYROZ_RATE, &ACCX_RATE,&ACCY_RATE,&ACCZ_RATE);		//42us
-		  Quaternion_Update(&q);	//10us
-
-//		  printf("%d %d %d\n", (int)(Roll), (int)(Pitch), (int)(Yaw));
-//		  printf("%d %d %d\n", (int)(q[0]*100), (int)(q[1]*100),(int)(q[2]*100));
 //		  printf("%.2f\n",(sampleFreq));
-//		  printf("%.d %.d %.d\n", ICM20602.gyro_x_raw, ICM20602.gyro_y_raw, ICM20602.gyro_z_raw);
-//		  printf("%.1f %.1f %.1f\n", ACCX_RATE, ACCY_RATE, ACCZ_RATE);
-
+		  GetRPY(&sampleFreq);
 		  // overall 230us time consumption
 		  // Loop 수행시간 계산시 소수점 세자리 출력(약 400u) 더해주어야 함
-
-//		  t2 = DWT->CYCCNT;
-//		  printf("%.0f\n",((float)(t2-t1))/CLOCK_PER_USEC);
-//		  t1 = DWT->CYCCNT;
 
 	  }
 

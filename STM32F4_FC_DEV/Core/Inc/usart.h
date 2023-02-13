@@ -40,6 +40,8 @@ void MX_USART3_UART_Init(void);
 void MX_USART6_UART_Init(void);
 
 /* USER CODE BEGIN Prototypes */
+int _write(int file, char* p, int len);
+void USART_Transmit(USART_TypeDef *USARTx, uint8_t * data, uint16_t length);
 
 /* USER CODE END Prototypes */
 
