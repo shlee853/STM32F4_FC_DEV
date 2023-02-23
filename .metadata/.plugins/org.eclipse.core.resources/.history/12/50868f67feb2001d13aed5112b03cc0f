@@ -1,0 +1,36 @@
+/*
+ * SBUS_Receiver.h
+ *
+ *  Created on: Feb 22, 2023
+ *      Author: swift
+ */
+
+#ifndef INC_SBUS_RECEIVER_H_
+#define INC_SBUS_RECEIVER_H_
+
+
+	#include "main.h"
+
+	#define MSG_LENGTH_SBUS 		25
+	#define MSG_SBUS_SOF 			0x0F
+
+
+	typedef struct{
+		USART_TypeDef* UART;
+		DMA_TypeDef* DMA;
+		uint8_t rx_buf[MSG_LENGTH_SBUS];
+	}SBUS_RAW_MESSAGE;
+
+	typedef struct{
+		uint8_t header;
+		uint8_t rx_channel[16];
+		uint8_t footer;
+	}MSG_SBUS;
+
+
+	void SBUS_Receiver_DMA_init(SBUS_RAW_MESSAGE* sbus_raw_message, USART_TypeDef* UART,DMA_TypeDef* DMA,uint32_t DMA_STREAM);
+	void SBUS_Parsing(SBUS_RAW_MESSAGE* raw, MSG_SBUS* msg_sbus, int* rx_recv_cnt, int* rx_err_cnt);
+
+
+
+#endif /* INC_SBUS_RECEIVER_H_ */

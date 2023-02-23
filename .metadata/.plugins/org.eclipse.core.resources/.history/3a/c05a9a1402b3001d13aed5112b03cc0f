@@ -1,0 +1,63 @@
+/*
+ * SBUS_Receiver.c
+ *
+ *  Created on: Feb 22, 2023
+ *      Author: swift
+ */
+
+
+#include "SBUS_Receiver.h"
+
+
+	int rx_recv_cnt=0;
+	int rx_err_cnt=0;
+
+
+void SBUS_Receiver_DMA_init(SBUS_RAW_MESSAGE* raw, USART_TypeDef* UART,DMA_TypeDef* DMA,uint32_t DMA_STREAM)
+{
+
+
+	//DMA, INTERRUPT SETTINGS
+	LL_DMA_SetMemoryAddress(DMA,DMA_STREAM,(uint32_t)(raw->rx_buf));
+	LL_DMA_SetPeriphAddress(DMA,DMA_STREAM,LL_USART_DMA_GetRegAddr(UART));
+	LL_DMA_SetDataLength(DMA,DMA_STREAM,MSG_LENGTH_SBUS);
+
+	//  LL_DMA_EnableIT_HT(DMA1, LL_DMA_STREAM_1);
+    LL_DMA_EnableIT_TC(DMA, DMA_STREAM);
+	LL_USART_EnableDMAReq_RX(UART);
+
+}
+
+
+void SBUS_Parsing(SBUS_RAW_MESSAGE* raw, MSG_SBUS* msg_sbus, int* rx_recv_cnt, int* rx_err_cnt)
+{
+	uint8_t* ptr = raw->rx_buf;
+	int32_t temp;
+	unsigned short msg_length = 0, checksum = 0;
+	unsigned char classID = 0, messageID = 0;
+	if(ptr[0]==MSG_SBUS_SOF ){
+		msg_sbus->header = *ptr++;
+		for (uint8_t i=0; i<MSG_SBUS_CH16; i++) {
+
+			msg_length 	= (ptr[1] << 8) + (ptr[0]);
+			ptr = ptr +2;
+
+		}
+
+
+		rx_recv_cnt[0]++;
+	}
+
+	else
+	{
+		rx_err_cnt[0]++;
+	}
+	printf("recv: %d\t err: %d\n", rx_recv_cnt[0], rx_err_cnt[0]);
+
+}
+
+
+
+
+
+

@@ -41,8 +41,10 @@
 
 /* Private variables ---------------------------------------------------------*/
 /* USER CODE BEGIN PV */
-uint8_t flag_INT_USART6, flag_INT_UART3_GPS, flag_DMA1_DONE;
-uint8_t rxd, rxd_gps;
+uint8_t flag_INT_USART6, flag_INT_UART3_GPS, flag_DMA1_DONE, flag_DMA2_DONE,  flag_INT_UART1_RX, flag_INT_UART1_RX_DONE,  flag_INT_UART4_RX;
+uint8_t rxd,rxd2, rxd_gps;
+uint8_t rx_buf[200];		// Rx 수신데이터 버퍼
+uint8_t rx_cnt = 0;
 
 unsigned int TimingDelay;
 /* USER CODE END PV */
@@ -255,6 +257,34 @@ void SPI1_IRQHandler(void)
   /* USER CODE BEGIN SPI1_IRQn 1 */
 
   /* USER CODE END SPI1_IRQn 1 */
+}
+
+/**
+  * @brief This function handles USART1 global interrupt.
+  */
+void USART1_IRQHandler(void)
+{
+  /* USER CODE BEGIN USART1_IRQn 0 */
+
+	if(LL_USART_IsEnabledIT_RXNE(USART1) && LL_USART_IsActiveFlag_RXNE(USART1)) // 인터럽트중 USART6인지 확인
+	{
+			LL_USART_ClearFlag_RXNE(USART1); // 맞으면 비트 클리어
+			flag_INT_UART1_RX = 1; // flag 클리어
+
+	}
+
+
+	if(LL_USART_IsEnabledIT_IDLE(USART1) && LL_USART_IsActiveFlag_IDLE(USART1)) {
+		LL_USART_ClearFlag_IDLE(USART1);
+		flag_INT_UART1_RX_DONE = 1; // 수신완료
+
+	}
+
+
+  /* USER CODE END USART1_IRQn 0 */
+  /* USER CODE BEGIN USART1_IRQn 1 */
+
+  /* USER CODE END USART1_IRQn 1 */
 }
 
 /**

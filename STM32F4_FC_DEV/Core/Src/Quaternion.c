@@ -69,7 +69,7 @@ void Quaternion_Update(float* q)
 	else	
 		Yaw = -Yaw;
 	
-	 printf("%d %d %d\n", (int)(Roll), (int)(Pitch), (int)(Yaw));
+//	 printf("%d %d %d\n", (int)(Roll), (int)(Pitch), (int)(Yaw));
 //	 printf("%d %d %d\n", (int)(q[0]*100), (int)(q[1]*100),(int)(q[2]*100));
 
 

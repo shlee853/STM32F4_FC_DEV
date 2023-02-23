@@ -1,10 +1,10 @@
 
 
 #ifndef INC_GPS_H_
+#define INC_GPS_H_
 
 	#include "main.h"
 
-	#define INC_GPS_H_
 	#define MSG_UBX_SOF1 			0xB5
 	#define MSG_UBX_SOF2			0x62
 	#define CLASS_ID_UBX 			0x01

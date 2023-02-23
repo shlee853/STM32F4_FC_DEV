@@ -1,0 +1,60 @@
+/*
+ * SBUS_Receiver.h
+ *
+ *  Created on: Feb 22, 2023
+ *      Author: swift
+ */
+
+#ifndef INC_SBUS_RECEIVER_H_
+#define INC_SBUS_RECEIVER_H_
+
+
+	#include "main.h"
+
+	#define MSG_LENGTH_SBUS 		25
+
+
+	typedef struct{
+		USART_TypeDef* UART;
+		DMA_TypeDef* DMA;
+		uint8_t rx_buf[MSG_LENGTH_SBUS];
+	}GPS_RAW_MESSAGE;
+
+
+	typedef struct{
+		int32_t lon;
+		int32_t lat;
+
+		int32_t longitude_deg,longitude_min;
+		float longitude_sec;
+
+		int32_t latitude_deg,latitude_min;
+		float latitude_sec;
+
+		float sec_lon;
+		float sec_lat;
+	}GPS_DATA;
+
+
+	typedef struct{
+
+		uint32_t iTOW;		// GPS time(ms)
+		int32_t lon;		// Longitude(deg)	scaling: e-7
+		int32_t lat;		// Latitude(deg)	scaling: e-7
+		int32_t h;		// Height(mm)
+		int32_t hMSL;		// Height above mean sea level(mm)
+		uint32_t hAcc;		// Horizontal Accuracy Estimate(mm)
+		uint32_t vAcc;		// Vertical Accuracy Estimate(mm)
+
+	}MSG_NAV;
+
+
+
+
+	void SBUS_Receiver_DMA_init(GPS_RAW_MESSAGE* gps_raw_message, USART_TypeDef* UART,DMA_TypeDef* DMA,uint32_t DMA_STREAM);
+	void SBUS_Parsing(GPS_RAW_MESSAGE* message, MSG_NAV* gps_data, int* recv_cnt, int* err_cnt);
+
+
+
+
+#endif /* INC_SBUS_RECEIVER_H_ */

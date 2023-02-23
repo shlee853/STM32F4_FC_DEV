@@ -29,6 +29,8 @@
 #include "ICM20602.h"
 #include "Quaternion.h"
 #include "GPS_Receiver.h"
+#include "SBUS_Receiver.h"
+
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -53,9 +55,13 @@
 /* USER CODE BEGIN PV */
 extern uint8_t flag_INT_USART6;		// UART6 인터럽트 플래그 변수
 extern uint8_t flag_INT_UART3_GPS;	// UART3 인터럽트 플래그 변수
-extern uint8_t flag_DMA1_DONE;		// DMA1_STREAM1 DMA완료 플래그
+extern uint8_t flag_DMA1_DONE, flag_DMA2_DONE;		// DMA1_STREAM1 DMA완료 플래그
+extern uint8_t flag_INT_UART1_RX, flag_INT_UART1_RX_DONE;	// SBUS 수신기 인터럽트 플래그 변수
+extern uint8_t flag_INT_UART4_RX;	// S.Port 수신기 인터럽트 플래그 변수
 
 extern uint8_t rxd, rxd_gps;		// UART 수신데이터 버퍼
+extern uint8_t rx_buf[100];		// Rx 수신데이터 버퍼
+uint8_t cnt1=0, cnt2 = 0;
 
 extern unsigned int TimingDelay;
 
@@ -64,11 +70,13 @@ unsigned long  t2=0;
 
 float sampleFreq;
 
-extern int recv_cnt;
-extern int err_cnt;
+extern int recv_cnt, rx_recv_cnt;
+extern int err_cnt, rx_err_cnt;
 
-GPS_RAW_MESSAGE recv_msg;
+GPS_RAW_MESSAGE raw_gps;
+SBUS_RAW_MESSAGE raw_rx;
 MSG_NAV 		msg_nav;
+MSG_SBUS 		msg_sbus;
 
 //unsigned char M8N_CFG_PRT[28] = {0xB5, 0x62, 0x06, 0x00, 0x14, 0x00, 0x01, 0x00, 0x00, 0x00, 0xD0, 0x08, 0x00, 0x00, 0x00, 0x96, 0x00, 0x00, 0x01, 0x00, 0x01, 0x00, 0x00, 0x00, 0x00, 0x00, 0x8B, 0x54};
 //unsigned char M8N_CFG_MSG[16] = {0xB5, 0x62, 0x06, 0x01, 0x08, 0x00, 0x29, 0x02, 0x00, 0x01, 0x00, 0x00, 0x00, 0x00, 0x3B, 0xFE};
@@ -113,7 +121,7 @@ int main(void)
   NVIC_SetPriority(SysTick_IRQn, NVIC_EncodePriority(NVIC_GetPriorityGrouping(),15, 0));
 
   /* USER CODE BEGIN Init */
-
+  memset(&rx_buf,0,27);
   /* USER CODE END Init */
 
   /* Configure the system clock */
@@ -130,26 +138,24 @@ int main(void)
   MX_SPI1_Init();
   MX_TIM3_Init();
   MX_USART3_UART_Init();
+  MX_USART1_UART_Init();
   /* USER CODE BEGIN 2 */
 
 
   LL_TIM_EnableCounter(TIM3);
   LL_TIM_CC_EnableChannel(TIM3, LL_TIM_CHANNEL_CH1);
 
-  TIM3->PSC = 2000;
+/*  TIM3->PSC = 2000;
   usDelay(100000);
   TIM3->PSC = 1500;
   usDelay(100000);
   TIM3->PSC = 1000;
   usDelay(100000);
-
+*/
 
   LL_TIM_CC_DisableChannel(TIM3, LL_TIM_CHANNEL_CH1);
-
-//  LL_USART_EnableIT_RXNE(USART3);	// UART3 인터럽트 활성화
   LL_USART_EnableIT_RXNE(USART6);	// UART6 인터럽트 활성화
   ICM20602_Initialization();
-  GPS_DMA_init(&recv_msg, USART3, DMA1, LL_DMA_STREAM_1);
 
 
 
@@ -158,10 +164,11 @@ int main(void)
   DWT->CYCCNT = 0;
   DWT->CTRL |= DWT_CTRL_CYCCNTENA_Msk;
 
-
-  DMA1->LIFCR |= DMA_LIFCR_CTCIF1|DMA_LIFCR_CHTIF1|DMA_LIFCR_CTEIF1|DMA_LIFCR_CDMEIF1|DMA_LIFCR_CFEIF1;
+  GPS_DMA_init(&raw_gps, USART3, DMA1, LL_DMA_STREAM_1);
   LL_DMA_EnableStream(DMA1,LL_DMA_STREAM_1);
   LL_USART_EnableIT_IDLE(USART3);
+  LL_USART_EnableIT_IDLE(USART1);
+  LL_USART_EnableIT_RXNE(USART1);
 
   /* USER CODE END 2 */
 
@@ -173,25 +180,45 @@ int main(void)
   //	  usDelay(1000000);
   //	  LL_USART_TransmitData8(USART6,'B');
 
+	  if(flag_INT_UART1_RX==1){
+		  raw_rx.rx_buf[cnt1++] = LL_USART_ReceiveData8(USART1);
+          flag_INT_UART1_RX =0;
+	  }
+
+	  if(flag_INT_UART1_RX_DONE == 1)
+	  {
+		  SBUS_Parsing(&raw_rx, &msg_sbus, &rx_recv_cnt, &rx_err_cnt);
+          cnt1=0;
+		  flag_INT_UART1_RX_DONE = 0;
+	  }
+
+	  if(flag_INT_UART4_RX==1){
+		  flag_INT_UART4_RX = 0;
+	  }
+
+
 	  if(flag_INT_USART6 == 1){
 		  flag_INT_USART6 =0;
 //		  LL_USART_TransmitData8(USART3,rxd); // 터미널에서 수신된 데이터를 GPS로 전달
 //		  LL_USART_TransmitData8(USART6,rxd); // 호스트로부터 수신한 데이터를 그대로 다시 보냄
 //		  LL_GPIO_TogglePin(GPIOB, LL_GPIO_PIN_5);
-
 	  }
 
 	  // UART3에서 한 프레임 GPS 데이터 수신완료에 인터럽트 발생, GPS데이터가 수신될 때마다 DMA는 데이터카운트를 하나씩 감소하면서 0이 될 때까지 전송
 	  if(flag_INT_UART3_GPS == 1){
+//		  cnt=(uint8_t)(MSG_LENGTH_NAV_SOL-LL_DMA_GetDataLength(DMA1,LL_DMA_STREAM_1));
 		  LL_DMA_DisableStream(DMA1,LL_DMA_STREAM_1);
 		  LL_DMA_ClearFlag_TC1(DMA1);
+//		  cnt = 0;
 		  flag_INT_UART3_GPS =0;
+
 	  }
 
 	  // DMA 데이터카운트가 0이되면 인터럽트 발생, 데이터를 버퍼로 수신 완료
 	  if(flag_DMA1_DONE == 1)
 	  {
-		  GPS_Parsing(&recv_msg, &msg_nav, &recv_cnt, &err_cnt);
+//		  cnt=(uint8_t)(MSG_LENGTH_NAV_SOL-LL_DMA_GetDataLength(DMA1,LL_DMA_STREAM_1));
+		  GPS_Parsing(&raw_gps, &msg_nav, &recv_cnt, &err_cnt);
 		  LL_DMA_EnableStream(DMA1,LL_DMA_STREAM_1);
 		  flag_DMA1_DONE = 0;
 	  }
@@ -203,7 +230,7 @@ int main(void)
 	  {
 
 		  t2 = DWT->CYCCNT;
-		  sampleFreq = (1000000.0f /(((float)(t2-t1))/CLOCK_PER_USEC)); // set integration time by time elapsed since last filter update
+//		  sampleFreq = (1000000.0f /(((float)(t2-t1))/CLOCK_PER_USEC)); // set integration time by time elapsed since last filter update
 		  t1 = t2;
 //		  printf("%.2f\n",(sampleFreq));
 		  GetRPY(&sampleFreq);

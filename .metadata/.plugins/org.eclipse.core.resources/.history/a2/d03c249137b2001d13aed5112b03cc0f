@@ -1,0 +1,34 @@
+/*
+ * SBUS_Receiver.c
+ *
+ *  Created on: Feb 22, 2023
+ *      Author: swift
+ */
+
+
+#include "SBUS_Receiver.h"
+
+
+
+//int recv_cnt;
+//int err_cnt;
+
+void SBUS_Receiver_DMA_init(SBUS_RAW_MESSAGE* sbus_raw_message, USART_TypeDef* UART,DMA_TypeDef* DMA,uint32_t DMA_STREAM)
+{
+
+
+	//DMA, INTERRUPT SETTINGS
+	LL_DMA_SetMemoryAddress(DMA,DMA_STREAM,(uint32_t)(sbus_raw_message->rx_buf));
+	LL_DMA_SetPeriphAddress(DMA,DMA_STREAM,LL_USART_DMA_GetRegAddr(UART));
+	LL_DMA_SetDataLength(DMA,DMA_STREAM,MSG_LENGTH_SBUS);
+
+	//  LL_DMA_EnableIT_HT(DMA1, LL_DMA_STREAM_1);
+    LL_DMA_EnableIT_TC(DMA, DMA_STREAM);
+	LL_USART_EnableDMAReq_RX(UART);
+
+}
+
+
+
+
+
