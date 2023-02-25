@@ -20,8 +20,8 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_usart.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_gpio.h \
  ../Core/Inc/dma.h ../Core/Inc/main.h ../Core/Inc/spi.h ../Core/Inc/tim.h \
- ../Core/Inc/usart.h ../Core/Inc/gpio.h ../Core/Inc/ICM20602.h \
- ../Core/Inc/Quaternion.h ../Core/Inc/ICM20602.h \
+ ../Core/Inc/usart.h ../Core/Inc/gpio.h ../Core/Inc/Configure.h \
+ ../Core/Inc/ICM20602.h ../Core/Inc/Quaternion.h ../Core/Inc/ICM20602.h \
  ../Core/Inc/GPS_Receiver.h ../Core/Inc/SBUS_Receiver.h
 ../Core/Inc/main.h:
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:
@@ -50,6 +50,7 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
 ../Core/Inc/tim.h:
 ../Core/Inc/usart.h:
 ../Core/Inc/gpio.h:
+../Core/Inc/Configure.h:
 ../Core/Inc/ICM20602.h:
 ../Core/Inc/Quaternion.h:
 ../Core/Inc/ICM20602.h:

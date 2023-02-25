@@ -1,0 +1,154 @@
+#include <stdarg.h>
+#include <stdio.h>
+#include "print.h"
+
+extern CIRCULAR_BUFFER circular_buffer = {0,};
+
+static inline void PRINTF_CLEAR_FLAG(){
+	LL_DMA_ClearFlag_TE7(circular_buffer.DMA);
+	LL_DMA_ClearFlag_HT7(circular_buffer.DMA);
+	LL_DMA_ClearFlag_TC7(circular_buffer.DMA);
+	LL_DMA_ClearFlag_DME7(circular_buffer.DMA);
+	LL_DMA_ClearFlag_FE7(circular_buffer.DMA);
+}
+
+static inline void PRINTF_ENABLE_STREAM_CHANNEL(){
+	LL_DMA_EnableStream(circular_buffer.DMA,circular_buffer.DMA_CHANNEL_STREAM);
+	//or
+	//LL_DMA_EnableChannel(circular_buffer.DMA,circular_buffer.DMA_CHANNEL_STREAM);
+}
+
+static inline void PRINTF_DISABLE_STREAM_CHANNEL(){
+	LL_DMA_DisableStream(circular_buffer.DMA,circular_buffer.DMA_CHANNEL_STREAM);
+	//or
+	//LL_DMA_DisableChannel(circular_buffer.DMA,circular_buffer.DMA_CHANNEL_STREAM);
+}
+
+
+void PRINTF_INIT(USART_TypeDef* UART, DMA_TypeDef* DMA, uint32_t DMA_CHANNEL_STREAM){
+	circular_buffer.UART = UART;
+	circular_buffer.DMA = DMA;
+	circular_buffer.DMA_CHANNEL_STREAM = DMA_CHANNEL_STREAM;
+
+	LL_DMA_SetPeriphAddress(DMA,DMA_CHANNEL_STREAM,(uint32_t)&(UART->DR));
+    LL_DMA_EnableIT_TC(DMA,DMA_CHANNEL_STREAM);
+	LL_USART_EnableDMAReq_TX(UART);
+}
+
+
+void PRINTF_UART_IRQ(){
+	if(LL_USART_IsActiveFlag_TC(circular_buffer.UART)){
+		LL_USART_ClearFlag_TC(circular_buffer.UART);
+		PRINTF_DISABLE_STREAM_CHANNEL();
+
+		if(circular_buffer.is_full == CIRCULAR_FULL){
+			PRINTF_CLEAR_FLAG();
+
+			if(circular_buffer.state == CIRCULAR_BUSY){
+				if(circular_buffer.end_position == CIRCULAR_BUFFER_SIZE-1){
+					circular_buffer.is_full = CIRCULAR_REMAIN;
+					circular_buffer.start_position = 0;
+					circular_buffer.end_position = circular_buffer.temp_end_position;
+					LL_DMA_SetMemoryAddress(circular_buffer.DMA,circular_buffer.DMA_CHANNEL_STREAM,(uint32_t)&circular_buffer.buffer[circular_buffer.start_position]);
+					LL_DMA_SetDataLength(circular_buffer.DMA,circular_buffer.DMA_CHANNEL_STREAM,circular_buffer.end_position+1);
+				}
+				else{
+					circular_buffer.start_position = circular_buffer.end_position+1;
+					circular_buffer.end_position = CIRCULAR_BUFFER_SIZE -1;
+					LL_DMA_SetMemoryAddress(circular_buffer.DMA,circular_buffer.DMA_CHANNEL_STREAM,(uint32_t)&circular_buffer.buffer[circular_buffer.start_position]);
+					LL_DMA_SetDataLength(circular_buffer.DMA,circular_buffer.DMA_CHANNEL_STREAM,CIRCULAR_BUFFER_SIZE - circular_buffer.start_position);
+				}
+			}
+			else{
+				circular_buffer.is_full = CIRCULAR_REMAIN;
+				circular_buffer.start_position = 0;
+				circular_buffer.end_position = circular_buffer.temp_end_position;
+				LL_DMA_SetMemoryAddress(circular_buffer.DMA,circular_buffer.DMA_CHANNEL_STREAM,(uint32_t)&circular_buffer.buffer[circular_buffer.start_position]);
+				LL_DMA_SetDataLength(circular_buffer.DMA,circular_buffer.DMA_CHANNEL_STREAM,circular_buffer.end_position - circular_buffer.start_position + 1);
+			}
+			PRINTF_ENABLE_STREAM_CHANNEL();
+		}
+		else if(circular_buffer.end_position != circular_buffer.temp_end_position){
+			circular_buffer.start_position = circular_buffer.end_position +1;
+			circular_buffer.end_position = circular_buffer.temp_end_position;
+			PRINTF_CLEAR_FLAG();
+
+			LL_DMA_SetMemoryAddress(circular_buffer.DMA,circular_buffer.DMA_CHANNEL_STREAM,(uint32_t)&circular_buffer.buffer[circular_buffer.start_position]);
+			LL_DMA_SetDataLength(circular_buffer.DMA,circular_buffer.DMA_CHANNEL_STREAM,circular_buffer.end_position - circular_buffer.start_position + 1);
+			PRINTF_ENABLE_STREAM_CHANNEL();
+		}
+		else{
+			if(circular_buffer.end_position == CIRCULAR_BUFFER_SIZE-1){
+				circular_buffer.start_position =0;
+				circular_buffer.end_position = 0;
+			}
+			else{
+				circular_buffer.start_position = circular_buffer.end_position +1;
+				circular_buffer.end_position = circular_buffer.start_position;
+			}
+			circular_buffer.state = CIRCULAR_READY;
+		}
+	}
+}
+
+void PRINTF(char* format, ...){
+	uint32_t str_length;
+	uint32_t temp_length;
+	va_list valist;
+	va_start(valist,format);
+	
+	str_length=vsprintf(circular_buffer.temp_buffer,format,valist);
+	va_end(valist);
+	
+
+	if(circular_buffer.state == CIRCULAR_READY){
+		LL_USART_ClearFlag_TC(circular_buffer.UART);
+		PRINTF_DISABLE_STREAM_CHANNEL();
+		PRINTF_CLEAR_FLAG();
+		LL_DMA_SetMemoryAddress(circular_buffer.DMA,circular_buffer.DMA_CHANNEL_STREAM,(uint32_t)&circular_buffer.buffer[circular_buffer.start_position]);
+
+		circular_buffer.state = CIRCULAR_BUSY;
+		if(circular_buffer.start_position + str_length > CIRCULAR_BUFFER_SIZE){
+			memcpy(&circular_buffer.buffer[circular_buffer.start_position],
+					circular_buffer.temp_buffer,
+					CIRCULAR_BUFFER_SIZE - circular_buffer.start_position);
+
+			temp_length=str_length - (CIRCULAR_BUFFER_SIZE - circular_buffer.start_position);
+			memcpy(circular_buffer.buffer,&circular_buffer.temp_buffer[str_length-temp_length],temp_length );
+
+			LL_DMA_SetDataLength(circular_buffer.DMA,circular_buffer.DMA_CHANNEL_STREAM,CIRCULAR_BUFFER_SIZE - circular_buffer.start_position);
+			circular_buffer.end_position = CIRCULAR_BUFFER_SIZE -1;
+			circular_buffer.temp_end_position = str_length - (CIRCULAR_BUFFER_SIZE - circular_buffer.start_position)-1;
+			circular_buffer.is_full = CIRCULAR_FULL;
+		}
+		else{
+			circular_buffer.end_position += (str_length-1);
+			circular_buffer.temp_end_position = circular_buffer.end_position;
+			memcpy(&circular_buffer.buffer[circular_buffer.start_position], circular_buffer.temp_buffer,str_length);
+			LL_DMA_SetDataLength(circular_buffer.DMA,circular_buffer.DMA_CHANNEL_STREAM,str_length);
+			circular_buffer.is_full = CIRCULAR_REMAIN;
+		}
+
+
+		PRINTF_ENABLE_STREAM_CHANNEL();
+	}
+	else if(circular_buffer.state == CIRCULAR_BUSY){
+
+		if(circular_buffer.temp_end_position+1 + str_length > CIRCULAR_BUFFER_SIZE){
+			memcpy(&circular_buffer.buffer[circular_buffer.temp_end_position+1],
+					circular_buffer.temp_buffer,
+					CIRCULAR_BUFFER_SIZE - (circular_buffer.temp_end_position+1));
+
+
+			temp_length=CIRCULAR_BUFFER_SIZE - (circular_buffer.temp_end_position+1);
+			memcpy(circular_buffer.buffer,&circular_buffer.temp_buffer[temp_length],str_length-temp_length );
+			circular_buffer.temp_end_position = str_length - temp_length -1;
+			circular_buffer.is_full = CIRCULAR_FULL;
+		}
+		else{
+			memcpy(&circular_buffer.buffer[circular_buffer.temp_end_position+1], circular_buffer.temp_buffer,str_length);
+			circular_buffer.temp_end_position += str_length;
+		}
+	}
+
+}

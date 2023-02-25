@@ -26,11 +26,12 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
+#include "Configure.h"
 #include "ICM20602.h"
 #include "Quaternion.h"
 #include "GPS_Receiver.h"
 #include "SBUS_Receiver.h"
-
+//#include "cli.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -53,11 +54,11 @@
 /* Private variables ---------------------------------------------------------*/
 
 /* USER CODE BEGIN PV */
-extern uint8_t flag_INT_USART6;		// UART6 인터럽트 플래그 변수
-extern uint8_t flag_INT_UART3_GPS;	// UART3 인터럽트 플래그 변수
-extern uint8_t flag_DMA1_DONE, flag_DMA2_DONE;		// DMA1_STREAM1 DMA완료 플래그
 extern uint8_t flag_INT_UART1_RX, flag_INT_UART1_RX_DONE;	// SBUS 수신기 인터럽트 플래그 변수
+extern uint8_t flag_INT_USART6,flag_INT_UART6_RX_DONE;		// UART6 인터럽트 플래그 변수
+extern uint8_t flag_INT_UART3_GPS;	// UART3 인터럽트 플래그 변수
 extern uint8_t flag_INT_UART4_RX;	// S.Port 수신기 인터럽트 플래그 변수
+extern uint8_t flag_DMA1_DONE, flag_DMA2_DONE;		// DMA1_STREAM1 DMA완료 플래그
 
 extern uint8_t rxd, rxd_gps;		// UART 수신데이터 버퍼
 extern uint8_t rx_buf[100];		// Rx 수신데이터 버퍼
@@ -77,7 +78,6 @@ GPS_RAW_MESSAGE raw_gps;
 SBUS_RAW_MESSAGE raw_rx;
 MSG_NAV 		msg_nav;
 MSG_SBUS 		msg_sbus;
-
 //unsigned char M8N_CFG_PRT[28] = {0xB5, 0x62, 0x06, 0x00, 0x14, 0x00, 0x01, 0x00, 0x00, 0x00, 0xD0, 0x08, 0x00, 0x00, 0x00, 0x96, 0x00, 0x00, 0x01, 0x00, 0x01, 0x00, 0x00, 0x00, 0x00, 0x00, 0x8B, 0x54};
 //unsigned char M8N_CFG_MSG[16] = {0xB5, 0x62, 0x06, 0x01, 0x08, 0x00, 0x29, 0x02, 0x00, 0x01, 0x00, 0x00, 0x00, 0x00, 0x3B, 0xFE};
 //unsigned char M8N_CFG_RAT[14] = {0xB5, 0x62, 0x06, 0x08, 0x06, 0x00, 0xC8, 0x00, 0x01, 0x00, 0x01, 0x00, 0xDE, 0x6A};
@@ -121,7 +121,7 @@ int main(void)
   NVIC_SetPriority(SysTick_IRQn, NVIC_EncodePriority(NVIC_GetPriorityGrouping(),15, 0));
 
   /* USER CODE BEGIN Init */
-  memset(&rx_buf,0,27);
+  memset(&rx_buf,0,100);
   /* USER CODE END Init */
 
   /* Configure the system clock */
@@ -139,24 +139,48 @@ int main(void)
   MX_TIM3_Init();
   MX_USART3_UART_Init();
   MX_USART1_UART_Init();
+  MX_TIM5_Init();
   /* USER CODE BEGIN 2 */
 
-
-  LL_TIM_EnableCounter(TIM3);
+  // Buzzer
+/*  LL_TIM_EnableCounter(TIM3);
   LL_TIM_CC_EnableChannel(TIM3, LL_TIM_CHANNEL_CH1);
 
-/*  TIM3->PSC = 2000;
+  TIM3->PSC = 2000;
   usDelay(100000);
   TIM3->PSC = 1500;
   usDelay(100000);
   TIM3->PSC = 1000;
   usDelay(100000);
-*/
 
   LL_TIM_CC_DisableChannel(TIM3, LL_TIM_CHANNEL_CH1);
-  LL_USART_EnableIT_RXNE(USART6);	// UART6 인터럽트 활성화
-  ICM20602_Initialization();
+*/
+  // ESC PWM
+  LL_TIM_EnableCounter(TIM3);
+  LL_TIM_CC_EnableChannel(TIM3, LL_TIM_CHANNEL_CH3);	// M1
+  LL_TIM_CC_EnableChannel(TIM3, LL_TIM_CHANNEL_CH4); 	// M2
+  LL_TIM_EnableCounter(TIM5);
+  LL_TIM_CC_EnableChannel(TIM5, LL_TIM_CHANNEL_CH4);	// M3
+  LL_TIM_CC_EnableChannel(TIM5, LL_TIM_CHANNEL_CH3);	// M4
 
+  // ESC Calibration
+  TIM3->CCR3 = MAX_TIM_PWM;
+  TIM3->CCR4 = MAX_TIM_PWM;
+  TIM5->CCR4 = MAX_TIM_PWM;
+  TIM5->CCR3 = MAX_TIM_PWM;
+  usDelay(7000000);	// 7sec
+
+  TIM3->CCR3 = MIN_TIM_PWM;
+  TIM3->CCR4 = MIN_TIM_PWM;
+  TIM5->CCR4 = MIN_TIM_PWM;
+  TIM5->CCR3 = MIN_TIM_PWM;
+  usDelay(8000000);	// 7sec
+
+
+
+
+
+  ICM20602_Initialization();
 
 
   // 시간측정을 위한 레지스터 초기화 값
@@ -164,11 +188,21 @@ int main(void)
   DWT->CYCCNT = 0;
   DWT->CTRL |= DWT_CTRL_CYCCNTENA_Msk;
 
+  // UART3 GPS 수신기 DMA 및 인터럽트 설정
   GPS_DMA_init(&raw_gps, USART3, DMA1, LL_DMA_STREAM_1);
   LL_DMA_EnableStream(DMA1,LL_DMA_STREAM_1);
   LL_USART_EnableIT_IDLE(USART3);
+
+  // UART1 SBUS 수신기 인터럽트 설정
   LL_USART_EnableIT_IDLE(USART1);
   LL_USART_EnableIT_RXNE(USART1);
+
+  // UART6 문자열 인터페이스 DMA 및  인터럽트 설정
+//  USART_DMA_Transmit_INIT(USART6, DMA2, LL_DMA_STREAM_6);
+  LL_USART_EnableIT_RXNE(USART6);	// UART6 인터럽트 활성화
+  LL_USART_EnableIT_IDLE(USART6);
+//  LL_USART_EnableIT_TC(USART6);
+
 
   /* USER CODE END 2 */
 
@@ -179,6 +213,7 @@ int main(void)
   //	  LL_GPIO_TogglePin(GPIOB, LL_GPIO_PIN_5);
   //	  usDelay(1000000);
   //	  LL_USART_TransmitData8(USART6,'B');
+
 
 	  if(flag_INT_UART1_RX==1){
 		  raw_rx.rx_buf[cnt1++] = LL_USART_ReceiveData8(USART1);
@@ -224,8 +259,6 @@ int main(void)
 	  }
 
 
-
-
 	  if(ICM20602_DataReady() == 1)
 	  {
 
@@ -237,6 +270,23 @@ int main(void)
 		  // overall 230us time consumption
 		  // Loop 수행시간 계산시 소수점 세자리 출력(약 400u) 더해주어야 함
 
+	  }
+
+
+	  // Failsafe
+	  if(msg_sbus.failsafe==MSG_SBUS_FS_BIT_MASK) {
+		  TIM3->CCR3 = MIN_TIM_PWM;
+		  TIM3->CCR4 = MIN_TIM_PWM;
+		  TIM5->CCR4 = MIN_TIM_PWM;
+		  TIM5->CCR3 = MIN_TIM_PWM;
+	  }
+
+	  // Radio Control
+	  else	  {
+		  TIM3->CCR3 = MIN_TIM_PWM + RANGE_TIM_PWM/RANGE_RADIO_CH1_PWM*(msg_sbus.rx_channel[0]-MIN_RADIO_CH1_PWM);
+		  TIM3->CCR4 = MIN_TIM_PWM + RANGE_TIM_PWM/RANGE_RADIO_CH1_PWM*(msg_sbus.rx_channel[0]-MIN_RADIO_CH1_PWM);
+		  TIM5->CCR4 = MIN_TIM_PWM + RANGE_TIM_PWM/RANGE_RADIO_CH1_PWM*(msg_sbus.rx_channel[0]-MIN_RADIO_CH1_PWM);
+		  TIM5->CCR3 = MIN_TIM_PWM + RANGE_TIM_PWM/RANGE_RADIO_CH1_PWM*(msg_sbus.rx_channel[0]-MIN_RADIO_CH1_PWM);
 	  }
 
 

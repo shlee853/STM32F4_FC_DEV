@@ -1,0 +1,150 @@
+/*
+ * cli_function.c
+ *
+ *  Created on: Apr 4, 2021
+ *      Author: perSec
+ */
+//#include "cli.h"
+//#include "print.h"
+#include <stdlib.h>
+
+DEF_CLI(test1,"aaa"){
+	PRINTF("AAA\r\n");
+}
+DEF_CLI(test2,"bbb"){
+	uint8_t i =0;
+	for(int i=0;i<10;i++){
+		PRINTF("0x%02X ",cli_arg_buffer[i]);
+	}
+	PRINTF("\r\n");
+	PRINTF("BBB\r\n");
+}
+DEF_CLI(test3,"ccc  aaa"){
+	uint8_t x[10]={0,};
+	uint32_t i=0;
+	CLI_GET_ARG(x,3);
+	for(i=0;i<10;i++){
+		PRINTF("0x%02X ",x[i]);
+	}
+	PRINTF("\r\n");
+}
+DEF_CLI(test4,"arg test VV"){
+	uint8_t i =0;
+	while(cli_arg_buffer[i] != 0xFF){
+		PRINTF("%c",cli_arg_buffer[i]);
+		i++;
+	}
+	PRINTF("\r\n");
+}
+
+DEF_CLI(test5,"arg2 VV and VV"){
+	uint8_t i =0;
+	for(int i=0;i<10;i++){
+		PRINTF("0x%02X ",cli_arg_buffer[i]);
+	}
+	PRINTF("\r\n");
+}
+DEF_CLI(test6,"arg3 VV VV"){
+	uint8_t i =0;
+	for(int i=0;i<10;i++){
+		PRINTF("0x%02X ",cli_arg_buffer[i]);
+	}
+	PRINTF("\r\n");
+}
+
+DEF_CLI(sum,"sum VV VV"){
+	uint8_t x[10]={0,};
+	uint8_t y[10]={0,};
+	uint8_t i=0;
+	int X,Y;
+	CLI_GET_ARG(x,0);
+	CLI_GET_ARG(y,1);
+	for(i=0;i<10;i++){
+		PRINTF("0x%02X ",x[i]);
+	}
+	PRINTF("\r\n");
+	for(i=0;i<10;i++){
+		PRINTF("0x%02X ",y[i]);
+	}
+	PRINTF("\r\n");
+	X=atoi(x);
+	Y=atoi(y);
+
+	PRINTF("SUM1: %d\r\n",X+Y);
+}
+
+DEF_CLI(sum2, "sum VV VV VV"){
+	uint8_t x[10]={0,};
+	uint8_t y[10]={0,};
+	uint8_t z[10]={0,};
+	uint8_t i=0;
+	int X,Y,Z;
+	CLI_GET_ARG(x,0);
+	CLI_GET_ARG(y,1);
+	CLI_GET_ARG(z,2);
+	for(i=0;i<10;i++){
+		PRINTF("0x%02X ",x[i]);
+	}
+	PRINTF("\r\n");
+	for(i=0;i<10;i++){
+		PRINTF("0x%02X ",y[i]);
+	}
+	PRINTF("\r\n");
+	for(i=0;i<10;i++){
+		PRINTF("0x%02X ",z[i]);
+	}
+	PRINTF("\r\n");
+
+
+	X=atoi(x);
+	Y=atoi(y);
+	Z=atoi(z);
+
+	PRINTF("SUM2: %d\r\n",X+Y+Z);
+}
+
+
+DEF_CLI(sum3, "sum3 VV VV VV"){
+	uint8_t x[10]={0,};
+	uint8_t y[10]={0,};
+	uint8_t z[10]={0,};
+	uint8_t i=0;
+	int X,Y,Z;
+	CLI_GET_ARG(x,0);
+	CLI_GET_ARG(y,1);
+	CLI_GET_ARG(z,2);
+	for(i=0;i<10;i++){
+		PRINTF("0x%02X ",x[i]);
+	}
+	PRINTF("\r\n");
+	for(i=0;i<10;i++){
+		PRINTF("0x%02X ",y[i]);
+	}
+	PRINTF("\r\n");
+	for(i=0;i<10;i++){
+		PRINTF("0x%02X ",z[i]);
+	}
+	PRINTF("\r\n");
+
+
+	X=atoi(x);
+	Y=atoi(y);
+	Z=atoi(z);
+
+	PRINTF("SUM3: %d\r\n",X+Y+Z);
+}
+
+
+void CLI_BLOCK_INIT(){
+	ADD_CLI(test1,"aaa");
+	ADD_CLI(test2,"bbb");
+	ADD_CLI(test3,"ccc  aaa");
+	ADD_CLI(test4,"arg test VV");
+	ADD_CLI(test5,"arg2 test VV and VV");
+	ADD_CLI(test6,"arg3 VV VV");
+	ADD_CLI(sum,"sum VV VV");
+	ADD_CLI(sum2,"sum VV VV VV");
+	ADD_CLI(sum3, "sum3 VV VV VV");
+}
+
+

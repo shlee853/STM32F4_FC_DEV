@@ -41,7 +41,7 @@
 
 /* Private variables ---------------------------------------------------------*/
 /* USER CODE BEGIN PV */
-uint8_t flag_INT_USART6, flag_INT_UART3_GPS, flag_DMA1_DONE, flag_DMA2_DONE,  flag_INT_UART1_RX, flag_INT_UART1_RX_DONE,  flag_INT_UART4_RX;
+uint8_t flag_INT_USART6, flag_INT_UART6_RX_DONE,  flag_INT_UART3_GPS, flag_DMA1_DONE, flag_DMA2_DONE,  flag_INT_UART1_RX, flag_INT_UART1_RX_DONE,  flag_INT_UART4_RX;
 uint8_t rxd,rxd2, rxd_gps;
 uint8_t rx_buf[200];		// Rx 수신데이터 버퍼
 uint8_t rx_cnt = 0;
@@ -189,6 +189,7 @@ void SysTick_Handler(void)
 {
   /* USER CODE BEGIN SysTick_IRQn 0 */
 	if (TimingDelay != 0x00) {
+
 		TimingDelay--;
 	}
   /* USER CODE END SysTick_IRQn 0 */
@@ -322,7 +323,7 @@ void USART3_IRQHandler(void)
 void USART6_IRQHandler(void)
 {
   /* USER CODE BEGIN USART6_IRQn 0 */
-	if(LL_USART_IsActiveFlag_RXNE(USART6)) // 인터럽트중 USART6인지 확인
+	if(LL_USART_IsActiveFlag_RXNE(USART6) && LL_USART_IsActiveFlag_RXNE(USART6))// 인터럽트중 USART6인지 확인
 	{
 			LL_USART_ClearFlag_RXNE(USART6); // 맞으면 비트 클리어
 			rxd = LL_USART_ReceiveData8(USART6); // 데이터 수신
@@ -331,6 +332,11 @@ void USART6_IRQHandler(void)
 	}
   /* USER CODE END USART6_IRQn 0 */
   /* USER CODE BEGIN USART6_IRQn 1 */
+	if(LL_USART_IsEnabledIT_IDLE(USART6) && LL_USART_IsActiveFlag_IDLE(USART6)) {
+		LL_USART_ClearFlag_IDLE(USART6);
+		flag_INT_UART6_RX_DONE = 1; // flag 클리어
+
+    }
 
   /* USER CODE END USART6_IRQn 1 */
 }

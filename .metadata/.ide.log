@@ -12764,3 +12764,1533 @@
 2023-02-23 09:59:05,436 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
 2023-02-23 09:59:05,437 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
 2023-02-23 09:59:05,438 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-23 13:04:48,376 [INFO] NvicIntPanel:100 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2023-02-23 13:04:54,686 [INFO] NvicIntPanel:100 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2023-02-23 13:05:25,673 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 328784840 Bytes (805306368)
+2023-02-23 13:05:25,806 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 350804936 Bytes (805306368)
+2023-02-23 13:05:26,289 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 432370352 Bytes (805306368)
+2023-02-23 13:05:26,578 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SPI
+2023-02-23 13:05:26,578 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM1_8
+2023-02-23 13:05:26,578 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RCC
+2023-02-23 13:05:26,578 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC
+2023-02-23 13:05:26,578 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USART
+2023-02-23 13:05:26,578 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USART
+2023-02-23 13:05:26,578 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USART
+2023-02-23 13:05:26,578 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: DMA
+2023-02-23 13:05:26,579 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: GPIO
+2023-02-23 13:05:26,579 [INFO] CodeGenerator:692 - code generatio: config db path: /opt/st/stm32cubeide_1.11.2/plugins/com.st.stm32cube.common.mx_6.7.0.202301130839//db/
+2023-02-23 13:05:26,602 [INFO] Argument:300 - Argument : DMAxvalue: DMA1
+2023-02-23 13:05:26,602 [INFO] Argument:310 - Argument : DMAxvalue: DMA1
+2023-02-23 13:05:26,602 [INFO] Argument:300 - Argument : Streamvalue: LL_DMA_STREAM_1
+2023-02-23 13:05:26,602 [INFO] Argument:310 - Argument : Streamvalue: LL_DMA_STREAM_1
+2023-02-23 13:05:26,602 [INFO] Argument:300 - Argument : Channelvalue: LL_DMA_CHANNEL_4
+2023-02-23 13:05:26,603 [INFO] Argument:310 - Argument : Channelvalue: LL_DMA_CHANNEL_4
+2023-02-23 13:05:26,603 [INFO] Argument:300 - Argument : DMAxvalue: DMA1
+2023-02-23 13:05:26,603 [INFO] Argument:310 - Argument : DMAxvalue: DMA1
+2023-02-23 13:05:26,603 [INFO] Argument:300 - Argument : Streamvalue: LL_DMA_STREAM_1
+2023-02-23 13:05:26,603 [INFO] Argument:310 - Argument : Streamvalue: LL_DMA_STREAM_1
+2023-02-23 13:05:26,603 [INFO] Argument:300 - Argument : Directionvalue: LL_DMA_DIRECTION_PERIPH_TO_MEMORY
+2023-02-23 13:05:26,604 [INFO] Argument:310 - Argument : Directionvalue: LL_DMA_DIRECTION_PERIPH_TO_MEMORY
+2023-02-23 13:05:26,604 [INFO] Argument:300 - Argument : DMAxvalue: DMA1
+2023-02-23 13:05:26,604 [INFO] Argument:310 - Argument : DMAxvalue: DMA1
+2023-02-23 13:05:26,604 [INFO] Argument:300 - Argument : Streamvalue: LL_DMA_STREAM_1
+2023-02-23 13:05:26,604 [INFO] Argument:310 - Argument : Streamvalue: LL_DMA_STREAM_1
+2023-02-23 13:05:26,604 [INFO] Argument:300 - Argument : Priorityvalue: LL_DMA_PRIORITY_LOW
+2023-02-23 13:05:26,604 [INFO] Argument:310 - Argument : Priorityvalue: LL_DMA_PRIORITY_LOW
+2023-02-23 13:05:26,604 [INFO] Argument:300 - Argument : DMAxvalue: DMA1
+2023-02-23 13:05:26,604 [INFO] Argument:310 - Argument : DMAxvalue: DMA1
+2023-02-23 13:05:26,604 [INFO] Argument:300 - Argument : Streamvalue: LL_DMA_STREAM_1
+2023-02-23 13:05:26,604 [INFO] Argument:310 - Argument : Streamvalue: LL_DMA_STREAM_1
+2023-02-23 13:05:26,604 [INFO] Argument:300 - Argument : Modevalue: LL_DMA_MODE_CIRCULAR
+2023-02-23 13:05:26,604 [INFO] Argument:310 - Argument : Modevalue: LL_DMA_MODE_CIRCULAR
+2023-02-23 13:05:26,604 [INFO] Argument:300 - Argument : DMAxvalue: DMA1
+2023-02-23 13:05:26,605 [INFO] Argument:310 - Argument : DMAxvalue: DMA1
+2023-02-23 13:05:26,605 [INFO] Argument:300 - Argument : Streamvalue: LL_DMA_STREAM_1
+2023-02-23 13:05:26,605 [INFO] Argument:310 - Argument : Streamvalue: LL_DMA_STREAM_1
+2023-02-23 13:05:26,605 [INFO] Argument:300 - Argument : IncrementModevalue: LL_DMA_PERIPH_NOINCREMENT
+2023-02-23 13:05:26,605 [INFO] Argument:310 - Argument : IncrementModevalue: LL_DMA_PERIPH_NOINCREMENT
+2023-02-23 13:05:26,605 [INFO] Argument:300 - Argument : DMAxvalue: DMA1
+2023-02-23 13:05:26,605 [INFO] Argument:310 - Argument : DMAxvalue: DMA1
+2023-02-23 13:05:26,605 [INFO] Argument:300 - Argument : Streamvalue: LL_DMA_STREAM_1
+2023-02-23 13:05:26,605 [INFO] Argument:310 - Argument : Streamvalue: LL_DMA_STREAM_1
+2023-02-23 13:05:26,605 [INFO] Argument:300 - Argument : IncrementModevalue: LL_DMA_MEMORY_INCREMENT
+2023-02-23 13:05:26,605 [INFO] Argument:310 - Argument : IncrementModevalue: LL_DMA_MEMORY_INCREMENT
+2023-02-23 13:05:26,605 [INFO] Argument:300 - Argument : DMAxvalue: DMA1
+2023-02-23 13:05:26,605 [INFO] Argument:310 - Argument : DMAxvalue: DMA1
+2023-02-23 13:05:26,606 [INFO] Argument:300 - Argument : Streamvalue: LL_DMA_STREAM_1
+2023-02-23 13:05:26,606 [INFO] Argument:310 - Argument : Streamvalue: LL_DMA_STREAM_1
+2023-02-23 13:05:26,606 [INFO] Argument:300 - Argument : Sizevalue: LL_DMA_PDATAALIGN_BYTE
+2023-02-23 13:05:26,606 [INFO] Argument:310 - Argument : Sizevalue: LL_DMA_PDATAALIGN_BYTE
+2023-02-23 13:05:26,606 [INFO] Argument:300 - Argument : DMAxvalue: DMA1
+2023-02-23 13:05:26,606 [INFO] Argument:310 - Argument : DMAxvalue: DMA1
+2023-02-23 13:05:26,606 [INFO] Argument:300 - Argument : Streamvalue: LL_DMA_STREAM_1
+2023-02-23 13:05:26,606 [INFO] Argument:310 - Argument : Streamvalue: LL_DMA_STREAM_1
+2023-02-23 13:05:26,606 [INFO] Argument:300 - Argument : Sizevalue: LL_DMA_MDATAALIGN_BYTE
+2023-02-23 13:05:26,606 [INFO] Argument:310 - Argument : Sizevalue: LL_DMA_MDATAALIGN_BYTE
+2023-02-23 13:05:26,606 [INFO] Argument:300 - Argument : DMAxvalue: DMA1
+2023-02-23 13:05:26,606 [INFO] Argument:310 - Argument : DMAxvalue: DMA1
+2023-02-23 13:05:26,606 [INFO] Argument:300 - Argument : Streamvalue: LL_DMA_STREAM_1
+2023-02-23 13:05:26,606 [INFO] Argument:310 - Argument : Streamvalue: LL_DMA_STREAM_1
+2023-02-23 13:05:26,815 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/MXTmpFiles/license.tmp_save
+2023-02-23 13:05:26,930 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/MXTmpFiles/license.tmp
+2023-02-23 13:05:26,975 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/gpio.c_save
+2023-02-23 13:05:27,082 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/gpio.c
+2023-02-23 13:05:27,083 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/gpio.h_save
+2023-02-23 13:05:27,280 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/gpio.h
+2023-02-23 13:05:28,131 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/dma.c_save
+2023-02-23 13:05:28,232 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/dma.c
+2023-02-23 13:05:28,233 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/dma.h_save
+2023-02-23 13:05:28,332 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/dma.h
+2023-02-23 13:05:28,335 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/spi.c_save
+2023-02-23 13:05:28,493 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/spi.c
+2023-02-23 13:05:28,494 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/spi.h_save
+2023-02-23 13:05:28,583 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/spi.h
+2023-02-23 13:05:28,586 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/tim.c_save
+2023-02-23 13:05:28,722 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/tim.c
+2023-02-23 13:05:28,724 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/tim.h_save
+2023-02-23 13:05:28,816 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/tim.h
+2023-02-23 13:05:28,819 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/usart.c_save
+2023-02-23 13:05:28,974 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/usart.c
+2023-02-23 13:05:28,976 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/usart.h_save
+2023-02-23 13:05:29,074 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/usart.h
+2023-02-23 13:05:29,079 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/stm32f4xx_it.c_save
+2023-02-23 13:05:29,374 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/stm32f4xx_it.c
+2023-02-23 13:05:29,375 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/stm32f4xx_it.h_save
+2023-02-23 13:05:29,475 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/stm32f4xx_it.h
+2023-02-23 13:05:29,477 [WARN] IPConfigManager:4122 - WARNING: Missing Config File for SYS ip!!
+2023-02-23 13:05:29,524 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/MXTmpFiles/system.tmp_save
+2023-02-23 13:05:29,615 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/MXTmpFiles/system.tmp
+2023-02-23 13:05:29,616 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/stm32_assert.h_save
+2023-02-23 13:05:29,705 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/stm32_assert.h
+2023-02-23 13:05:29,706 [WARN] IPConfigManager:2928 - Warning: the RefConfig RCC_PLL_PLLM_CONFIG is not available in your config.xml file
+2023-02-23 13:05:29,706 [WARN] IPConfigManager:2928 - Warning: the RefConfig RCC_PLL_PLLSOURCE_CONFIG is not available in your config.xml file
+2023-02-23 13:05:29,706 [WARN] IPConfigManager:2928 - Warning: the RefConfig RCC_ConfigVoltageScaling is not available in your config.xml file
+2023-02-23 13:05:29,714 [WARN] IPConfigManager:2928 - Warning: the RefConfig RCC_ClockConfig is not available in your config.xml file
+2023-02-23 13:05:29,715 [WARN] IPConfigManager:2928 - Warning: the RefConfig RCC_MCO1Config is not available in your config.xml file
+2023-02-23 13:05:29,715 [WARN] IPConfigManager:2928 - Warning: the RefConfig RCC_MCO2Config is not available in your config.xml file
+2023-02-23 13:05:29,715 [WARN] IPConfigManager:2928 - Warning: the RefConfig RCC_interrupt_Time_SYSTICK_Config is not available in your config.xml file
+2023-02-23 13:05:29,715 [WARN] IPConfigManager:2928 - Warning: the RefConfig RCC_SYSTICK_CONFIG is not available in your config.xml file
+2023-02-23 13:05:29,720 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/main.h_save
+2023-02-23 13:05:29,841 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/main.h
+2023-02-23 13:05:29,843 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/main.c_save
+2023-02-23 13:05:29,979 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/main.c
+2023-02-23 13:05:30,708 [INFO] ProjectBuilder:2919 - Time for Copy HAL[1] : 17mS.
+2023-02-23 13:05:30,710 [INFO] ProjectBuilder:4183 - Project Generator version: 3.18.0-B7
+2023-02-23 13:05:31,094 [INFO] ConfigFileManager:1396 - The Die is : DIE413
+2023-02-23 13:05:32,673 [INFO] ProjectBuilder:4351 - Time for Generating toolchain IDE Files: 1963mS.
+2023-02-23 13:05:32,674 [INFO] ProjectBuilder:2790 - Time for Copy CMSIS : 0mS.
+2023-02-23 13:05:32,674 [INFO] ProjectBuilder:2790 - Time for Copy CMSIS : 0mS.
+2023-02-23 13:47:10,515 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-23 13:47:10,517 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-23 13:47:10,518 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-23 13:47:12,367 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-23 13:47:12,368 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-23 13:47:12,368 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-23 13:49:13,839 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-23 13:49:13,841 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-23 13:49:13,842 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-23 13:49:14,602 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-23 13:49:14,603 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-23 13:49:14,603 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-23 13:53:21,367 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-23 13:53:21,369 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-23 13:53:21,371 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-23 13:53:22,289 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-23 13:53:22,290 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-23 13:53:22,291 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-23 14:06:26,304 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-23 14:06:26,305 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-23 14:06:26,306 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-23 14:06:27,225 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-23 14:06:27,227 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-23 14:06:27,227 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-23 14:13:48,065 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-23 14:13:48,067 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-23 14:13:48,068 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-23 14:13:49,013 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-23 14:13:49,014 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-23 14:13:49,014 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-23 14:17:19,749 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-23 14:17:19,751 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-23 14:17:19,752 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-23 14:17:21,567 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-23 14:17:21,568 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-23 14:17:21,568 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-23 14:17:58,549 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-23 14:17:58,550 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-23 14:17:58,551 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-23 14:18:00,472 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-23 14:18:00,472 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-23 14:18:00,473 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-23 14:18:54,544 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-23 14:18:54,546 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-23 14:18:54,547 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-23 14:18:56,514 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-23 14:18:56,514 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-23 14:18:56,515 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-23 14:23:31,991 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-23 14:23:31,992 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-23 14:23:31,993 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-23 14:23:33,914 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-23 14:23:33,915 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-23 14:23:33,915 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-23 14:42:39,196 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-23 14:42:39,198 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-23 14:42:39,198 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-23 14:42:41,033 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-23 14:42:41,033 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-23 14:42:41,034 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-23 14:53:29,032 [INFO] NvicIntPanel:100 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2023-02-23 14:53:32,342 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 703539432 Bytes (828375040)
+2023-02-23 14:53:32,480 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 321488360 Bytes (828375040)
+2023-02-23 14:53:35,684 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 385430728 Bytes (828375040)
+2023-02-23 14:53:35,901 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SPI
+2023-02-23 14:53:35,902 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM1_8
+2023-02-23 14:53:35,902 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RCC
+2023-02-23 14:53:35,902 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC
+2023-02-23 14:53:35,902 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USART
+2023-02-23 14:53:35,902 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USART
+2023-02-23 14:53:35,902 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USART
+2023-02-23 14:53:35,902 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: DMA
+2023-02-23 14:53:35,902 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: GPIO
+2023-02-23 14:53:35,902 [INFO] CodeGenerator:692 - code generatio: config db path: /opt/st/stm32cubeide_1.11.2/plugins/com.st.stm32cube.common.mx_6.7.0.202301130839//db/
+2023-02-23 14:53:35,920 [INFO] Argument:300 - Argument : DMAxvalue: DMA1
+2023-02-23 14:53:35,921 [INFO] Argument:310 - Argument : DMAxvalue: DMA1
+2023-02-23 14:53:35,921 [INFO] Argument:300 - Argument : Streamvalue: LL_DMA_STREAM_1
+2023-02-23 14:53:35,921 [INFO] Argument:310 - Argument : Streamvalue: LL_DMA_STREAM_1
+2023-02-23 14:53:35,921 [INFO] Argument:300 - Argument : Channelvalue: LL_DMA_CHANNEL_4
+2023-02-23 14:53:35,921 [INFO] Argument:310 - Argument : Channelvalue: LL_DMA_CHANNEL_4
+2023-02-23 14:53:35,921 [INFO] Argument:300 - Argument : DMAxvalue: DMA1
+2023-02-23 14:53:35,921 [INFO] Argument:310 - Argument : DMAxvalue: DMA1
+2023-02-23 14:53:35,921 [INFO] Argument:300 - Argument : Streamvalue: LL_DMA_STREAM_1
+2023-02-23 14:53:35,921 [INFO] Argument:310 - Argument : Streamvalue: LL_DMA_STREAM_1
+2023-02-23 14:53:35,921 [INFO] Argument:300 - Argument : Directionvalue: LL_DMA_DIRECTION_PERIPH_TO_MEMORY
+2023-02-23 14:53:35,921 [INFO] Argument:310 - Argument : Directionvalue: LL_DMA_DIRECTION_PERIPH_TO_MEMORY
+2023-02-23 14:53:35,921 [INFO] Argument:300 - Argument : DMAxvalue: DMA1
+2023-02-23 14:53:35,921 [INFO] Argument:310 - Argument : DMAxvalue: DMA1
+2023-02-23 14:53:35,922 [INFO] Argument:300 - Argument : Streamvalue: LL_DMA_STREAM_1
+2023-02-23 14:53:35,922 [INFO] Argument:310 - Argument : Streamvalue: LL_DMA_STREAM_1
+2023-02-23 14:53:35,922 [INFO] Argument:300 - Argument : Priorityvalue: LL_DMA_PRIORITY_LOW
+2023-02-23 14:53:35,922 [INFO] Argument:310 - Argument : Priorityvalue: LL_DMA_PRIORITY_LOW
+2023-02-23 14:53:35,922 [INFO] Argument:300 - Argument : DMAxvalue: DMA1
+2023-02-23 14:53:35,922 [INFO] Argument:310 - Argument : DMAxvalue: DMA1
+2023-02-23 14:53:35,922 [INFO] Argument:300 - Argument : Streamvalue: LL_DMA_STREAM_1
+2023-02-23 14:53:35,922 [INFO] Argument:310 - Argument : Streamvalue: LL_DMA_STREAM_1
+2023-02-23 14:53:35,922 [INFO] Argument:300 - Argument : Modevalue: LL_DMA_MODE_CIRCULAR
+2023-02-23 14:53:35,922 [INFO] Argument:310 - Argument : Modevalue: LL_DMA_MODE_CIRCULAR
+2023-02-23 14:53:35,922 [INFO] Argument:300 - Argument : DMAxvalue: DMA1
+2023-02-23 14:53:35,922 [INFO] Argument:310 - Argument : DMAxvalue: DMA1
+2023-02-23 14:53:35,922 [INFO] Argument:300 - Argument : Streamvalue: LL_DMA_STREAM_1
+2023-02-23 14:53:35,922 [INFO] Argument:310 - Argument : Streamvalue: LL_DMA_STREAM_1
+2023-02-23 14:53:35,922 [INFO] Argument:300 - Argument : IncrementModevalue: LL_DMA_PERIPH_NOINCREMENT
+2023-02-23 14:53:35,922 [INFO] Argument:310 - Argument : IncrementModevalue: LL_DMA_PERIPH_NOINCREMENT
+2023-02-23 14:53:35,922 [INFO] Argument:300 - Argument : DMAxvalue: DMA1
+2023-02-23 14:53:35,922 [INFO] Argument:310 - Argument : DMAxvalue: DMA1
+2023-02-23 14:53:35,922 [INFO] Argument:300 - Argument : Streamvalue: LL_DMA_STREAM_1
+2023-02-23 14:53:35,923 [INFO] Argument:310 - Argument : Streamvalue: LL_DMA_STREAM_1
+2023-02-23 14:53:35,923 [INFO] Argument:300 - Argument : IncrementModevalue: LL_DMA_MEMORY_INCREMENT
+2023-02-23 14:53:35,923 [INFO] Argument:310 - Argument : IncrementModevalue: LL_DMA_MEMORY_INCREMENT
+2023-02-23 14:53:35,923 [INFO] Argument:300 - Argument : DMAxvalue: DMA1
+2023-02-23 14:53:35,923 [INFO] Argument:310 - Argument : DMAxvalue: DMA1
+2023-02-23 14:53:35,923 [INFO] Argument:300 - Argument : Streamvalue: LL_DMA_STREAM_1
+2023-02-23 14:53:35,923 [INFO] Argument:310 - Argument : Streamvalue: LL_DMA_STREAM_1
+2023-02-23 14:53:35,923 [INFO] Argument:300 - Argument : Sizevalue: LL_DMA_PDATAALIGN_BYTE
+2023-02-23 14:53:35,923 [INFO] Argument:310 - Argument : Sizevalue: LL_DMA_PDATAALIGN_BYTE
+2023-02-23 14:53:35,923 [INFO] Argument:300 - Argument : DMAxvalue: DMA1
+2023-02-23 14:53:35,923 [INFO] Argument:310 - Argument : DMAxvalue: DMA1
+2023-02-23 14:53:35,923 [INFO] Argument:300 - Argument : Streamvalue: LL_DMA_STREAM_1
+2023-02-23 14:53:35,923 [INFO] Argument:310 - Argument : Streamvalue: LL_DMA_STREAM_1
+2023-02-23 14:53:35,923 [INFO] Argument:300 - Argument : Sizevalue: LL_DMA_MDATAALIGN_BYTE
+2023-02-23 14:53:35,923 [INFO] Argument:310 - Argument : Sizevalue: LL_DMA_MDATAALIGN_BYTE
+2023-02-23 14:53:35,923 [INFO] Argument:300 - Argument : DMAxvalue: DMA1
+2023-02-23 14:53:35,923 [INFO] Argument:310 - Argument : DMAxvalue: DMA1
+2023-02-23 14:53:35,923 [INFO] Argument:300 - Argument : Streamvalue: LL_DMA_STREAM_1
+2023-02-23 14:53:35,924 [INFO] Argument:310 - Argument : Streamvalue: LL_DMA_STREAM_1
+2023-02-23 14:53:35,925 [INFO] Argument:300 - Argument : DMAxvalue: DMA2
+2023-02-23 14:53:35,926 [INFO] Argument:310 - Argument : DMAxvalue: DMA2
+2023-02-23 14:53:35,926 [INFO] Argument:300 - Argument : Streamvalue: LL_DMA_STREAM_6
+2023-02-23 14:53:35,926 [INFO] Argument:310 - Argument : Streamvalue: LL_DMA_STREAM_6
+2023-02-23 14:53:35,926 [INFO] Argument:300 - Argument : Channelvalue: LL_DMA_CHANNEL_5
+2023-02-23 14:53:35,926 [INFO] Argument:310 - Argument : Channelvalue: LL_DMA_CHANNEL_5
+2023-02-23 14:53:35,926 [INFO] Argument:300 - Argument : DMAxvalue: DMA2
+2023-02-23 14:53:35,926 [INFO] Argument:310 - Argument : DMAxvalue: DMA2
+2023-02-23 14:53:35,926 [INFO] Argument:300 - Argument : Streamvalue: LL_DMA_STREAM_6
+2023-02-23 14:53:35,926 [INFO] Argument:310 - Argument : Streamvalue: LL_DMA_STREAM_6
+2023-02-23 14:53:35,926 [INFO] Argument:300 - Argument : Directionvalue: LL_DMA_DIRECTION_MEMORY_TO_PERIPH
+2023-02-23 14:53:35,926 [INFO] Argument:310 - Argument : Directionvalue: LL_DMA_DIRECTION_MEMORY_TO_PERIPH
+2023-02-23 14:53:35,926 [INFO] Argument:300 - Argument : DMAxvalue: DMA2
+2023-02-23 14:53:35,926 [INFO] Argument:310 - Argument : DMAxvalue: DMA2
+2023-02-23 14:53:35,926 [INFO] Argument:300 - Argument : Streamvalue: LL_DMA_STREAM_6
+2023-02-23 14:53:35,926 [INFO] Argument:310 - Argument : Streamvalue: LL_DMA_STREAM_6
+2023-02-23 14:53:35,926 [INFO] Argument:300 - Argument : Priorityvalue: LL_DMA_PRIORITY_LOW
+2023-02-23 14:53:35,926 [INFO] Argument:310 - Argument : Priorityvalue: LL_DMA_PRIORITY_LOW
+2023-02-23 14:53:35,926 [INFO] Argument:300 - Argument : DMAxvalue: DMA2
+2023-02-23 14:53:35,926 [INFO] Argument:310 - Argument : DMAxvalue: DMA2
+2023-02-23 14:53:35,927 [INFO] Argument:300 - Argument : Streamvalue: LL_DMA_STREAM_6
+2023-02-23 14:53:35,927 [INFO] Argument:310 - Argument : Streamvalue: LL_DMA_STREAM_6
+2023-02-23 14:53:35,927 [INFO] Argument:300 - Argument : Modevalue: LL_DMA_MODE_CIRCULAR
+2023-02-23 14:53:35,927 [INFO] Argument:310 - Argument : Modevalue: LL_DMA_MODE_CIRCULAR
+2023-02-23 14:53:35,927 [INFO] Argument:300 - Argument : DMAxvalue: DMA2
+2023-02-23 14:53:35,927 [INFO] Argument:310 - Argument : DMAxvalue: DMA2
+2023-02-23 14:53:35,927 [INFO] Argument:300 - Argument : Streamvalue: LL_DMA_STREAM_6
+2023-02-23 14:53:35,927 [INFO] Argument:310 - Argument : Streamvalue: LL_DMA_STREAM_6
+2023-02-23 14:53:35,927 [INFO] Argument:300 - Argument : IncrementModevalue: LL_DMA_PERIPH_NOINCREMENT
+2023-02-23 14:53:35,927 [INFO] Argument:310 - Argument : IncrementModevalue: LL_DMA_PERIPH_NOINCREMENT
+2023-02-23 14:53:35,927 [INFO] Argument:300 - Argument : DMAxvalue: DMA2
+2023-02-23 14:53:35,927 [INFO] Argument:310 - Argument : DMAxvalue: DMA2
+2023-02-23 14:53:35,927 [INFO] Argument:300 - Argument : Streamvalue: LL_DMA_STREAM_6
+2023-02-23 14:53:35,927 [INFO] Argument:310 - Argument : Streamvalue: LL_DMA_STREAM_6
+2023-02-23 14:53:35,927 [INFO] Argument:300 - Argument : IncrementModevalue: LL_DMA_MEMORY_INCREMENT
+2023-02-23 14:53:35,927 [INFO] Argument:310 - Argument : IncrementModevalue: LL_DMA_MEMORY_INCREMENT
+2023-02-23 14:53:35,927 [INFO] Argument:300 - Argument : DMAxvalue: DMA2
+2023-02-23 14:53:35,927 [INFO] Argument:310 - Argument : DMAxvalue: DMA2
+2023-02-23 14:53:35,927 [INFO] Argument:300 - Argument : Streamvalue: LL_DMA_STREAM_6
+2023-02-23 14:53:35,928 [INFO] Argument:310 - Argument : Streamvalue: LL_DMA_STREAM_6
+2023-02-23 14:53:35,928 [INFO] Argument:300 - Argument : Sizevalue: LL_DMA_PDATAALIGN_BYTE
+2023-02-23 14:53:35,928 [INFO] Argument:310 - Argument : Sizevalue: LL_DMA_PDATAALIGN_BYTE
+2023-02-23 14:53:35,928 [INFO] Argument:300 - Argument : DMAxvalue: DMA2
+2023-02-23 14:53:35,928 [INFO] Argument:310 - Argument : DMAxvalue: DMA2
+2023-02-23 14:53:35,928 [INFO] Argument:300 - Argument : Streamvalue: LL_DMA_STREAM_6
+2023-02-23 14:53:35,928 [INFO] Argument:310 - Argument : Streamvalue: LL_DMA_STREAM_6
+2023-02-23 14:53:35,928 [INFO] Argument:300 - Argument : Sizevalue: LL_DMA_MDATAALIGN_BYTE
+2023-02-23 14:53:35,928 [INFO] Argument:310 - Argument : Sizevalue: LL_DMA_MDATAALIGN_BYTE
+2023-02-23 14:53:35,928 [INFO] Argument:300 - Argument : DMAxvalue: DMA2
+2023-02-23 14:53:35,928 [INFO] Argument:310 - Argument : DMAxvalue: DMA2
+2023-02-23 14:53:35,928 [INFO] Argument:300 - Argument : Streamvalue: LL_DMA_STREAM_6
+2023-02-23 14:53:35,928 [INFO] Argument:310 - Argument : Streamvalue: LL_DMA_STREAM_6
+2023-02-23 14:53:36,124 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/MXTmpFiles/license.tmp_save
+2023-02-23 14:53:36,237 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/MXTmpFiles/license.tmp
+2023-02-23 14:53:36,280 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/gpio.c_save
+2023-02-23 14:53:36,384 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/gpio.c
+2023-02-23 14:53:36,385 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/gpio.h_save
+2023-02-23 14:53:36,473 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/gpio.h
+2023-02-23 14:53:37,299 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/dma.c_save
+2023-02-23 14:53:37,395 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/dma.c
+2023-02-23 14:53:37,396 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/dma.h_save
+2023-02-23 14:53:37,485 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/dma.h
+2023-02-23 14:53:37,488 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/spi.c_save
+2023-02-23 14:53:37,643 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/spi.c
+2023-02-23 14:53:37,645 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/spi.h_save
+2023-02-23 14:53:37,735 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/spi.h
+2023-02-23 14:53:37,738 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/tim.c_save
+2023-02-23 14:53:37,873 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/tim.c
+2023-02-23 14:53:37,874 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/tim.h_save
+2023-02-23 14:53:37,963 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/tim.h
+2023-02-23 14:53:37,966 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/usart.c_save
+2023-02-23 14:53:38,111 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/usart.c
+2023-02-23 14:53:38,112 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/usart.h_save
+2023-02-23 14:53:38,204 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/usart.h
+2023-02-23 14:53:38,209 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/stm32f4xx_it.c_save
+2023-02-23 14:53:38,444 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/stm32f4xx_it.c
+2023-02-23 14:53:38,445 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/stm32f4xx_it.h_save
+2023-02-23 14:53:38,533 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/stm32f4xx_it.h
+2023-02-23 14:53:38,534 [WARN] IPConfigManager:4122 - WARNING: Missing Config File for SYS ip!!
+2023-02-23 14:53:38,740 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/MXTmpFiles/system.tmp_save
+2023-02-23 14:53:38,839 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/MXTmpFiles/system.tmp
+2023-02-23 14:53:38,840 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/stm32_assert.h_save
+2023-02-23 14:53:38,942 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/stm32_assert.h
+2023-02-23 14:53:38,943 [WARN] IPConfigManager:2928 - Warning: the RefConfig RCC_PLL_PLLM_CONFIG is not available in your config.xml file
+2023-02-23 14:53:38,943 [WARN] IPConfigManager:2928 - Warning: the RefConfig RCC_PLL_PLLSOURCE_CONFIG is not available in your config.xml file
+2023-02-23 14:53:38,943 [WARN] IPConfigManager:2928 - Warning: the RefConfig RCC_ConfigVoltageScaling is not available in your config.xml file
+2023-02-23 14:53:39,005 [WARN] IPConfigManager:2928 - Warning: the RefConfig RCC_ClockConfig is not available in your config.xml file
+2023-02-23 14:53:39,005 [WARN] IPConfigManager:2928 - Warning: the RefConfig RCC_MCO1Config is not available in your config.xml file
+2023-02-23 14:53:39,005 [WARN] IPConfigManager:2928 - Warning: the RefConfig RCC_MCO2Config is not available in your config.xml file
+2023-02-23 14:53:39,005 [WARN] IPConfigManager:2928 - Warning: the RefConfig RCC_interrupt_Time_SYSTICK_Config is not available in your config.xml file
+2023-02-23 14:53:39,005 [WARN] IPConfigManager:2928 - Warning: the RefConfig RCC_SYSTICK_CONFIG is not available in your config.xml file
+2023-02-23 14:53:39,013 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/main.h_save
+2023-02-23 14:53:39,145 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/main.h
+2023-02-23 14:53:39,147 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/main.c_save
+2023-02-23 14:53:39,289 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/main.c
+2023-02-23 14:53:39,927 [INFO] ProjectBuilder:2919 - Time for Copy HAL[1] : 19mS.
+2023-02-23 14:53:39,929 [INFO] ProjectBuilder:4183 - Project Generator version: 3.18.0-B7
+2023-02-23 14:53:40,527 [INFO] ConfigFileManager:1396 - The Die is : DIE413
+2023-02-23 14:53:42,031 [INFO] ProjectBuilder:4351 - Time for Generating toolchain IDE Files: 2102mS.
+2023-02-23 14:53:42,032 [INFO] ProjectBuilder:2790 - Time for Copy CMSIS : 0mS.
+2023-02-23 14:53:42,033 [INFO] ProjectBuilder:2790 - Time for Copy CMSIS : 0mS.
+2023-02-23 15:09:00,789 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-23 15:09:00,791 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-23 15:09:00,792 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-23 15:09:02,858 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-23 15:09:02,859 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-23 15:09:02,860 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-23 15:25:48,996 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-23 15:25:48,998 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-23 15:25:48,999 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-23 15:25:50,852 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-23 15:25:50,852 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-23 15:25:50,853 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-23 15:27:53,757 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-23 15:27:53,760 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-23 15:27:53,761 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-23 15:27:54,630 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-23 15:27:54,631 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-23 15:27:54,632 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-23 15:42:13,393 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-23 15:42:13,394 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-23 15:42:13,395 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-23 15:42:15,305 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-23 15:42:15,305 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-23 15:42:15,306 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-23 15:42:40,007 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-23 15:42:40,008 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-23 15:42:40,008 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-23 15:43:28,257 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-23 15:43:28,258 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-23 15:43:28,259 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-23 15:43:29,100 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-23 15:43:29,101 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-23 15:43:29,101 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-23 15:44:01,933 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-23 15:44:01,934 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-23 15:44:01,935 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-23 15:44:02,740 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-23 15:44:02,741 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-23 15:44:02,742 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-23 15:44:50,787 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-23 15:44:50,789 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-23 15:44:50,790 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-23 15:44:51,557 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-23 15:44:51,558 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-23 15:44:51,558 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-23 15:45:50,810 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-23 15:45:50,812 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-23 15:45:50,812 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-23 15:45:51,673 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-23 15:45:51,674 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-23 15:45:51,675 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-23 15:46:21,919 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-23 15:46:21,920 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-23 15:46:21,920 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-23 15:46:22,766 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-23 15:46:22,767 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-23 15:46:22,767 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-25 05:00:00,090 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-25 05:00:00,091 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-25 05:00:00,091 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-25 05:00:01,648 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-25 05:00:01,648 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-25 05:00:01,649 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-25 05:37:05,873 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-25 05:37:05,874 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-25 05:37:05,875 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-25 05:37:06,506 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-25 05:37:06,507 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-25 05:37:06,508 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-25 05:37:43,870 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 597235168 Bytes (828375040)
+2023-02-25 05:37:43,968 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 617684448 Bytes (828375040)
+2023-02-25 05:37:44,416 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 657530336 Bytes (828375040)
+2023-02-25 05:37:44,656 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SPI
+2023-02-25 05:37:44,656 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM1_8
+2023-02-25 05:37:44,656 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RCC
+2023-02-25 05:37:44,657 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC
+2023-02-25 05:37:44,657 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USART
+2023-02-25 05:37:44,657 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USART
+2023-02-25 05:37:44,657 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USART
+2023-02-25 05:37:44,657 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: DMA
+2023-02-25 05:37:44,657 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: GPIO
+2023-02-25 05:37:44,657 [INFO] CodeGenerator:692 - code generatio: config db path: /opt/st/stm32cubeide_1.11.2/plugins/com.st.stm32cube.common.mx_6.7.0.202301130839//db/
+2023-02-25 05:37:44,683 [INFO] Argument:300 - Argument : DMAxvalue: DMA1
+2023-02-25 05:37:44,684 [INFO] Argument:310 - Argument : DMAxvalue: DMA1
+2023-02-25 05:37:44,684 [INFO] Argument:300 - Argument : Streamvalue: LL_DMA_STREAM_1
+2023-02-25 05:37:44,684 [INFO] Argument:310 - Argument : Streamvalue: LL_DMA_STREAM_1
+2023-02-25 05:37:44,684 [INFO] Argument:300 - Argument : Channelvalue: LL_DMA_CHANNEL_4
+2023-02-25 05:37:44,684 [INFO] Argument:310 - Argument : Channelvalue: LL_DMA_CHANNEL_4
+2023-02-25 05:37:44,684 [INFO] Argument:300 - Argument : DMAxvalue: DMA1
+2023-02-25 05:37:44,684 [INFO] Argument:310 - Argument : DMAxvalue: DMA1
+2023-02-25 05:37:44,685 [INFO] Argument:300 - Argument : Streamvalue: LL_DMA_STREAM_1
+2023-02-25 05:37:44,685 [INFO] Argument:310 - Argument : Streamvalue: LL_DMA_STREAM_1
+2023-02-25 05:37:44,685 [INFO] Argument:300 - Argument : Directionvalue: LL_DMA_DIRECTION_PERIPH_TO_MEMORY
+2023-02-25 05:37:44,685 [INFO] Argument:310 - Argument : Directionvalue: LL_DMA_DIRECTION_PERIPH_TO_MEMORY
+2023-02-25 05:37:44,685 [INFO] Argument:300 - Argument : DMAxvalue: DMA1
+2023-02-25 05:37:44,685 [INFO] Argument:310 - Argument : DMAxvalue: DMA1
+2023-02-25 05:37:44,685 [INFO] Argument:300 - Argument : Streamvalue: LL_DMA_STREAM_1
+2023-02-25 05:37:44,685 [INFO] Argument:310 - Argument : Streamvalue: LL_DMA_STREAM_1
+2023-02-25 05:37:44,685 [INFO] Argument:300 - Argument : Priorityvalue: LL_DMA_PRIORITY_LOW
+2023-02-25 05:37:44,685 [INFO] Argument:310 - Argument : Priorityvalue: LL_DMA_PRIORITY_LOW
+2023-02-25 05:37:44,685 [INFO] Argument:300 - Argument : DMAxvalue: DMA1
+2023-02-25 05:37:44,685 [INFO] Argument:310 - Argument : DMAxvalue: DMA1
+2023-02-25 05:37:44,685 [INFO] Argument:300 - Argument : Streamvalue: LL_DMA_STREAM_1
+2023-02-25 05:37:44,685 [INFO] Argument:310 - Argument : Streamvalue: LL_DMA_STREAM_1
+2023-02-25 05:37:44,685 [INFO] Argument:300 - Argument : Modevalue: LL_DMA_MODE_CIRCULAR
+2023-02-25 05:37:44,686 [INFO] Argument:310 - Argument : Modevalue: LL_DMA_MODE_CIRCULAR
+2023-02-25 05:37:44,686 [INFO] Argument:300 - Argument : DMAxvalue: DMA1
+2023-02-25 05:37:44,686 [INFO] Argument:310 - Argument : DMAxvalue: DMA1
+2023-02-25 05:37:44,686 [INFO] Argument:300 - Argument : Streamvalue: LL_DMA_STREAM_1
+2023-02-25 05:37:44,686 [INFO] Argument:310 - Argument : Streamvalue: LL_DMA_STREAM_1
+2023-02-25 05:37:44,686 [INFO] Argument:300 - Argument : IncrementModevalue: LL_DMA_PERIPH_NOINCREMENT
+2023-02-25 05:37:44,686 [INFO] Argument:310 - Argument : IncrementModevalue: LL_DMA_PERIPH_NOINCREMENT
+2023-02-25 05:37:44,686 [INFO] Argument:300 - Argument : DMAxvalue: DMA1
+2023-02-25 05:37:44,686 [INFO] Argument:310 - Argument : DMAxvalue: DMA1
+2023-02-25 05:37:44,686 [INFO] Argument:300 - Argument : Streamvalue: LL_DMA_STREAM_1
+2023-02-25 05:37:44,686 [INFO] Argument:310 - Argument : Streamvalue: LL_DMA_STREAM_1
+2023-02-25 05:37:44,686 [INFO] Argument:300 - Argument : IncrementModevalue: LL_DMA_MEMORY_INCREMENT
+2023-02-25 05:37:44,686 [INFO] Argument:310 - Argument : IncrementModevalue: LL_DMA_MEMORY_INCREMENT
+2023-02-25 05:37:44,686 [INFO] Argument:300 - Argument : DMAxvalue: DMA1
+2023-02-25 05:37:44,686 [INFO] Argument:310 - Argument : DMAxvalue: DMA1
+2023-02-25 05:37:44,686 [INFO] Argument:300 - Argument : Streamvalue: LL_DMA_STREAM_1
+2023-02-25 05:37:44,687 [INFO] Argument:310 - Argument : Streamvalue: LL_DMA_STREAM_1
+2023-02-25 05:37:44,687 [INFO] Argument:300 - Argument : Sizevalue: LL_DMA_PDATAALIGN_BYTE
+2023-02-25 05:37:44,687 [INFO] Argument:310 - Argument : Sizevalue: LL_DMA_PDATAALIGN_BYTE
+2023-02-25 05:37:44,687 [INFO] Argument:300 - Argument : DMAxvalue: DMA1
+2023-02-25 05:37:44,687 [INFO] Argument:310 - Argument : DMAxvalue: DMA1
+2023-02-25 05:37:44,687 [INFO] Argument:300 - Argument : Streamvalue: LL_DMA_STREAM_1
+2023-02-25 05:37:44,687 [INFO] Argument:310 - Argument : Streamvalue: LL_DMA_STREAM_1
+2023-02-25 05:37:44,687 [INFO] Argument:300 - Argument : Sizevalue: LL_DMA_MDATAALIGN_BYTE
+2023-02-25 05:37:44,687 [INFO] Argument:310 - Argument : Sizevalue: LL_DMA_MDATAALIGN_BYTE
+2023-02-25 05:37:44,687 [INFO] Argument:300 - Argument : DMAxvalue: DMA1
+2023-02-25 05:37:44,687 [INFO] Argument:310 - Argument : DMAxvalue: DMA1
+2023-02-25 05:37:44,687 [INFO] Argument:300 - Argument : Streamvalue: LL_DMA_STREAM_1
+2023-02-25 05:37:44,687 [INFO] Argument:310 - Argument : Streamvalue: LL_DMA_STREAM_1
+2023-02-25 05:37:45,011 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/MXTmpFiles/license.tmp_save
+2023-02-25 05:37:45,139 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/MXTmpFiles/license.tmp
+2023-02-25 05:37:45,187 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/gpio.c_save
+2023-02-25 05:37:45,302 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/gpio.c
+2023-02-25 05:37:45,303 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/gpio.h_save
+2023-02-25 05:37:45,398 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/gpio.h
+2023-02-25 05:37:45,792 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/dma.c_save
+2023-02-25 05:37:45,887 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/dma.c
+2023-02-25 05:37:45,888 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/dma.h_save
+2023-02-25 05:37:45,976 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/dma.h
+2023-02-25 05:37:45,979 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/spi.c_save
+2023-02-25 05:37:46,131 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/spi.c
+2023-02-25 05:37:46,132 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/spi.h_save
+2023-02-25 05:37:46,222 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/spi.h
+2023-02-25 05:37:46,256 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/tim.c_save
+2023-02-25 05:37:46,417 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/tim.c
+2023-02-25 05:37:46,418 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/tim.h_save
+2023-02-25 05:37:46,519 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/tim.h
+2023-02-25 05:37:46,556 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/usart.c_save
+2023-02-25 05:37:46,711 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/usart.c
+2023-02-25 05:37:46,712 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/usart.h_save
+2023-02-25 05:37:46,812 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/usart.h
+2023-02-25 05:37:46,817 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/stm32f4xx_it.c_save
+2023-02-25 05:37:47,068 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/stm32f4xx_it.c
+2023-02-25 05:37:47,069 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/stm32f4xx_it.h_save
+2023-02-25 05:37:47,162 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/stm32f4xx_it.h
+2023-02-25 05:37:47,164 [WARN] IPConfigManager:4122 - WARNING: Missing Config File for SYS ip!!
+2023-02-25 05:37:47,205 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/MXTmpFiles/system.tmp_save
+2023-02-25 05:37:47,293 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/MXTmpFiles/system.tmp
+2023-02-25 05:37:47,294 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/stm32_assert.h_save
+2023-02-25 05:37:47,381 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/stm32_assert.h
+2023-02-25 05:37:47,382 [WARN] IPConfigManager:2928 - Warning: the RefConfig RCC_PLL_PLLM_CONFIG is not available in your config.xml file
+2023-02-25 05:37:47,383 [WARN] IPConfigManager:2928 - Warning: the RefConfig RCC_PLL_PLLSOURCE_CONFIG is not available in your config.xml file
+2023-02-25 05:37:47,383 [WARN] IPConfigManager:2928 - Warning: the RefConfig RCC_ConfigVoltageScaling is not available in your config.xml file
+2023-02-25 05:37:47,391 [WARN] IPConfigManager:2928 - Warning: the RefConfig RCC_ClockConfig is not available in your config.xml file
+2023-02-25 05:37:47,391 [WARN] IPConfigManager:2928 - Warning: the RefConfig RCC_MCO1Config is not available in your config.xml file
+2023-02-25 05:37:47,391 [WARN] IPConfigManager:2928 - Warning: the RefConfig RCC_MCO2Config is not available in your config.xml file
+2023-02-25 05:37:47,391 [WARN] IPConfigManager:2928 - Warning: the RefConfig RCC_interrupt_Time_SYSTICK_Config is not available in your config.xml file
+2023-02-25 05:37:47,391 [WARN] IPConfigManager:2928 - Warning: the RefConfig RCC_SYSTICK_CONFIG is not available in your config.xml file
+2023-02-25 05:37:47,396 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/main.h_save
+2023-02-25 05:37:47,527 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/main.h
+2023-02-25 05:37:47,528 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/main.c_save
+2023-02-25 05:37:47,690 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/main.c
+2023-02-25 05:37:48,347 [INFO] ProjectBuilder:2919 - Time for Copy HAL[1] : 18mS.
+2023-02-25 05:37:48,349 [INFO] ProjectBuilder:4183 - Project Generator version: 3.18.0-B7
+2023-02-25 05:37:48,733 [INFO] ConfigFileManager:1396 - The Die is : DIE413
+2023-02-25 05:37:50,432 [INFO] ProjectBuilder:4351 - Time for Generating toolchain IDE Files: 2083mS.
+2023-02-25 05:37:50,433 [INFO] ProjectBuilder:2790 - Time for Copy CMSIS : 0mS.
+2023-02-25 05:37:50,433 [INFO] ProjectBuilder:2790 - Time for Copy CMSIS : 0mS.
+2023-02-25 05:39:02,977 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-25 05:39:02,979 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-25 05:39:02,980 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-25 05:39:03,589 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-25 05:39:03,590 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-25 05:39:03,590 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-25 05:54:34,376 [INFO] NvicIntPanel:100 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2023-02-25 05:55:43,243 [INFO] NvicIntPanel:100 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2023-02-25 05:57:34,540 [INFO] NvicIntPanel:100 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2023-02-25 05:57:40,689 [INFO] NvicIntPanel:100 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2023-02-25 06:11:13,451 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 491476760 Bytes (828375040)
+2023-02-25 06:11:13,572 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 511399704 Bytes (828375040)
+2023-02-25 06:11:14,038 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 549674776 Bytes (828375040)
+2023-02-25 06:11:14,331 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SPI
+2023-02-25 06:11:14,331 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM1_8
+2023-02-25 06:11:14,331 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM1_8
+2023-02-25 06:11:14,331 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RCC
+2023-02-25 06:11:14,331 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC
+2023-02-25 06:11:14,331 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USART
+2023-02-25 06:11:14,331 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USART
+2023-02-25 06:11:14,331 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USART
+2023-02-25 06:11:14,331 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: DMA
+2023-02-25 06:11:14,332 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: GPIO
+2023-02-25 06:11:14,332 [INFO] CodeGenerator:692 - code generatio: config db path: /opt/st/stm32cubeide_1.11.2/plugins/com.st.stm32cube.common.mx_6.7.0.202301130839//db/
+2023-02-25 06:11:14,387 [INFO] Argument:300 - Argument : DMAxvalue: DMA1
+2023-02-25 06:11:14,387 [INFO] Argument:310 - Argument : DMAxvalue: DMA1
+2023-02-25 06:11:14,387 [INFO] Argument:300 - Argument : Streamvalue: LL_DMA_STREAM_1
+2023-02-25 06:11:14,387 [INFO] Argument:310 - Argument : Streamvalue: LL_DMA_STREAM_1
+2023-02-25 06:11:14,388 [INFO] Argument:300 - Argument : Channelvalue: LL_DMA_CHANNEL_4
+2023-02-25 06:11:14,388 [INFO] Argument:310 - Argument : Channelvalue: LL_DMA_CHANNEL_4
+2023-02-25 06:11:14,388 [INFO] Argument:300 - Argument : DMAxvalue: DMA1
+2023-02-25 06:11:14,388 [INFO] Argument:310 - Argument : DMAxvalue: DMA1
+2023-02-25 06:11:14,388 [INFO] Argument:300 - Argument : Streamvalue: LL_DMA_STREAM_1
+2023-02-25 06:11:14,388 [INFO] Argument:310 - Argument : Streamvalue: LL_DMA_STREAM_1
+2023-02-25 06:11:14,388 [INFO] Argument:300 - Argument : Directionvalue: LL_DMA_DIRECTION_PERIPH_TO_MEMORY
+2023-02-25 06:11:14,388 [INFO] Argument:310 - Argument : Directionvalue: LL_DMA_DIRECTION_PERIPH_TO_MEMORY
+2023-02-25 06:11:14,388 [INFO] Argument:300 - Argument : DMAxvalue: DMA1
+2023-02-25 06:11:14,388 [INFO] Argument:310 - Argument : DMAxvalue: DMA1
+2023-02-25 06:11:14,389 [INFO] Argument:300 - Argument : Streamvalue: LL_DMA_STREAM_1
+2023-02-25 06:11:14,389 [INFO] Argument:310 - Argument : Streamvalue: LL_DMA_STREAM_1
+2023-02-25 06:11:14,389 [INFO] Argument:300 - Argument : Priorityvalue: LL_DMA_PRIORITY_LOW
+2023-02-25 06:11:14,389 [INFO] Argument:310 - Argument : Priorityvalue: LL_DMA_PRIORITY_LOW
+2023-02-25 06:11:14,389 [INFO] Argument:300 - Argument : DMAxvalue: DMA1
+2023-02-25 06:11:14,389 [INFO] Argument:310 - Argument : DMAxvalue: DMA1
+2023-02-25 06:11:14,389 [INFO] Argument:300 - Argument : Streamvalue: LL_DMA_STREAM_1
+2023-02-25 06:11:14,389 [INFO] Argument:310 - Argument : Streamvalue: LL_DMA_STREAM_1
+2023-02-25 06:11:14,389 [INFO] Argument:300 - Argument : Modevalue: LL_DMA_MODE_CIRCULAR
+2023-02-25 06:11:14,389 [INFO] Argument:310 - Argument : Modevalue: LL_DMA_MODE_CIRCULAR
+2023-02-25 06:11:14,389 [INFO] Argument:300 - Argument : DMAxvalue: DMA1
+2023-02-25 06:11:14,389 [INFO] Argument:310 - Argument : DMAxvalue: DMA1
+2023-02-25 06:11:14,390 [INFO] Argument:300 - Argument : Streamvalue: LL_DMA_STREAM_1
+2023-02-25 06:11:14,390 [INFO] Argument:310 - Argument : Streamvalue: LL_DMA_STREAM_1
+2023-02-25 06:11:14,390 [INFO] Argument:300 - Argument : IncrementModevalue: LL_DMA_PERIPH_NOINCREMENT
+2023-02-25 06:11:14,390 [INFO] Argument:310 - Argument : IncrementModevalue: LL_DMA_PERIPH_NOINCREMENT
+2023-02-25 06:11:14,390 [INFO] Argument:300 - Argument : DMAxvalue: DMA1
+2023-02-25 06:11:14,390 [INFO] Argument:310 - Argument : DMAxvalue: DMA1
+2023-02-25 06:11:14,390 [INFO] Argument:300 - Argument : Streamvalue: LL_DMA_STREAM_1
+2023-02-25 06:11:14,390 [INFO] Argument:310 - Argument : Streamvalue: LL_DMA_STREAM_1
+2023-02-25 06:11:14,390 [INFO] Argument:300 - Argument : IncrementModevalue: LL_DMA_MEMORY_INCREMENT
+2023-02-25 06:11:14,390 [INFO] Argument:310 - Argument : IncrementModevalue: LL_DMA_MEMORY_INCREMENT
+2023-02-25 06:11:14,390 [INFO] Argument:300 - Argument : DMAxvalue: DMA1
+2023-02-25 06:11:14,390 [INFO] Argument:310 - Argument : DMAxvalue: DMA1
+2023-02-25 06:11:14,390 [INFO] Argument:300 - Argument : Streamvalue: LL_DMA_STREAM_1
+2023-02-25 06:11:14,390 [INFO] Argument:310 - Argument : Streamvalue: LL_DMA_STREAM_1
+2023-02-25 06:11:14,391 [INFO] Argument:300 - Argument : Sizevalue: LL_DMA_PDATAALIGN_BYTE
+2023-02-25 06:11:14,391 [INFO] Argument:310 - Argument : Sizevalue: LL_DMA_PDATAALIGN_BYTE
+2023-02-25 06:11:14,391 [INFO] Argument:300 - Argument : DMAxvalue: DMA1
+2023-02-25 06:11:14,391 [INFO] Argument:310 - Argument : DMAxvalue: DMA1
+2023-02-25 06:11:14,391 [INFO] Argument:300 - Argument : Streamvalue: LL_DMA_STREAM_1
+2023-02-25 06:11:14,391 [INFO] Argument:310 - Argument : Streamvalue: LL_DMA_STREAM_1
+2023-02-25 06:11:14,391 [INFO] Argument:300 - Argument : Sizevalue: LL_DMA_MDATAALIGN_BYTE
+2023-02-25 06:11:14,391 [INFO] Argument:310 - Argument : Sizevalue: LL_DMA_MDATAALIGN_BYTE
+2023-02-25 06:11:14,391 [INFO] Argument:300 - Argument : DMAxvalue: DMA1
+2023-02-25 06:11:14,391 [INFO] Argument:310 - Argument : DMAxvalue: DMA1
+2023-02-25 06:11:14,391 [INFO] Argument:300 - Argument : Streamvalue: LL_DMA_STREAM_1
+2023-02-25 06:11:14,391 [INFO] Argument:310 - Argument : Streamvalue: LL_DMA_STREAM_1
+2023-02-25 06:11:14,699 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/MXTmpFiles/license.tmp_save
+2023-02-25 06:11:14,827 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/MXTmpFiles/license.tmp
+2023-02-25 06:11:14,887 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/gpio.c_save
+2023-02-25 06:11:15,004 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/gpio.c
+2023-02-25 06:11:15,006 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/gpio.h_save
+2023-02-25 06:11:15,103 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/gpio.h
+2023-02-25 06:11:15,778 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/dma.c_save
+2023-02-25 06:11:15,881 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/dma.c
+2023-02-25 06:11:15,882 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/dma.h_save
+2023-02-25 06:11:15,975 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/dma.h
+2023-02-25 06:11:15,978 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/spi.c_save
+2023-02-25 06:11:16,134 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/spi.c
+2023-02-25 06:11:16,135 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/spi.h_save
+2023-02-25 06:11:16,232 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/spi.h
+2023-02-25 06:11:16,236 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/tim.c_save
+2023-02-25 06:11:16,414 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/tim.c
+2023-02-25 06:11:16,415 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/tim.h_save
+2023-02-25 06:11:16,511 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/tim.h
+2023-02-25 06:11:16,515 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/usart.c_save
+2023-02-25 06:11:16,666 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/usart.c
+2023-02-25 06:11:16,667 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/usart.h_save
+2023-02-25 06:11:16,763 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/usart.h
+2023-02-25 06:11:16,768 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/stm32f4xx_it.c_save
+2023-02-25 06:11:17,013 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/stm32f4xx_it.c
+2023-02-25 06:11:17,014 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/stm32f4xx_it.h_save
+2023-02-25 06:11:17,107 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/stm32f4xx_it.h
+2023-02-25 06:11:17,109 [WARN] IPConfigManager:4122 - WARNING: Missing Config File for SYS ip!!
+2023-02-25 06:11:17,163 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/MXTmpFiles/system.tmp_save
+2023-02-25 06:11:17,253 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/MXTmpFiles/system.tmp
+2023-02-25 06:11:17,254 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/stm32_assert.h_save
+2023-02-25 06:11:17,345 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/stm32_assert.h
+2023-02-25 06:11:17,346 [WARN] IPConfigManager:2928 - Warning: the RefConfig RCC_PLL_PLLM_CONFIG is not available in your config.xml file
+2023-02-25 06:11:17,346 [WARN] IPConfigManager:2928 - Warning: the RefConfig RCC_PLL_PLLSOURCE_CONFIG is not available in your config.xml file
+2023-02-25 06:11:17,346 [WARN] IPConfigManager:2928 - Warning: the RefConfig RCC_ConfigVoltageScaling is not available in your config.xml file
+2023-02-25 06:11:17,354 [WARN] IPConfigManager:2928 - Warning: the RefConfig RCC_ClockConfig is not available in your config.xml file
+2023-02-25 06:11:17,354 [WARN] IPConfigManager:2928 - Warning: the RefConfig RCC_MCO1Config is not available in your config.xml file
+2023-02-25 06:11:17,354 [WARN] IPConfigManager:2928 - Warning: the RefConfig RCC_MCO2Config is not available in your config.xml file
+2023-02-25 06:11:17,354 [WARN] IPConfigManager:2928 - Warning: the RefConfig RCC_interrupt_Time_SYSTICK_Config is not available in your config.xml file
+2023-02-25 06:11:17,354 [WARN] IPConfigManager:2928 - Warning: the RefConfig RCC_SYSTICK_CONFIG is not available in your config.xml file
+2023-02-25 06:11:17,360 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/main.h_save
+2023-02-25 06:11:17,488 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/main.h
+2023-02-25 06:11:17,489 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/main.c_save
+2023-02-25 06:11:17,636 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/main.c
+2023-02-25 06:11:18,447 [INFO] ProjectBuilder:2919 - Time for Copy HAL[1] : 18mS.
+2023-02-25 06:11:18,449 [INFO] ProjectBuilder:4183 - Project Generator version: 3.18.0-B7
+2023-02-25 06:11:18,827 [INFO] ConfigFileManager:1396 - The Die is : DIE413
+2023-02-25 06:11:20,445 [INFO] ProjectBuilder:4351 - Time for Generating toolchain IDE Files: 1996mS.
+2023-02-25 06:11:20,446 [INFO] ProjectBuilder:2790 - Time for Copy CMSIS : 0mS.
+2023-02-25 06:11:20,446 [INFO] ProjectBuilder:2790 - Time for Copy CMSIS : 0mS.
+2023-02-25 06:19:04,270 [INFO] NvicIntPanel:100 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2023-02-25 06:19:53,756 [INFO] NvicIntPanel:100 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2023-02-25 06:20:08,483 [INFO] NvicIntPanel:100 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2023-02-25 06:20:15,591 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 335587360 Bytes (828375040)
+2023-02-25 06:20:15,708 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 355510304 Bytes (828375040)
+2023-02-25 06:20:16,175 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 417376288 Bytes (828375040)
+2023-02-25 06:20:16,449 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SPI
+2023-02-25 06:20:16,450 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM1_8
+2023-02-25 06:20:16,450 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM1_8
+2023-02-25 06:20:16,450 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RCC
+2023-02-25 06:20:16,450 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC
+2023-02-25 06:20:16,450 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USART
+2023-02-25 06:20:16,450 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USART
+2023-02-25 06:20:16,450 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USART
+2023-02-25 06:20:16,450 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: DMA
+2023-02-25 06:20:16,451 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: GPIO
+2023-02-25 06:20:16,451 [INFO] CodeGenerator:692 - code generatio: config db path: /opt/st/stm32cubeide_1.11.2/plugins/com.st.stm32cube.common.mx_6.7.0.202301130839//db/
+2023-02-25 06:20:16,494 [INFO] Argument:300 - Argument : DMAxvalue: DMA1
+2023-02-25 06:20:16,494 [INFO] Argument:310 - Argument : DMAxvalue: DMA1
+2023-02-25 06:20:16,494 [INFO] Argument:300 - Argument : Streamvalue: LL_DMA_STREAM_1
+2023-02-25 06:20:16,494 [INFO] Argument:310 - Argument : Streamvalue: LL_DMA_STREAM_1
+2023-02-25 06:20:16,494 [INFO] Argument:300 - Argument : Channelvalue: LL_DMA_CHANNEL_4
+2023-02-25 06:20:16,494 [INFO] Argument:310 - Argument : Channelvalue: LL_DMA_CHANNEL_4
+2023-02-25 06:20:16,494 [INFO] Argument:300 - Argument : DMAxvalue: DMA1
+2023-02-25 06:20:16,495 [INFO] Argument:310 - Argument : DMAxvalue: DMA1
+2023-02-25 06:20:16,495 [INFO] Argument:300 - Argument : Streamvalue: LL_DMA_STREAM_1
+2023-02-25 06:20:16,495 [INFO] Argument:310 - Argument : Streamvalue: LL_DMA_STREAM_1
+2023-02-25 06:20:16,495 [INFO] Argument:300 - Argument : Directionvalue: LL_DMA_DIRECTION_PERIPH_TO_MEMORY
+2023-02-25 06:20:16,495 [INFO] Argument:310 - Argument : Directionvalue: LL_DMA_DIRECTION_PERIPH_TO_MEMORY
+2023-02-25 06:20:16,495 [INFO] Argument:300 - Argument : DMAxvalue: DMA1
+2023-02-25 06:20:16,495 [INFO] Argument:310 - Argument : DMAxvalue: DMA1
+2023-02-25 06:20:16,495 [INFO] Argument:300 - Argument : Streamvalue: LL_DMA_STREAM_1
+2023-02-25 06:20:16,495 [INFO] Argument:310 - Argument : Streamvalue: LL_DMA_STREAM_1
+2023-02-25 06:20:16,495 [INFO] Argument:300 - Argument : Priorityvalue: LL_DMA_PRIORITY_LOW
+2023-02-25 06:20:16,495 [INFO] Argument:310 - Argument : Priorityvalue: LL_DMA_PRIORITY_LOW
+2023-02-25 06:20:16,495 [INFO] Argument:300 - Argument : DMAxvalue: DMA1
+2023-02-25 06:20:16,495 [INFO] Argument:310 - Argument : DMAxvalue: DMA1
+2023-02-25 06:20:16,495 [INFO] Argument:300 - Argument : Streamvalue: LL_DMA_STREAM_1
+2023-02-25 06:20:16,496 [INFO] Argument:310 - Argument : Streamvalue: LL_DMA_STREAM_1
+2023-02-25 06:20:16,496 [INFO] Argument:300 - Argument : Modevalue: LL_DMA_MODE_CIRCULAR
+2023-02-25 06:20:16,496 [INFO] Argument:310 - Argument : Modevalue: LL_DMA_MODE_CIRCULAR
+2023-02-25 06:20:16,496 [INFO] Argument:300 - Argument : DMAxvalue: DMA1
+2023-02-25 06:20:16,496 [INFO] Argument:310 - Argument : DMAxvalue: DMA1
+2023-02-25 06:20:16,496 [INFO] Argument:300 - Argument : Streamvalue: LL_DMA_STREAM_1
+2023-02-25 06:20:16,496 [INFO] Argument:310 - Argument : Streamvalue: LL_DMA_STREAM_1
+2023-02-25 06:20:16,496 [INFO] Argument:300 - Argument : IncrementModevalue: LL_DMA_PERIPH_NOINCREMENT
+2023-02-25 06:20:16,496 [INFO] Argument:310 - Argument : IncrementModevalue: LL_DMA_PERIPH_NOINCREMENT
+2023-02-25 06:20:16,496 [INFO] Argument:300 - Argument : DMAxvalue: DMA1
+2023-02-25 06:20:16,496 [INFO] Argument:310 - Argument : DMAxvalue: DMA1
+2023-02-25 06:20:16,496 [INFO] Argument:300 - Argument : Streamvalue: LL_DMA_STREAM_1
+2023-02-25 06:20:16,496 [INFO] Argument:310 - Argument : Streamvalue: LL_DMA_STREAM_1
+2023-02-25 06:20:16,496 [INFO] Argument:300 - Argument : IncrementModevalue: LL_DMA_MEMORY_INCREMENT
+2023-02-25 06:20:16,496 [INFO] Argument:310 - Argument : IncrementModevalue: LL_DMA_MEMORY_INCREMENT
+2023-02-25 06:20:16,497 [INFO] Argument:300 - Argument : DMAxvalue: DMA1
+2023-02-25 06:20:16,497 [INFO] Argument:310 - Argument : DMAxvalue: DMA1
+2023-02-25 06:20:16,497 [INFO] Argument:300 - Argument : Streamvalue: LL_DMA_STREAM_1
+2023-02-25 06:20:16,497 [INFO] Argument:310 - Argument : Streamvalue: LL_DMA_STREAM_1
+2023-02-25 06:20:16,497 [INFO] Argument:300 - Argument : Sizevalue: LL_DMA_PDATAALIGN_BYTE
+2023-02-25 06:20:16,497 [INFO] Argument:310 - Argument : Sizevalue: LL_DMA_PDATAALIGN_BYTE
+2023-02-25 06:20:16,497 [INFO] Argument:300 - Argument : DMAxvalue: DMA1
+2023-02-25 06:20:16,497 [INFO] Argument:310 - Argument : DMAxvalue: DMA1
+2023-02-25 06:20:16,497 [INFO] Argument:300 - Argument : Streamvalue: LL_DMA_STREAM_1
+2023-02-25 06:20:16,497 [INFO] Argument:310 - Argument : Streamvalue: LL_DMA_STREAM_1
+2023-02-25 06:20:16,497 [INFO] Argument:300 - Argument : Sizevalue: LL_DMA_MDATAALIGN_BYTE
+2023-02-25 06:20:16,497 [INFO] Argument:310 - Argument : Sizevalue: LL_DMA_MDATAALIGN_BYTE
+2023-02-25 06:20:16,497 [INFO] Argument:300 - Argument : DMAxvalue: DMA1
+2023-02-25 06:20:16,498 [INFO] Argument:310 - Argument : DMAxvalue: DMA1
+2023-02-25 06:20:16,498 [INFO] Argument:300 - Argument : Streamvalue: LL_DMA_STREAM_1
+2023-02-25 06:20:16,498 [INFO] Argument:310 - Argument : Streamvalue: LL_DMA_STREAM_1
+2023-02-25 06:20:16,808 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/MXTmpFiles/license.tmp_save
+2023-02-25 06:20:16,907 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/MXTmpFiles/license.tmp
+2023-02-25 06:20:16,967 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/gpio.c_save
+2023-02-25 06:20:17,068 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/gpio.c
+2023-02-25 06:20:17,069 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/gpio.h_save
+2023-02-25 06:20:17,163 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/gpio.h
+2023-02-25 06:20:17,765 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/dma.c_save
+2023-02-25 06:20:17,870 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/dma.c
+2023-02-25 06:20:17,871 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/dma.h_save
+2023-02-25 06:20:17,966 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/dma.h
+2023-02-25 06:20:17,969 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/spi.c_save
+2023-02-25 06:20:18,111 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/spi.c
+2023-02-25 06:20:18,112 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/spi.h_save
+2023-02-25 06:20:18,240 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/spi.h
+2023-02-25 06:20:18,245 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/tim.c_save
+2023-02-25 06:20:18,431 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/tim.c
+2023-02-25 06:20:18,433 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/tim.h_save
+2023-02-25 06:20:18,536 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/tim.h
+2023-02-25 06:20:18,540 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/usart.c_save
+2023-02-25 06:20:18,747 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/usart.c
+2023-02-25 06:20:18,748 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/usart.h_save
+2023-02-25 06:20:18,855 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/usart.h
+2023-02-25 06:20:18,861 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/stm32f4xx_it.c_save
+2023-02-25 06:20:18,989 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/stm32f4xx_it.c
+2023-02-25 06:20:18,991 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/stm32f4xx_it.h_save
+2023-02-25 06:20:19,085 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/stm32f4xx_it.h
+2023-02-25 06:20:19,086 [WARN] IPConfigManager:4122 - WARNING: Missing Config File for SYS ip!!
+2023-02-25 06:20:19,141 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/MXTmpFiles/system.tmp_save
+2023-02-25 06:20:19,233 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/MXTmpFiles/system.tmp
+2023-02-25 06:20:19,234 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/stm32_assert.h_save
+2023-02-25 06:20:19,327 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/stm32_assert.h
+2023-02-25 06:20:19,328 [WARN] IPConfigManager:2928 - Warning: the RefConfig RCC_PLL_PLLM_CONFIG is not available in your config.xml file
+2023-02-25 06:20:19,328 [WARN] IPConfigManager:2928 - Warning: the RefConfig RCC_PLL_PLLSOURCE_CONFIG is not available in your config.xml file
+2023-02-25 06:20:19,328 [WARN] IPConfigManager:2928 - Warning: the RefConfig RCC_ConfigVoltageScaling is not available in your config.xml file
+2023-02-25 06:20:19,337 [WARN] IPConfigManager:2928 - Warning: the RefConfig RCC_ClockConfig is not available in your config.xml file
+2023-02-25 06:20:19,337 [WARN] IPConfigManager:2928 - Warning: the RefConfig RCC_MCO1Config is not available in your config.xml file
+2023-02-25 06:20:19,337 [WARN] IPConfigManager:2928 - Warning: the RefConfig RCC_MCO2Config is not available in your config.xml file
+2023-02-25 06:20:19,337 [WARN] IPConfigManager:2928 - Warning: the RefConfig RCC_interrupt_Time_SYSTICK_Config is not available in your config.xml file
+2023-02-25 06:20:19,337 [WARN] IPConfigManager:2928 - Warning: the RefConfig RCC_SYSTICK_CONFIG is not available in your config.xml file
+2023-02-25 06:20:19,343 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/main.h_save
+2023-02-25 06:20:19,457 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/main.h
+2023-02-25 06:20:19,458 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/main.c_save
+2023-02-25 06:20:19,606 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/main.c
+2023-02-25 06:20:20,495 [INFO] ProjectBuilder:2919 - Time for Copy HAL[1] : 56mS.
+2023-02-25 06:20:20,497 [INFO] ProjectBuilder:4183 - Project Generator version: 3.18.0-B7
+2023-02-25 06:20:20,898 [INFO] ConfigFileManager:1396 - The Die is : DIE413
+2023-02-25 06:20:22,504 [INFO] ProjectBuilder:4351 - Time for Generating toolchain IDE Files: 2007mS.
+2023-02-25 06:20:22,504 [INFO] ProjectBuilder:2790 - Time for Copy CMSIS : 0mS.
+2023-02-25 06:20:22,505 [INFO] ProjectBuilder:2790 - Time for Copy CMSIS : 0mS.
+2023-02-25 06:23:39,470 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-25 06:23:39,473 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-25 06:23:39,473 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-25 06:23:40,103 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-25 06:23:40,104 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-25 06:23:40,104 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-25 06:35:45,588 [INFO] NvicIntPanel:100 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2023-02-25 06:35:54,784 [INFO] NvicIntPanel:100 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2023-02-25 06:35:56,293 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 387112424 Bytes (828375040)
+2023-02-25 06:35:56,410 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 407035368 Bytes (828375040)
+2023-02-25 06:35:56,911 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 446359016 Bytes (828375040)
+2023-02-25 06:35:57,176 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SPI
+2023-02-25 06:35:57,176 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM1_8
+2023-02-25 06:35:57,176 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM1_8
+2023-02-25 06:35:57,176 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RCC
+2023-02-25 06:35:57,177 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC
+2023-02-25 06:35:57,177 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USART
+2023-02-25 06:35:57,177 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USART
+2023-02-25 06:35:57,177 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USART
+2023-02-25 06:35:57,177 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: DMA
+2023-02-25 06:35:57,177 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: GPIO
+2023-02-25 06:35:57,177 [INFO] CodeGenerator:692 - code generatio: config db path: /opt/st/stm32cubeide_1.11.2/plugins/com.st.stm32cube.common.mx_6.7.0.202301130839//db/
+2023-02-25 06:35:57,211 [INFO] Argument:300 - Argument : DMAxvalue: DMA1
+2023-02-25 06:35:57,211 [INFO] Argument:310 - Argument : DMAxvalue: DMA1
+2023-02-25 06:35:57,211 [INFO] Argument:300 - Argument : Streamvalue: LL_DMA_STREAM_1
+2023-02-25 06:35:57,211 [INFO] Argument:310 - Argument : Streamvalue: LL_DMA_STREAM_1
+2023-02-25 06:35:57,211 [INFO] Argument:300 - Argument : Channelvalue: LL_DMA_CHANNEL_4
+2023-02-25 06:35:57,211 [INFO] Argument:310 - Argument : Channelvalue: LL_DMA_CHANNEL_4
+2023-02-25 06:35:57,211 [INFO] Argument:300 - Argument : DMAxvalue: DMA1
+2023-02-25 06:35:57,211 [INFO] Argument:310 - Argument : DMAxvalue: DMA1
+2023-02-25 06:35:57,211 [INFO] Argument:300 - Argument : Streamvalue: LL_DMA_STREAM_1
+2023-02-25 06:35:57,211 [INFO] Argument:310 - Argument : Streamvalue: LL_DMA_STREAM_1
+2023-02-25 06:35:57,211 [INFO] Argument:300 - Argument : Directionvalue: LL_DMA_DIRECTION_PERIPH_TO_MEMORY
+2023-02-25 06:35:57,211 [INFO] Argument:310 - Argument : Directionvalue: LL_DMA_DIRECTION_PERIPH_TO_MEMORY
+2023-02-25 06:35:57,211 [INFO] Argument:300 - Argument : DMAxvalue: DMA1
+2023-02-25 06:35:57,212 [INFO] Argument:310 - Argument : DMAxvalue: DMA1
+2023-02-25 06:35:57,212 [INFO] Argument:300 - Argument : Streamvalue: LL_DMA_STREAM_1
+2023-02-25 06:35:57,212 [INFO] Argument:310 - Argument : Streamvalue: LL_DMA_STREAM_1
+2023-02-25 06:35:57,212 [INFO] Argument:300 - Argument : Priorityvalue: LL_DMA_PRIORITY_LOW
+2023-02-25 06:35:57,212 [INFO] Argument:310 - Argument : Priorityvalue: LL_DMA_PRIORITY_LOW
+2023-02-25 06:35:57,212 [INFO] Argument:300 - Argument : DMAxvalue: DMA1
+2023-02-25 06:35:57,212 [INFO] Argument:310 - Argument : DMAxvalue: DMA1
+2023-02-25 06:35:57,212 [INFO] Argument:300 - Argument : Streamvalue: LL_DMA_STREAM_1
+2023-02-25 06:35:57,212 [INFO] Argument:310 - Argument : Streamvalue: LL_DMA_STREAM_1
+2023-02-25 06:35:57,212 [INFO] Argument:300 - Argument : Modevalue: LL_DMA_MODE_CIRCULAR
+2023-02-25 06:35:57,212 [INFO] Argument:310 - Argument : Modevalue: LL_DMA_MODE_CIRCULAR
+2023-02-25 06:35:57,212 [INFO] Argument:300 - Argument : DMAxvalue: DMA1
+2023-02-25 06:35:57,212 [INFO] Argument:310 - Argument : DMAxvalue: DMA1
+2023-02-25 06:35:57,212 [INFO] Argument:300 - Argument : Streamvalue: LL_DMA_STREAM_1
+2023-02-25 06:35:57,212 [INFO] Argument:310 - Argument : Streamvalue: LL_DMA_STREAM_1
+2023-02-25 06:35:57,213 [INFO] Argument:300 - Argument : IncrementModevalue: LL_DMA_PERIPH_NOINCREMENT
+2023-02-25 06:35:57,213 [INFO] Argument:310 - Argument : IncrementModevalue: LL_DMA_PERIPH_NOINCREMENT
+2023-02-25 06:35:57,213 [INFO] Argument:300 - Argument : DMAxvalue: DMA1
+2023-02-25 06:35:57,213 [INFO] Argument:310 - Argument : DMAxvalue: DMA1
+2023-02-25 06:35:57,213 [INFO] Argument:300 - Argument : Streamvalue: LL_DMA_STREAM_1
+2023-02-25 06:35:57,213 [INFO] Argument:310 - Argument : Streamvalue: LL_DMA_STREAM_1
+2023-02-25 06:35:57,213 [INFO] Argument:300 - Argument : IncrementModevalue: LL_DMA_MEMORY_INCREMENT
+2023-02-25 06:35:57,213 [INFO] Argument:310 - Argument : IncrementModevalue: LL_DMA_MEMORY_INCREMENT
+2023-02-25 06:35:57,213 [INFO] Argument:300 - Argument : DMAxvalue: DMA1
+2023-02-25 06:35:57,213 [INFO] Argument:310 - Argument : DMAxvalue: DMA1
+2023-02-25 06:35:57,213 [INFO] Argument:300 - Argument : Streamvalue: LL_DMA_STREAM_1
+2023-02-25 06:35:57,213 [INFO] Argument:310 - Argument : Streamvalue: LL_DMA_STREAM_1
+2023-02-25 06:35:57,213 [INFO] Argument:300 - Argument : Sizevalue: LL_DMA_PDATAALIGN_BYTE
+2023-02-25 06:35:57,213 [INFO] Argument:310 - Argument : Sizevalue: LL_DMA_PDATAALIGN_BYTE
+2023-02-25 06:35:57,213 [INFO] Argument:300 - Argument : DMAxvalue: DMA1
+2023-02-25 06:35:57,213 [INFO] Argument:310 - Argument : DMAxvalue: DMA1
+2023-02-25 06:35:57,214 [INFO] Argument:300 - Argument : Streamvalue: LL_DMA_STREAM_1
+2023-02-25 06:35:57,214 [INFO] Argument:310 - Argument : Streamvalue: LL_DMA_STREAM_1
+2023-02-25 06:35:57,214 [INFO] Argument:300 - Argument : Sizevalue: LL_DMA_MDATAALIGN_BYTE
+2023-02-25 06:35:57,214 [INFO] Argument:310 - Argument : Sizevalue: LL_DMA_MDATAALIGN_BYTE
+2023-02-25 06:35:57,214 [INFO] Argument:300 - Argument : DMAxvalue: DMA1
+2023-02-25 06:35:57,214 [INFO] Argument:310 - Argument : DMAxvalue: DMA1
+2023-02-25 06:35:57,214 [INFO] Argument:300 - Argument : Streamvalue: LL_DMA_STREAM_1
+2023-02-25 06:35:57,214 [INFO] Argument:310 - Argument : Streamvalue: LL_DMA_STREAM_1
+2023-02-25 06:35:57,421 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/MXTmpFiles/license.tmp_save
+2023-02-25 06:35:57,534 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/MXTmpFiles/license.tmp
+2023-02-25 06:35:57,589 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/gpio.c_save
+2023-02-25 06:35:57,798 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/gpio.c
+2023-02-25 06:35:57,799 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/gpio.h_save
+2023-02-25 06:35:57,886 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/gpio.h
+2023-02-25 06:35:58,387 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/dma.c_save
+2023-02-25 06:35:58,494 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/dma.c
+2023-02-25 06:35:58,495 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/dma.h_save
+2023-02-25 06:35:58,656 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/dma.h
+2023-02-25 06:35:58,659 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/spi.c_save
+2023-02-25 06:35:58,827 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/spi.c
+2023-02-25 06:35:58,828 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/spi.h_save
+2023-02-25 06:35:58,924 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/spi.h
+2023-02-25 06:35:58,927 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/tim.c_save
+2023-02-25 06:35:59,097 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/tim.c
+2023-02-25 06:35:59,098 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/tim.h_save
+2023-02-25 06:35:59,186 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/tim.h
+2023-02-25 06:35:59,190 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/usart.c_save
+2023-02-25 06:35:59,330 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/usart.c
+2023-02-25 06:35:59,331 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/usart.h_save
+2023-02-25 06:35:59,427 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/usart.h
+2023-02-25 06:35:59,443 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/stm32f4xx_it.c_save
+2023-02-25 06:35:59,707 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/stm32f4xx_it.c
+2023-02-25 06:35:59,708 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/stm32f4xx_it.h_save
+2023-02-25 06:35:59,796 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/stm32f4xx_it.h
+2023-02-25 06:35:59,798 [WARN] IPConfigManager:4122 - WARNING: Missing Config File for SYS ip!!
+2023-02-25 06:35:59,850 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/MXTmpFiles/system.tmp_save
+2023-02-25 06:35:59,938 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/MXTmpFiles/system.tmp
+2023-02-25 06:35:59,939 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/stm32_assert.h_save
+2023-02-25 06:36:00,026 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/stm32_assert.h
+2023-02-25 06:36:00,027 [WARN] IPConfigManager:2928 - Warning: the RefConfig RCC_PLL_PLLM_CONFIG is not available in your config.xml file
+2023-02-25 06:36:00,027 [WARN] IPConfigManager:2928 - Warning: the RefConfig RCC_PLL_PLLSOURCE_CONFIG is not available in your config.xml file
+2023-02-25 06:36:00,027 [WARN] IPConfigManager:2928 - Warning: the RefConfig RCC_ConfigVoltageScaling is not available in your config.xml file
+2023-02-25 06:36:00,035 [WARN] IPConfigManager:2928 - Warning: the RefConfig RCC_ClockConfig is not available in your config.xml file
+2023-02-25 06:36:00,035 [WARN] IPConfigManager:2928 - Warning: the RefConfig RCC_MCO1Config is not available in your config.xml file
+2023-02-25 06:36:00,035 [WARN] IPConfigManager:2928 - Warning: the RefConfig RCC_MCO2Config is not available in your config.xml file
+2023-02-25 06:36:00,035 [WARN] IPConfigManager:2928 - Warning: the RefConfig RCC_interrupt_Time_SYSTICK_Config is not available in your config.xml file
+2023-02-25 06:36:00,035 [WARN] IPConfigManager:2928 - Warning: the RefConfig RCC_SYSTICK_CONFIG is not available in your config.xml file
+2023-02-25 06:36:00,040 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/main.h_save
+2023-02-25 06:36:00,158 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/main.h
+2023-02-25 06:36:00,159 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/main.c_save
+2023-02-25 06:36:00,291 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/main.c
+2023-02-25 06:36:01,014 [INFO] ProjectBuilder:2919 - Time for Copy HAL[1] : 17mS.
+2023-02-25 06:36:01,016 [INFO] ProjectBuilder:4183 - Project Generator version: 3.18.0-B7
+2023-02-25 06:36:01,373 [INFO] ConfigFileManager:1396 - The Die is : DIE413
+2023-02-25 06:36:02,868 [INFO] ProjectBuilder:4351 - Time for Generating toolchain IDE Files: 1852mS.
+2023-02-25 06:36:02,868 [INFO] ProjectBuilder:2790 - Time for Copy CMSIS : 0mS.
+2023-02-25 06:36:02,869 [INFO] ProjectBuilder:2790 - Time for Copy CMSIS : 0mS.
+2023-02-25 06:36:09,311 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-25 06:36:09,314 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-25 06:36:09,314 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-25 06:36:09,800 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-25 06:36:09,801 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-25 06:36:09,802 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-25 06:44:04,944 [INFO] NvicIntPanel:100 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2023-02-25 06:44:39,163 [INFO] NvicIntPanel:100 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2023-02-25 06:45:55,138 [INFO] MainUpdater:2800 - connection check result : 10
+2023-02-25 06:45:55,139 [INFO] MainUpdater:2800 - connection check result : 10
+2023-02-25 06:45:55,177 [INFO] MicroXplorer:451 - Change Database Path : 
+2023-02-25 06:45:55,177 [INFO] MicroXplorer:481 - Change Database Version : DB.6.0.70
+2023-02-25 06:45:55,194 [WARN] ThirdParty:845 - waiting for thirdparty lock release [close project]
+2023-02-25 06:45:55,194 [INFO] ThirdParty:847 - entering critical section [close project]
+2023-02-25 06:45:55,194 [INFO] ThirdParty:857 - exiting critical section [close project]
+2023-02-25 06:45:55,196 [INFO] PinOutPanel:1477 - setPackage(No Configuration,No Configuration)
+2023-02-25 06:45:55,203 [WARN] IpParametersView:148 - Warning: This peripheral hasn't parameters
+2023-02-25 06:45:55,207 [WARN] MainPanel:253 - <html><b><center>Warning: This peripheral has no parameters to be configured<br></b></html>
+2023-02-25 06:45:55,219 [INFO] UtilMem:74 - Begin LoadConfig() Used Memory: 380301016 Bytes (868220928)
+2023-02-25 06:45:55,219 [INFO] MicroXplorer:451 - Change Database Path : 
+2023-02-25 06:45:55,220 [INFO] MicroXplorer:481 - Change Database Version : DB.6.0.70
+2023-02-25 06:45:55,220 [INFO] OpenFileManager:307 - Change cursor
+2023-02-25 06:45:55,238 [INFO] RulesReader:61 - Compatibility file has been processed (283 Rules)
+2023-02-25 06:45:55,241 [INFO] Mcu:1925 - Initializing MCU STM32F405RGTx STM32F405RGTx STM32F405RGT6
+2023-02-25 06:45:56,761 [INFO] Context:654 - Trying to add GPIOservice into a context  which must be forbidden
+2023-02-25 06:45:57,714 [INFO] RtosManager:489 - Registered RTOS mode: class=CMSIS, group=RTOS, mode=CMSIS_V1, owner=FREERTOS
+2023-02-25 06:45:57,714 [INFO] RtosManager:489 - Registered RTOS mode: class=CMSIS, group=RTOS2, mode=CMSIS_V2, owner=FREERTOS
+2023-02-25 06:45:57,714 [INFO] RtosManager:489 - Registered RTOS mode: class=RTOS, group=Core, mode=CMSIS_V1, owner=FREERTOS
+2023-02-25 06:45:57,715 [INFO] RtosManager:489 - Registered RTOS mode: class=RTOS, group=Core, mode=CMSIS_V2, owner=FREERTOS
+2023-02-25 06:45:57,715 [WARN] ModelIntegratedComponent:185 - Missing modes for component STMicroelectronics:FreeRTOS:0.0.1:STMicroelectronics:RTOS:FreeRTOS:Core:::10.2.0:
+2023-02-25 06:45:57,725 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2023-02-25 06:45:57,725 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2023-02-25 06:45:57,725 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2023-02-25 06:45:57,725 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2023-02-25 06:45:57,725 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2023-02-25 06:45:57,725 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2023-02-25 06:45:57,726 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2023-02-25 06:45:57,726 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2023-02-25 06:45:57,726 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2023-02-25 06:45:57,726 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2023-02-25 06:45:57,726 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2023-02-25 06:45:57,726 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2023-02-25 06:45:57,726 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2023-02-25 06:45:57,726 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2023-02-25 06:45:57,726 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2023-02-25 06:45:57,726 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2023-02-25 06:45:57,726 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2023-02-25 06:45:57,726 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2023-02-25 06:45:57,726 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2023-02-25 06:45:57,727 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2023-02-25 06:45:57,727 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2023-02-25 06:45:57,727 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2023-02-25 06:45:57,727 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2023-02-25 06:45:57,727 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2023-02-25 06:45:57,727 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2023-02-25 06:45:57,727 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2023-02-25 06:45:57,727 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2023-02-25 06:45:57,727 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2023-02-25 06:45:57,727 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2023-02-25 06:45:57,727 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2023-02-25 06:45:57,728 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2023-02-25 06:45:57,728 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2023-02-25 06:45:57,728 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2023-02-25 06:45:57,875 [INFO] ThirdPartyModel:294 - Start build external matchings
+2023-02-25 06:45:58,381 [INFO] ThirdPartyModel:310 - End build external matchings
+2023-02-25 06:45:58,396 [INFO] ImportTextPane:193 - (OptionalMessage_ERROR) IP (DMA) : Parameter (Instance) has Id (USART3_RX) currently not set
+2023-02-25 06:45:58,396 [INFO] ImportTextPane:193 - (OptionalMessage_ERROR) IP (DMA) : Parameter (Channel) has Id (USART3_RX) currently not set
+2023-02-25 06:45:58,396 [INFO] ImportTextPane:193 - (OptionalMessage_ERROR) IP (DMA) : Parameter (Direction) has Id (USART3_RX) currently not set
+2023-02-25 06:45:58,396 [INFO] ImportTextPane:193 - (OptionalMessage_ERROR) IP (DMA) : Parameter (PeriphInc) has Id (USART3_RX) currently not set
+2023-02-25 06:45:58,396 [INFO] ImportTextPane:193 - (OptionalMessage_ERROR) IP (DMA) : Parameter (MemInc) has Id (USART3_RX) currently not set
+2023-02-25 06:45:58,396 [INFO] ImportTextPane:193 - (OptionalMessage_ERROR) IP (DMA) : Parameter (PeriphDataAlignment) has Id (USART3_RX) currently not set
+2023-02-25 06:45:58,397 [INFO] ImportTextPane:193 - (OptionalMessage_ERROR) IP (DMA) : Parameter (MemDataAlignment) has Id (USART3_RX) currently not set
+2023-02-25 06:45:58,397 [INFO] ImportTextPane:193 - (OptionalMessage_ERROR) IP (DMA) : Parameter (Mode) has Id (USART3_RX) currently not set
+2023-02-25 06:45:58,397 [INFO] ImportTextPane:193 - (OptionalMessage_ERROR) IP (DMA) : Parameter (Priority) has Id (USART3_RX) currently not set
+2023-02-25 06:45:58,397 [INFO] ImportTextPane:193 - (OptionalMessage_ERROR) IP (DMA) : Parameter (FIFOMode) has Id (USART3_RX) currently not set
+2023-02-25 06:45:58,397 [INFO] ImportTextPane:193 - (OptionalMessage_ERROR) IP (RCC) : Parameter (48MHZClocksFreq_Value) has invalid value (84000000)
+2023-02-25 06:45:58,398 [INFO] ImportTextPane:193 - (OptionalMessage_ERROR) IP (RCC) : Parameter (RTCHSEDivFreq_Value) has invalid value (4000000)
+2023-02-25 06:45:58,700 [INFO] UtilMem:74 - End LoadConfig() Used Memory: 515148176 Bytes (868220928)
+2023-02-25 06:45:58,711 [WARN] ThirdParty:807 - waiting for thirdparty lock release [change project]
+2023-02-25 06:45:58,711 [INFO] ThirdParty:809 - entering critical section [change project]
+2023-02-25 06:45:58,711 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-ISPU 1.1.0
+2023-02-25 06:45:58,711 [INFO] ThirdParty:999 - CMSIS Pack Vendor :RoweBots I-CUBE-UNISONRTOS 5.5.0-4
+2023-02-25 06:45:58,711 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-GNSS1 6.0.0
+2023-02-25 06:45:58,712 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics USB_HOST 2.0.0
+2023-02-25 06:45:58,712 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-F4 1.1.0
+2023-02-25 06:45:58,712 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics LIBJPEG 8.0.0
+2023-02-25 06:45:58,712 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics USB_DEVICE 3.0.0
+2023-02-25 06:45:58,712 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-TOUCHGFX 4.21.1
+2023-02-25 06:45:58,712 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-F7 1.1.0
+2023-02-25 06:45:58,712 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-MEMS1 9.4.0
+2023-02-25 06:45:58,712 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics USB_DEVICE 2.0.0
+2023-02-25 06:45:58,712 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AI 7.3.0
+2023-02-25 06:45:58,712 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-ALGOBUILD 1.3.0
+2023-02-25 06:45:58,712 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-BLE1 6.2.4
+2023-02-25 06:45:58,712 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-L5 1.1.0
+2023-02-25 06:45:58,712 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics FreeRTOS 0.0.1
+2023-02-25 06:45:58,712 [INFO] ThirdParty:999 - CMSIS Pack Vendor :emotas I-CUBE-CANOPEN 1.1.3
+2023-02-25 06:45:58,712 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-G0 1.1.0
+2023-02-25 06:45:58,712 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-SUBG2 5.0.0
+2023-02-25 06:45:58,713 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-NFC4 3.0.0
+2023-02-25 06:45:58,713 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics STM32_WPAN 1.0.0
+2023-02-25 06:45:58,713 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics lwIP 2.0.3
+2023-02-25 06:45:58,713 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics USB_HOST 1.0.0
+2023-02-25 06:45:58,713 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics PDM2PCM 3.1.0
+2023-02-25 06:45:58,713 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics FP-ATR-ASTRA1 1.1.1
+2023-02-25 06:45:58,713 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics PDM2PCM 3.3.0
+2023-02-25 06:45:58,713 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-DISPLAY 3.0.0
+2023-02-25 06:45:58,713 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-BLEMGR 1.3.0
+2023-02-25 06:45:58,713 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-G4 1.0.0
+2023-02-25 06:45:58,713 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics FP-ATR-SIGFOX1 3.2.0
+2023-02-25 06:45:58,713 [INFO] ThirdParty:999 - CMSIS Pack Vendor :wolfSSL I-CUBE-wolfSSL 5.5.4
+2023-02-25 06:45:58,713 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-L4 1.0.0
+2023-02-25 06:45:58,713 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics HAL Drivers 0.0.0
+2023-02-25 06:45:58,713 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics MBEDTLS 2.16.2
+2023-02-25 06:45:58,713 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics MBEDTLS 2.14.1
+2023-02-25 06:45:58,713 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-NFC7 1.0.0
+2023-02-25 06:45:58,714 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-WL 1.0.0
+2023-02-25 06:45:58,714 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-EEPRMA1 4.1.0
+2023-02-25 06:45:58,714 [INFO] ThirdParty:999 - CMSIS Pack Vendor :portGmbH I-Cube-SoM-uGOAL 1.1.0
+2023-02-25 06:45:58,714 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-ALS 1.0.1
+2023-02-25 06:45:58,714 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-MEMS1 9.5.0
+2023-02-25 06:45:58,714 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics ThreadX 1.0.0
+2023-02-25 06:45:58,714 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-WB 1.1.0
+2023-02-25 06:45:58,714 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics USB_DEVICE 1.0.0
+2023-02-25 06:45:58,714 [INFO] ThirdParty:999 - CMSIS Pack Vendor :SEGGER I-CUBE-embOS 1.3.0
+2023-02-25 06:45:58,714 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics ThreadX 0.0.2
+2023-02-25 06:45:58,714 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics lwIP 2.1.2
+2023-02-25 06:45:58,714 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-SFXS2LP1 4.0.0
+2023-02-25 06:45:58,714 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-BLE2 3.3.0
+2023-02-25 06:45:58,714 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-TOF1 3.2.0
+2023-02-25 06:45:58,714 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics PDM2PCM 3.2.0
+2023-02-25 06:45:58,714 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-H7 3.0.0
+2023-02-25 06:45:58,715 [INFO] ThirdParty:815 - exiting critical section [change project]
+2023-02-25 06:45:59,055 [INFO] PinOutPanel:1477 - setPackage(No Configuration,No Configuration)
+2023-02-25 06:45:59,055 [INFO] PinOutPanel:1477 - setPackage(STM32F405RGTx,LQFP64)
+2023-02-25 06:45:59,395 [INFO] UtilMem:74 - Before build in PCC Used Memory: 717864392 Bytes (868220928)
+2023-02-25 06:45:59,669 [INFO] UtilMem:74 - After build in PCC Used Memory: 360778232 Bytes (868220928)
+2023-02-25 06:45:59,737 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-02-25 06:45:59,737 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-02-25 06:45:59,738 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-02-25 06:45:59,738 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-02-25 06:45:59,738 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-02-25 06:45:59,738 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-02-25 06:45:59,738 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-02-25 06:45:59,738 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-02-25 06:45:59,739 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-02-25 06:45:59,739 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-02-25 06:45:59,739 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-02-25 06:45:59,739 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-02-25 06:45:59,739 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-02-25 06:45:59,740 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-02-25 06:45:59,740 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-02-25 06:45:59,740 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-02-25 06:45:59,740 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-02-25 06:45:59,740 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-02-25 06:45:59,741 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-02-25 06:45:59,741 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-02-25 06:45:59,741 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-02-25 06:45:59,741 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-02-25 06:45:59,741 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-02-25 06:45:59,742 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-02-25 06:45:59,742 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-02-25 06:45:59,742 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-02-25 06:45:59,742 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-02-25 06:45:59,743 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-02-25 06:45:59,743 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-02-25 06:45:59,743 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-02-25 06:45:59,743 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-02-25 06:45:59,744 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-02-25 06:45:59,744 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-02-25 06:45:59,744 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-02-25 06:45:59,744 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-02-25 06:45:59,744 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-02-25 06:45:59,745 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-02-25 06:45:59,745 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-02-25 06:45:59,745 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-02-25 06:45:59,745 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-02-25 06:45:59,746 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-02-25 06:45:59,746 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-02-25 06:45:59,746 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-02-25 06:45:59,746 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-02-25 06:45:59,746 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-02-25 06:45:59,747 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-02-25 06:45:59,747 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-02-25 06:45:59,747 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-02-25 06:45:59,747 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-02-25 06:45:59,747 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-02-25 06:45:59,748 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-02-25 06:45:59,748 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-02-25 06:45:59,749 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-02-25 06:45:59,749 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-02-25 06:45:59,752 [INFO] ApiDbMcu:505 - Load IP Config File for PDM2PCM
+2023-02-25 06:45:59,814 [INFO] CADModel:164 - CPN selected for project levelSTM32F405RGT6
+2023-02-25 06:45:59,815 [INFO] CADModel:113 - Register for checkConnection events
+2023-02-25 06:45:59,853 [INFO] OpenFileManager:327 - Restore cursor
+2023-02-25 06:46:52,458 [INFO] NvicIntPanel:100 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2023-02-25 06:46:56,701 [INFO] NvicIntPanel:100 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2023-02-25 06:47:24,657 [INFO] NvicIntPanel:100 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2023-02-25 06:47:31,007 [INFO] NvicIntPanel:100 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2023-02-25 06:49:20,962 [INFO] NvicIntPanel:100 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2023-02-25 06:49:23,043 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 640802288 Bytes (868220928)
+2023-02-25 06:49:23,152 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 660725232 Bytes (868220928)
+2023-02-25 06:49:23,582 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 695915560 Bytes (868220928)
+2023-02-25 06:49:23,879 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SPI
+2023-02-25 06:49:23,879 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM1_8
+2023-02-25 06:49:23,879 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM1_8
+2023-02-25 06:49:23,879 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RCC
+2023-02-25 06:49:23,879 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC
+2023-02-25 06:49:23,880 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USART
+2023-02-25 06:49:23,880 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USART
+2023-02-25 06:49:23,880 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USART
+2023-02-25 06:49:23,880 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: DMA
+2023-02-25 06:49:23,880 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: GPIO
+2023-02-25 06:49:23,881 [INFO] CodeGenerator:692 - code generatio: config db path: /opt/st/stm32cubeide_1.11.2/plugins/com.st.stm32cube.common.mx_6.7.0.202301130839//db/
+2023-02-25 06:49:23,933 [INFO] Argument:300 - Argument : DMAxvalue: DMA1
+2023-02-25 06:49:23,934 [INFO] Argument:310 - Argument : DMAxvalue: DMA1
+2023-02-25 06:49:23,934 [INFO] Argument:300 - Argument : Streamvalue: LL_DMA_STREAM_1
+2023-02-25 06:49:23,934 [INFO] Argument:310 - Argument : Streamvalue: LL_DMA_STREAM_1
+2023-02-25 06:49:23,934 [INFO] Argument:300 - Argument : Channelvalue: LL_DMA_CHANNEL_4
+2023-02-25 06:49:23,934 [INFO] Argument:310 - Argument : Channelvalue: LL_DMA_CHANNEL_4
+2023-02-25 06:49:23,934 [INFO] Argument:300 - Argument : DMAxvalue: DMA1
+2023-02-25 06:49:23,934 [INFO] Argument:310 - Argument : DMAxvalue: DMA1
+2023-02-25 06:49:23,935 [INFO] Argument:300 - Argument : Streamvalue: LL_DMA_STREAM_1
+2023-02-25 06:49:23,935 [INFO] Argument:310 - Argument : Streamvalue: LL_DMA_STREAM_1
+2023-02-25 06:49:23,935 [INFO] Argument:300 - Argument : Directionvalue: LL_DMA_DIRECTION_PERIPH_TO_MEMORY
+2023-02-25 06:49:23,935 [INFO] Argument:310 - Argument : Directionvalue: LL_DMA_DIRECTION_PERIPH_TO_MEMORY
+2023-02-25 06:49:23,935 [INFO] Argument:300 - Argument : DMAxvalue: DMA1
+2023-02-25 06:49:23,935 [INFO] Argument:310 - Argument : DMAxvalue: DMA1
+2023-02-25 06:49:23,935 [INFO] Argument:300 - Argument : Streamvalue: LL_DMA_STREAM_1
+2023-02-25 06:49:23,935 [INFO] Argument:310 - Argument : Streamvalue: LL_DMA_STREAM_1
+2023-02-25 06:49:23,935 [INFO] Argument:300 - Argument : Priorityvalue: LL_DMA_PRIORITY_LOW
+2023-02-25 06:49:23,936 [INFO] Argument:310 - Argument : Priorityvalue: LL_DMA_PRIORITY_LOW
+2023-02-25 06:49:23,936 [INFO] Argument:300 - Argument : DMAxvalue: DMA1
+2023-02-25 06:49:23,936 [INFO] Argument:310 - Argument : DMAxvalue: DMA1
+2023-02-25 06:49:23,936 [INFO] Argument:300 - Argument : Streamvalue: LL_DMA_STREAM_1
+2023-02-25 06:49:23,936 [INFO] Argument:310 - Argument : Streamvalue: LL_DMA_STREAM_1
+2023-02-25 06:49:23,936 [INFO] Argument:300 - Argument : Modevalue: LL_DMA_MODE_CIRCULAR
+2023-02-25 06:49:23,936 [INFO] Argument:310 - Argument : Modevalue: LL_DMA_MODE_CIRCULAR
+2023-02-25 06:49:23,936 [INFO] Argument:300 - Argument : DMAxvalue: DMA1
+2023-02-25 06:49:23,936 [INFO] Argument:310 - Argument : DMAxvalue: DMA1
+2023-02-25 06:49:23,936 [INFO] Argument:300 - Argument : Streamvalue: LL_DMA_STREAM_1
+2023-02-25 06:49:23,937 [INFO] Argument:310 - Argument : Streamvalue: LL_DMA_STREAM_1
+2023-02-25 06:49:23,937 [INFO] Argument:300 - Argument : IncrementModevalue: LL_DMA_PERIPH_NOINCREMENT
+2023-02-25 06:49:23,937 [INFO] Argument:310 - Argument : IncrementModevalue: LL_DMA_PERIPH_NOINCREMENT
+2023-02-25 06:49:23,937 [INFO] Argument:300 - Argument : DMAxvalue: DMA1
+2023-02-25 06:49:23,937 [INFO] Argument:310 - Argument : DMAxvalue: DMA1
+2023-02-25 06:49:23,937 [INFO] Argument:300 - Argument : Streamvalue: LL_DMA_STREAM_1
+2023-02-25 06:49:23,937 [INFO] Argument:310 - Argument : Streamvalue: LL_DMA_STREAM_1
+2023-02-25 06:49:23,937 [INFO] Argument:300 - Argument : IncrementModevalue: LL_DMA_MEMORY_INCREMENT
+2023-02-25 06:49:23,937 [INFO] Argument:310 - Argument : IncrementModevalue: LL_DMA_MEMORY_INCREMENT
+2023-02-25 06:49:23,938 [INFO] Argument:300 - Argument : DMAxvalue: DMA1
+2023-02-25 06:49:23,938 [INFO] Argument:310 - Argument : DMAxvalue: DMA1
+2023-02-25 06:49:23,938 [INFO] Argument:300 - Argument : Streamvalue: LL_DMA_STREAM_1
+2023-02-25 06:49:23,938 [INFO] Argument:310 - Argument : Streamvalue: LL_DMA_STREAM_1
+2023-02-25 06:49:23,938 [INFO] Argument:300 - Argument : Sizevalue: LL_DMA_PDATAALIGN_BYTE
+2023-02-25 06:49:23,938 [INFO] Argument:310 - Argument : Sizevalue: LL_DMA_PDATAALIGN_BYTE
+2023-02-25 06:49:23,938 [INFO] Argument:300 - Argument : DMAxvalue: DMA1
+2023-02-25 06:49:23,938 [INFO] Argument:310 - Argument : DMAxvalue: DMA1
+2023-02-25 06:49:23,938 [INFO] Argument:300 - Argument : Streamvalue: LL_DMA_STREAM_1
+2023-02-25 06:49:23,939 [INFO] Argument:310 - Argument : Streamvalue: LL_DMA_STREAM_1
+2023-02-25 06:49:23,939 [INFO] Argument:300 - Argument : Sizevalue: LL_DMA_MDATAALIGN_BYTE
+2023-02-25 06:49:23,939 [INFO] Argument:310 - Argument : Sizevalue: LL_DMA_MDATAALIGN_BYTE
+2023-02-25 06:49:23,939 [INFO] Argument:300 - Argument : DMAxvalue: DMA1
+2023-02-25 06:49:23,939 [INFO] Argument:310 - Argument : DMAxvalue: DMA1
+2023-02-25 06:49:23,939 [INFO] Argument:300 - Argument : Streamvalue: LL_DMA_STREAM_1
+2023-02-25 06:49:23,939 [INFO] Argument:310 - Argument : Streamvalue: LL_DMA_STREAM_1
+2023-02-25 06:49:24,478 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/MXTmpFiles/license.tmp_save
+2023-02-25 06:49:24,625 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/MXTmpFiles/license.tmp
+2023-02-25 06:49:24,683 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/gpio.c_save
+2023-02-25 06:49:24,788 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/gpio.c
+2023-02-25 06:49:24,789 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/gpio.h_save
+2023-02-25 06:49:24,926 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/gpio.h
+2023-02-25 06:49:25,719 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/dma.c_save
+2023-02-25 06:49:25,827 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/dma.c
+2023-02-25 06:49:25,829 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/dma.h_save
+2023-02-25 06:49:25,938 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/dma.h
+2023-02-25 06:49:25,943 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/spi.c_save
+2023-02-25 06:49:26,129 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/spi.c
+2023-02-25 06:49:26,130 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/spi.h_save
+2023-02-25 06:49:26,225 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/spi.h
+2023-02-25 06:49:26,229 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/tim.c_save
+2023-02-25 06:49:26,429 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/tim.c
+2023-02-25 06:49:26,430 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/tim.h_save
+2023-02-25 06:49:26,524 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/tim.h
+2023-02-25 06:49:26,528 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/usart.c_save
+2023-02-25 06:49:26,674 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/usart.c
+2023-02-25 06:49:26,675 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/usart.h_save
+2023-02-25 06:49:26,771 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/usart.h
+2023-02-25 06:49:26,777 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/stm32f4xx_it.c_save
+2023-02-25 06:49:27,021 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/stm32f4xx_it.c
+2023-02-25 06:49:27,023 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/stm32f4xx_it.h_save
+2023-02-25 06:49:27,111 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/stm32f4xx_it.h
+2023-02-25 06:49:27,113 [WARN] IPConfigManager:4122 - WARNING: Missing Config File for SYS ip!!
+2023-02-25 06:49:27,165 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/MXTmpFiles/system.tmp_save
+2023-02-25 06:49:27,253 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/MXTmpFiles/system.tmp
+2023-02-25 06:49:27,254 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/stm32_assert.h_save
+2023-02-25 06:49:27,365 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/stm32_assert.h
+2023-02-25 06:49:27,373 [WARN] IPConfigManager:2928 - Warning: the RefConfig RCC_PLL_PLLM_CONFIG is not available in your config.xml file
+2023-02-25 06:49:27,374 [WARN] IPConfigManager:2928 - Warning: the RefConfig RCC_PLL_PLLSOURCE_CONFIG is not available in your config.xml file
+2023-02-25 06:49:27,374 [WARN] IPConfigManager:2928 - Warning: the RefConfig RCC_ConfigVoltageScaling is not available in your config.xml file
+2023-02-25 06:49:27,382 [WARN] IPConfigManager:2928 - Warning: the RefConfig RCC_ClockConfig is not available in your config.xml file
+2023-02-25 06:49:27,382 [WARN] IPConfigManager:2928 - Warning: the RefConfig RCC_MCO1Config is not available in your config.xml file
+2023-02-25 06:49:27,383 [WARN] IPConfigManager:2928 - Warning: the RefConfig RCC_MCO2Config is not available in your config.xml file
+2023-02-25 06:49:27,383 [WARN] IPConfigManager:2928 - Warning: the RefConfig RCC_interrupt_Time_SYSTICK_Config is not available in your config.xml file
+2023-02-25 06:49:27,383 [WARN] IPConfigManager:2928 - Warning: the RefConfig RCC_SYSTICK_CONFIG is not available in your config.xml file
+2023-02-25 06:49:27,396 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/main.h_save
+2023-02-25 06:49:27,531 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/main.h
+2023-02-25 06:49:27,532 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/main.c_save
+2023-02-25 06:49:27,721 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/main.c
+2023-02-25 06:49:28,326 [INFO] ProjectBuilder:2919 - Time for Copy HAL[1] : 17mS.
+2023-02-25 06:49:28,328 [INFO] ProjectBuilder:4183 - Project Generator version: 3.18.0-B7
+2023-02-25 06:49:28,905 [INFO] ConfigFileManager:1396 - The Die is : DIE413
+2023-02-25 06:49:28,909 [INFO] ApiDbMcu:505 - Load IP Config File for FATFS
+2023-02-25 06:49:28,921 [INFO] ApiDbMcu:505 - Load IP Config File for FREERTOS
+2023-02-25 06:49:28,925 [INFO] ApiDbMcu:505 - Load IP Config File for LIBJPEG
+2023-02-25 06:49:28,941 [INFO] ApiDbMcu:505 - Load IP Config File for MBEDTLS
+2023-02-25 06:49:28,962 [INFO] ApiDbMcu:505 - Load IP Config File for USB_DEVICE
+2023-02-25 06:49:28,971 [INFO] ApiDbMcu:505 - Load IP Config File for USB_HOST
+2023-02-25 06:49:30,468 [INFO] ProjectBuilder:4351 - Time for Generating toolchain IDE Files: 2140mS.
+2023-02-25 06:49:30,468 [INFO] ProjectBuilder:2790 - Time for Copy CMSIS : 0mS.
+2023-02-25 06:49:30,470 [INFO] ProjectBuilder:2790 - Time for Copy CMSIS : 0mS.
+2023-02-25 06:49:59,277 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-25 06:49:59,279 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-25 06:49:59,279 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-25 06:49:59,906 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-25 06:49:59,907 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-25 06:49:59,907 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-25 06:51:58,358 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-25 06:51:58,361 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-25 06:51:58,362 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-25 06:51:58,762 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-25 06:51:58,763 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-25 06:51:58,763 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-25 06:59:37,113 [INFO] NvicIntPanel:100 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2023-02-25 06:59:39,027 [INFO] NvicIntPanel:100 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2023-02-25 06:59:42,510 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 451816808 Bytes (897581056)
+2023-02-25 06:59:42,611 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 470691176 Bytes (897581056)
+2023-02-25 06:59:43,054 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 506342760 Bytes (897581056)
+2023-02-25 06:59:43,257 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SPI
+2023-02-25 06:59:43,257 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM1_8
+2023-02-25 06:59:43,257 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM1_8
+2023-02-25 06:59:43,257 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RCC
+2023-02-25 06:59:43,258 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC
+2023-02-25 06:59:43,258 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USART
+2023-02-25 06:59:43,258 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USART
+2023-02-25 06:59:43,258 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USART
+2023-02-25 06:59:43,258 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: DMA
+2023-02-25 06:59:43,258 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: GPIO
+2023-02-25 06:59:43,258 [INFO] CodeGenerator:692 - code generatio: config db path: /opt/st/stm32cubeide_1.11.2/plugins/com.st.stm32cube.common.mx_6.7.0.202301130839//db/
+2023-02-25 06:59:43,286 [INFO] Argument:300 - Argument : DMAxvalue: DMA1
+2023-02-25 06:59:43,287 [INFO] Argument:310 - Argument : DMAxvalue: DMA1
+2023-02-25 06:59:43,287 [INFO] Argument:300 - Argument : Streamvalue: LL_DMA_STREAM_1
+2023-02-25 06:59:43,287 [INFO] Argument:310 - Argument : Streamvalue: LL_DMA_STREAM_1
+2023-02-25 06:59:43,287 [INFO] Argument:300 - Argument : Channelvalue: LL_DMA_CHANNEL_4
+2023-02-25 06:59:43,287 [INFO] Argument:310 - Argument : Channelvalue: LL_DMA_CHANNEL_4
+2023-02-25 06:59:43,287 [INFO] Argument:300 - Argument : DMAxvalue: DMA1
+2023-02-25 06:59:43,287 [INFO] Argument:310 - Argument : DMAxvalue: DMA1
+2023-02-25 06:59:43,287 [INFO] Argument:300 - Argument : Streamvalue: LL_DMA_STREAM_1
+2023-02-25 06:59:43,287 [INFO] Argument:310 - Argument : Streamvalue: LL_DMA_STREAM_1
+2023-02-25 06:59:43,287 [INFO] Argument:300 - Argument : Directionvalue: LL_DMA_DIRECTION_PERIPH_TO_MEMORY
+2023-02-25 06:59:43,287 [INFO] Argument:310 - Argument : Directionvalue: LL_DMA_DIRECTION_PERIPH_TO_MEMORY
+2023-02-25 06:59:43,287 [INFO] Argument:300 - Argument : DMAxvalue: DMA1
+2023-02-25 06:59:43,287 [INFO] Argument:310 - Argument : DMAxvalue: DMA1
+2023-02-25 06:59:43,287 [INFO] Argument:300 - Argument : Streamvalue: LL_DMA_STREAM_1
+2023-02-25 06:59:43,287 [INFO] Argument:310 - Argument : Streamvalue: LL_DMA_STREAM_1
+2023-02-25 06:59:43,287 [INFO] Argument:300 - Argument : Priorityvalue: LL_DMA_PRIORITY_LOW
+2023-02-25 06:59:43,287 [INFO] Argument:310 - Argument : Priorityvalue: LL_DMA_PRIORITY_LOW
+2023-02-25 06:59:43,287 [INFO] Argument:300 - Argument : DMAxvalue: DMA1
+2023-02-25 06:59:43,287 [INFO] Argument:310 - Argument : DMAxvalue: DMA1
+2023-02-25 06:59:43,288 [INFO] Argument:300 - Argument : Streamvalue: LL_DMA_STREAM_1
+2023-02-25 06:59:43,288 [INFO] Argument:310 - Argument : Streamvalue: LL_DMA_STREAM_1
+2023-02-25 06:59:43,288 [INFO] Argument:300 - Argument : Modevalue: LL_DMA_MODE_CIRCULAR
+2023-02-25 06:59:43,288 [INFO] Argument:310 - Argument : Modevalue: LL_DMA_MODE_CIRCULAR
+2023-02-25 06:59:43,288 [INFO] Argument:300 - Argument : DMAxvalue: DMA1
+2023-02-25 06:59:43,288 [INFO] Argument:310 - Argument : DMAxvalue: DMA1
+2023-02-25 06:59:43,288 [INFO] Argument:300 - Argument : Streamvalue: LL_DMA_STREAM_1
+2023-02-25 06:59:43,288 [INFO] Argument:310 - Argument : Streamvalue: LL_DMA_STREAM_1
+2023-02-25 06:59:43,288 [INFO] Argument:300 - Argument : IncrementModevalue: LL_DMA_PERIPH_NOINCREMENT
+2023-02-25 06:59:43,288 [INFO] Argument:310 - Argument : IncrementModevalue: LL_DMA_PERIPH_NOINCREMENT
+2023-02-25 06:59:43,288 [INFO] Argument:300 - Argument : DMAxvalue: DMA1
+2023-02-25 06:59:43,288 [INFO] Argument:310 - Argument : DMAxvalue: DMA1
+2023-02-25 06:59:43,288 [INFO] Argument:300 - Argument : Streamvalue: LL_DMA_STREAM_1
+2023-02-25 06:59:43,288 [INFO] Argument:310 - Argument : Streamvalue: LL_DMA_STREAM_1
+2023-02-25 06:59:43,288 [INFO] Argument:300 - Argument : IncrementModevalue: LL_DMA_MEMORY_INCREMENT
+2023-02-25 06:59:43,288 [INFO] Argument:310 - Argument : IncrementModevalue: LL_DMA_MEMORY_INCREMENT
+2023-02-25 06:59:43,288 [INFO] Argument:300 - Argument : DMAxvalue: DMA1
+2023-02-25 06:59:43,288 [INFO] Argument:310 - Argument : DMAxvalue: DMA1
+2023-02-25 06:59:43,289 [INFO] Argument:300 - Argument : Streamvalue: LL_DMA_STREAM_1
+2023-02-25 06:59:43,289 [INFO] Argument:310 - Argument : Streamvalue: LL_DMA_STREAM_1
+2023-02-25 06:59:43,289 [INFO] Argument:300 - Argument : Sizevalue: LL_DMA_PDATAALIGN_BYTE
+2023-02-25 06:59:43,289 [INFO] Argument:310 - Argument : Sizevalue: LL_DMA_PDATAALIGN_BYTE
+2023-02-25 06:59:43,289 [INFO] Argument:300 - Argument : DMAxvalue: DMA1
+2023-02-25 06:59:43,289 [INFO] Argument:310 - Argument : DMAxvalue: DMA1
+2023-02-25 06:59:43,289 [INFO] Argument:300 - Argument : Streamvalue: LL_DMA_STREAM_1
+2023-02-25 06:59:43,289 [INFO] Argument:310 - Argument : Streamvalue: LL_DMA_STREAM_1
+2023-02-25 06:59:43,289 [INFO] Argument:300 - Argument : Sizevalue: LL_DMA_MDATAALIGN_BYTE
+2023-02-25 06:59:43,289 [INFO] Argument:310 - Argument : Sizevalue: LL_DMA_MDATAALIGN_BYTE
+2023-02-25 06:59:43,289 [INFO] Argument:300 - Argument : DMAxvalue: DMA1
+2023-02-25 06:59:43,289 [INFO] Argument:310 - Argument : DMAxvalue: DMA1
+2023-02-25 06:59:43,289 [INFO] Argument:300 - Argument : Streamvalue: LL_DMA_STREAM_1
+2023-02-25 06:59:43,289 [INFO] Argument:310 - Argument : Streamvalue: LL_DMA_STREAM_1
+2023-02-25 06:59:43,487 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/MXTmpFiles/license.tmp_save
+2023-02-25 06:59:43,582 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/MXTmpFiles/license.tmp
+2023-02-25 06:59:43,744 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/gpio.c_save
+2023-02-25 06:59:43,848 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/gpio.c
+2023-02-25 06:59:43,849 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/gpio.h_save
+2023-02-25 06:59:43,944 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/gpio.h
+2023-02-25 06:59:44,470 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/dma.c_save
+2023-02-25 06:59:44,579 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/dma.c
+2023-02-25 06:59:44,581 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/dma.h_save
+2023-02-25 06:59:44,721 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/dma.h
+2023-02-25 06:59:44,724 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/spi.c_save
+2023-02-25 06:59:44,862 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/spi.c
+2023-02-25 06:59:44,863 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/spi.h_save
+2023-02-25 06:59:44,956 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/spi.h
+2023-02-25 06:59:44,959 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/tim.c_save
+2023-02-25 06:59:45,116 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/tim.c
+2023-02-25 06:59:45,118 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/tim.h_save
+2023-02-25 06:59:45,208 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/tim.h
+2023-02-25 06:59:45,211 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/usart.c_save
+2023-02-25 06:59:45,351 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/usart.c
+2023-02-25 06:59:45,352 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/usart.h_save
+2023-02-25 06:59:45,443 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/usart.h
+2023-02-25 06:59:45,449 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/stm32f4xx_it.c_save
+2023-02-25 06:59:45,571 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/stm32f4xx_it.c
+2023-02-25 06:59:45,572 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/stm32f4xx_it.h_save
+2023-02-25 06:59:45,660 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/stm32f4xx_it.h
+2023-02-25 06:59:45,662 [WARN] IPConfigManager:4122 - WARNING: Missing Config File for SYS ip!!
+2023-02-25 06:59:45,723 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/MXTmpFiles/system.tmp_save
+2023-02-25 06:59:45,846 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/MXTmpFiles/system.tmp
+2023-02-25 06:59:45,847 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/stm32_assert.h_save
+2023-02-25 06:59:45,941 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/stm32_assert.h
+2023-02-25 06:59:45,942 [WARN] IPConfigManager:2928 - Warning: the RefConfig RCC_PLL_PLLM_CONFIG is not available in your config.xml file
+2023-02-25 06:59:45,942 [WARN] IPConfigManager:2928 - Warning: the RefConfig RCC_PLL_PLLSOURCE_CONFIG is not available in your config.xml file
+2023-02-25 06:59:45,942 [WARN] IPConfigManager:2928 - Warning: the RefConfig RCC_ConfigVoltageScaling is not available in your config.xml file
+2023-02-25 06:59:45,951 [WARN] IPConfigManager:2928 - Warning: the RefConfig RCC_ClockConfig is not available in your config.xml file
+2023-02-25 06:59:45,951 [WARN] IPConfigManager:2928 - Warning: the RefConfig RCC_MCO1Config is not available in your config.xml file
+2023-02-25 06:59:45,951 [WARN] IPConfigManager:2928 - Warning: the RefConfig RCC_MCO2Config is not available in your config.xml file
+2023-02-25 06:59:45,951 [WARN] IPConfigManager:2928 - Warning: the RefConfig RCC_interrupt_Time_SYSTICK_Config is not available in your config.xml file
+2023-02-25 06:59:45,951 [WARN] IPConfigManager:2928 - Warning: the RefConfig RCC_SYSTICK_CONFIG is not available in your config.xml file
+2023-02-25 06:59:45,957 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/main.h_save
+2023-02-25 06:59:46,064 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/main.h
+2023-02-25 06:59:46,065 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/main.c_save
+2023-02-25 06:59:46,208 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/main.c
+2023-02-25 06:59:46,951 [INFO] ProjectBuilder:2919 - Time for Copy HAL[1] : 19mS.
+2023-02-25 06:59:46,953 [INFO] ProjectBuilder:4183 - Project Generator version: 3.18.0-B7
+2023-02-25 06:59:47,330 [INFO] ConfigFileManager:1396 - The Die is : DIE413
+2023-02-25 06:59:48,767 [INFO] ProjectBuilder:4351 - Time for Generating toolchain IDE Files: 1814mS.
+2023-02-25 06:59:48,767 [INFO] ProjectBuilder:2790 - Time for Copy CMSIS : 0mS.
+2023-02-25 06:59:48,768 [INFO] ProjectBuilder:2790 - Time for Copy CMSIS : 0mS.
+2023-02-25 07:00:25,380 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-25 07:00:25,382 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-25 07:00:25,383 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-25 07:00:25,873 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-25 07:00:25,874 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-25 07:00:25,877 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-25 07:08:07,095 [INFO] NvicIntPanel:100 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2023-02-25 07:08:12,391 [INFO] NvicIntPanel:100 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2023-02-25 07:08:17,527 [INFO] NvicIntPanel:100 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2023-02-25 07:08:19,854 [INFO] NvicIntPanel:100 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2023-02-25 07:08:24,706 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 469766928 Bytes (897581056)
+2023-02-25 07:08:24,838 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 489163536 Bytes (897581056)
+2023-02-25 07:08:25,314 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 551555856 Bytes (897581056)
+2023-02-25 07:08:25,543 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SPI
+2023-02-25 07:08:25,543 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM1_8
+2023-02-25 07:08:25,543 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM1_8
+2023-02-25 07:08:25,543 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RCC
+2023-02-25 07:08:25,544 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC
+2023-02-25 07:08:25,544 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USART
+2023-02-25 07:08:25,544 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USART
+2023-02-25 07:08:25,544 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USART
+2023-02-25 07:08:25,544 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: DMA
+2023-02-25 07:08:25,544 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: GPIO
+2023-02-25 07:08:25,544 [INFO] CodeGenerator:692 - code generatio: config db path: /opt/st/stm32cubeide_1.11.2/plugins/com.st.stm32cube.common.mx_6.7.0.202301130839//db/
+2023-02-25 07:08:25,580 [INFO] Argument:300 - Argument : DMAxvalue: DMA1
+2023-02-25 07:08:25,580 [INFO] Argument:310 - Argument : DMAxvalue: DMA1
+2023-02-25 07:08:25,580 [INFO] Argument:300 - Argument : Streamvalue: LL_DMA_STREAM_1
+2023-02-25 07:08:25,580 [INFO] Argument:310 - Argument : Streamvalue: LL_DMA_STREAM_1
+2023-02-25 07:08:25,580 [INFO] Argument:300 - Argument : Channelvalue: LL_DMA_CHANNEL_4
+2023-02-25 07:08:25,580 [INFO] Argument:310 - Argument : Channelvalue: LL_DMA_CHANNEL_4
+2023-02-25 07:08:25,581 [INFO] Argument:300 - Argument : DMAxvalue: DMA1
+2023-02-25 07:08:25,581 [INFO] Argument:310 - Argument : DMAxvalue: DMA1
+2023-02-25 07:08:25,581 [INFO] Argument:300 - Argument : Streamvalue: LL_DMA_STREAM_1
+2023-02-25 07:08:25,581 [INFO] Argument:310 - Argument : Streamvalue: LL_DMA_STREAM_1
+2023-02-25 07:08:25,581 [INFO] Argument:300 - Argument : Directionvalue: LL_DMA_DIRECTION_PERIPH_TO_MEMORY
+2023-02-25 07:08:25,581 [INFO] Argument:310 - Argument : Directionvalue: LL_DMA_DIRECTION_PERIPH_TO_MEMORY
+2023-02-25 07:08:25,581 [INFO] Argument:300 - Argument : DMAxvalue: DMA1
+2023-02-25 07:08:25,581 [INFO] Argument:310 - Argument : DMAxvalue: DMA1
+2023-02-25 07:08:25,581 [INFO] Argument:300 - Argument : Streamvalue: LL_DMA_STREAM_1
+2023-02-25 07:08:25,581 [INFO] Argument:310 - Argument : Streamvalue: LL_DMA_STREAM_1
+2023-02-25 07:08:25,581 [INFO] Argument:300 - Argument : Priorityvalue: LL_DMA_PRIORITY_LOW
+2023-02-25 07:08:25,581 [INFO] Argument:310 - Argument : Priorityvalue: LL_DMA_PRIORITY_LOW
+2023-02-25 07:08:25,581 [INFO] Argument:300 - Argument : DMAxvalue: DMA1
+2023-02-25 07:08:25,581 [INFO] Argument:310 - Argument : DMAxvalue: DMA1
+2023-02-25 07:08:25,581 [INFO] Argument:300 - Argument : Streamvalue: LL_DMA_STREAM_1
+2023-02-25 07:08:25,581 [INFO] Argument:310 - Argument : Streamvalue: LL_DMA_STREAM_1
+2023-02-25 07:08:25,581 [INFO] Argument:300 - Argument : Modevalue: LL_DMA_MODE_CIRCULAR
+2023-02-25 07:08:25,582 [INFO] Argument:310 - Argument : Modevalue: LL_DMA_MODE_CIRCULAR
+2023-02-25 07:08:25,582 [INFO] Argument:300 - Argument : DMAxvalue: DMA1
+2023-02-25 07:08:25,582 [INFO] Argument:310 - Argument : DMAxvalue: DMA1
+2023-02-25 07:08:25,582 [INFO] Argument:300 - Argument : Streamvalue: LL_DMA_STREAM_1
+2023-02-25 07:08:25,582 [INFO] Argument:310 - Argument : Streamvalue: LL_DMA_STREAM_1
+2023-02-25 07:08:25,582 [INFO] Argument:300 - Argument : IncrementModevalue: LL_DMA_PERIPH_NOINCREMENT
+2023-02-25 07:08:25,582 [INFO] Argument:310 - Argument : IncrementModevalue: LL_DMA_PERIPH_NOINCREMENT
+2023-02-25 07:08:25,582 [INFO] Argument:300 - Argument : DMAxvalue: DMA1
+2023-02-25 07:08:25,582 [INFO] Argument:310 - Argument : DMAxvalue: DMA1
+2023-02-25 07:08:25,582 [INFO] Argument:300 - Argument : Streamvalue: LL_DMA_STREAM_1
+2023-02-25 07:08:25,582 [INFO] Argument:310 - Argument : Streamvalue: LL_DMA_STREAM_1
+2023-02-25 07:08:25,582 [INFO] Argument:300 - Argument : IncrementModevalue: LL_DMA_MEMORY_INCREMENT
+2023-02-25 07:08:25,582 [INFO] Argument:310 - Argument : IncrementModevalue: LL_DMA_MEMORY_INCREMENT
+2023-02-25 07:08:25,582 [INFO] Argument:300 - Argument : DMAxvalue: DMA1
+2023-02-25 07:08:25,582 [INFO] Argument:310 - Argument : DMAxvalue: DMA1
+2023-02-25 07:08:25,582 [INFO] Argument:300 - Argument : Streamvalue: LL_DMA_STREAM_1
+2023-02-25 07:08:25,583 [INFO] Argument:310 - Argument : Streamvalue: LL_DMA_STREAM_1
+2023-02-25 07:08:25,583 [INFO] Argument:300 - Argument : Sizevalue: LL_DMA_PDATAALIGN_BYTE
+2023-02-25 07:08:25,583 [INFO] Argument:310 - Argument : Sizevalue: LL_DMA_PDATAALIGN_BYTE
+2023-02-25 07:08:25,583 [INFO] Argument:300 - Argument : DMAxvalue: DMA1
+2023-02-25 07:08:25,583 [INFO] Argument:310 - Argument : DMAxvalue: DMA1
+2023-02-25 07:08:25,583 [INFO] Argument:300 - Argument : Streamvalue: LL_DMA_STREAM_1
+2023-02-25 07:08:25,583 [INFO] Argument:310 - Argument : Streamvalue: LL_DMA_STREAM_1
+2023-02-25 07:08:25,583 [INFO] Argument:300 - Argument : Sizevalue: LL_DMA_MDATAALIGN_BYTE
+2023-02-25 07:08:25,583 [INFO] Argument:310 - Argument : Sizevalue: LL_DMA_MDATAALIGN_BYTE
+2023-02-25 07:08:25,583 [INFO] Argument:300 - Argument : DMAxvalue: DMA1
+2023-02-25 07:08:25,583 [INFO] Argument:310 - Argument : DMAxvalue: DMA1
+2023-02-25 07:08:25,583 [INFO] Argument:300 - Argument : Streamvalue: LL_DMA_STREAM_1
+2023-02-25 07:08:25,583 [INFO] Argument:310 - Argument : Streamvalue: LL_DMA_STREAM_1
+2023-02-25 07:08:25,943 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/MXTmpFiles/license.tmp_save
+2023-02-25 07:08:26,037 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/MXTmpFiles/license.tmp
+2023-02-25 07:08:26,093 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/gpio.c_save
+2023-02-25 07:08:26,186 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/gpio.c
+2023-02-25 07:08:26,187 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/gpio.h_save
+2023-02-25 07:08:26,275 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/gpio.h
+2023-02-25 07:08:26,786 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/dma.c_save
+2023-02-25 07:08:26,880 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/dma.c
+2023-02-25 07:08:26,881 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/dma.h_save
+2023-02-25 07:08:26,969 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/dma.h
+2023-02-25 07:08:26,972 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/spi.c_save
+2023-02-25 07:08:27,098 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/spi.c
+2023-02-25 07:08:27,100 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/spi.h_save
+2023-02-25 07:08:27,189 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/spi.h
+2023-02-25 07:08:27,192 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/tim.c_save
+2023-02-25 07:08:27,348 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/tim.c
+2023-02-25 07:08:27,349 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/tim.h_save
+2023-02-25 07:08:27,488 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/tim.h
+2023-02-25 07:08:27,491 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/usart.c_save
+2023-02-25 07:08:27,650 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/usart.c
+2023-02-25 07:08:27,651 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/usart.h_save
+2023-02-25 07:08:27,784 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/usart.h
+2023-02-25 07:08:27,790 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/stm32f4xx_it.c_save
+2023-02-25 07:08:27,918 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/stm32f4xx_it.c
+2023-02-25 07:08:27,919 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/stm32f4xx_it.h_save
+2023-02-25 07:08:28,012 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/stm32f4xx_it.h
+2023-02-25 07:08:28,014 [WARN] IPConfigManager:4122 - WARNING: Missing Config File for SYS ip!!
+2023-02-25 07:08:28,067 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/MXTmpFiles/system.tmp_save
+2023-02-25 07:08:28,154 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/MXTmpFiles/system.tmp
+2023-02-25 07:08:28,155 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/stm32_assert.h_save
+2023-02-25 07:08:28,242 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/stm32_assert.h
+2023-02-25 07:08:28,243 [WARN] IPConfigManager:2928 - Warning: the RefConfig RCC_PLL_PLLM_CONFIG is not available in your config.xml file
+2023-02-25 07:08:28,243 [WARN] IPConfigManager:2928 - Warning: the RefConfig RCC_PLL_PLLSOURCE_CONFIG is not available in your config.xml file
+2023-02-25 07:08:28,243 [WARN] IPConfigManager:2928 - Warning: the RefConfig RCC_ConfigVoltageScaling is not available in your config.xml file
+2023-02-25 07:08:28,251 [WARN] IPConfigManager:2928 - Warning: the RefConfig RCC_ClockConfig is not available in your config.xml file
+2023-02-25 07:08:28,251 [WARN] IPConfigManager:2928 - Warning: the RefConfig RCC_MCO1Config is not available in your config.xml file
+2023-02-25 07:08:28,251 [WARN] IPConfigManager:2928 - Warning: the RefConfig RCC_MCO2Config is not available in your config.xml file
+2023-02-25 07:08:28,251 [WARN] IPConfigManager:2928 - Warning: the RefConfig RCC_interrupt_Time_SYSTICK_Config is not available in your config.xml file
+2023-02-25 07:08:28,252 [WARN] IPConfigManager:2928 - Warning: the RefConfig RCC_SYSTICK_CONFIG is not available in your config.xml file
+2023-02-25 07:08:28,256 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/main.h_save
+2023-02-25 07:08:28,355 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/main.h
+2023-02-25 07:08:28,357 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/main.c_save
+2023-02-25 07:08:28,486 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/main.c
+2023-02-25 07:08:29,090 [INFO] ProjectBuilder:2919 - Time for Copy HAL[1] : 17mS.
+2023-02-25 07:08:29,149 [INFO] ProjectBuilder:4183 - Project Generator version: 3.18.0-B7
+2023-02-25 07:08:29,690 [INFO] ConfigFileManager:1396 - The Die is : DIE413
+2023-02-25 07:08:31,055 [INFO] ProjectBuilder:4351 - Time for Generating toolchain IDE Files: 1906mS.
+2023-02-25 07:08:31,055 [INFO] ProjectBuilder:2790 - Time for Copy CMSIS : 0mS.
+2023-02-25 07:08:31,056 [INFO] ProjectBuilder:2790 - Time for Copy CMSIS : 0mS.
+2023-02-25 07:08:38,354 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-25 07:08:38,356 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-25 07:08:38,357 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-25 07:08:39,060 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-25 07:08:39,061 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-25 07:08:39,061 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-25 07:26:32,306 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-25 07:26:32,308 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-25 07:26:32,308 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-25 07:26:33,156 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-25 07:26:33,157 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-25 07:26:33,158 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-25 07:33:05,465 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-25 07:33:05,466 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-25 07:33:05,466 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-25 07:33:05,934 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-25 07:33:05,935 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-25 07:33:05,935 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-25 07:33:31,354 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-25 07:33:31,355 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-25 07:33:31,355 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-25 07:55:56,181 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-25 07:55:56,183 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-25 07:55:56,184 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-25 07:55:57,851 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-25 07:55:57,851 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-25 07:55:57,852 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-25 07:59:05,784 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-25 07:59:05,785 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-25 07:59:05,785 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-25 07:59:05,795 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-25 07:59:05,796 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-25 07:59:05,796 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-25 08:00:06,476 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-25 08:00:06,477 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-25 08:00:06,478 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-25 08:08:23,323 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-25 08:08:23,325 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-25 08:08:23,325 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-25 08:08:23,824 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-25 08:08:23,825 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-25 08:08:23,825 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-25 08:08:39,629 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-25 08:08:39,629 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-25 08:08:39,630 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-25 08:08:40,493 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-25 08:08:40,494 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-25 08:08:40,494 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-25 08:08:45,165 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-25 08:08:45,165 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-25 08:08:45,166 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-25 08:12:08,771 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-25 08:12:08,773 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-25 08:12:08,774 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-25 08:12:09,230 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-25 08:12:09,231 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-25 08:12:09,232 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-25 16:42:57,659 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-25 16:42:57,661 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-25 16:42:57,661 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-25 16:42:58,238 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-25 16:42:58,238 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-02-25 16:42:58,239 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com

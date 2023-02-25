@@ -11,6 +11,8 @@
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:921:22:LL_DMA_SetStreamPriorityLevel	24	static
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:1019:22:LL_DMA_SetChannelSelection	24	static
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:1276:22:LL_DMA_DisableFifoMode	16	static
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:1459:22:LL_DMA_SetPeriphAddress	24	static
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:2586:22:LL_DMA_EnableIT_TC	16	static
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_bus.h:409:22:LL_AHB1_GRP1_EnableClock	24	static
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_bus.h:1185:22:LL_APB1_GRP1_EnableClock	24	static
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_bus.h:1704:22:LL_APB2_GRP1_EnableClock	24	static
@@ -18,9 +20,12 @@
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_usart.h:1479:22:LL_USART_ConfigAsyncMode	16	static
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_usart.h:1593:22:LL_USART_ConfigHalfDuplexMode	16	static
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_usart.h:1814:26:LL_USART_IsActiveFlag_TXE	16	static
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_usart.h:2046:22:LL_USART_EnableIT_TC	40	static,ignoring_inline_asm
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_usart.h:2349:22:LL_USART_EnableDMAReq_TX	40	static,ignoring_inline_asm
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_usart.h:2426:22:LL_USART_TransmitData8	16	static
 ../Core/Src/usart.c:29:6:MX_USART1_UART_Init	64	static
 ../Core/Src/usart.c:78:6:MX_USART3_UART_Init	64	static
 ../Core/Src/usart.c:151:6:MX_USART6_UART_Init	64	static
 ../Core/Src/usart.c:202:5:_write	32	static
 ../Core/Src/usart.c:213:6:USART_Transmit	32	static
+../Core/Src/usart.c:221:6:USART_DMA_Transmit_INIT	24	static

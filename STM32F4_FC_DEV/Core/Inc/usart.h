@@ -33,6 +33,38 @@ extern "C" {
 /* USER CODE END Includes */
 
 /* USER CODE BEGIN Private defines */
+#define CIRCULAR_BUFFER_SIZE 1024
+
+enum{
+	CIRCULAR_READY,
+	CIRCULAR_BUSY
+}state;
+
+enum{
+	CIRCULAR_REMAIN,
+	CIRCULAR_FULL
+}is_full;
+
+enum{
+	CIRCULAR_DATA_INCREASE,
+	CIRCULAR_DATA_HOLD
+}increase;
+
+typedef struct{
+	USART_TypeDef* UART;
+	DMA_TypeDef* DMA;
+	uint32_t DMA_CHANNEL_STREAM;
+	uint8_t buffer[CIRCULAR_BUFFER_SIZE];
+	uint8_t temp_buffer[CIRCULAR_BUFFER_SIZE];
+	uint16_t start_position;
+	uint16_t end_position;
+	uint16_t temp_end_position;
+	uint8_t is_full;
+	uint8_t state;
+}CIRCULAR_BUFFER;
+
+
+
 
 /* USER CODE END Private defines */
 
@@ -43,6 +75,7 @@ void MX_USART6_UART_Init(void);
 /* USER CODE BEGIN Prototypes */
 int _write(int file, char* p, int len);
 void USART_Transmit(USART_TypeDef *USARTx, uint8_t * data, uint16_t length);
+void PRINTF_INIT(USART_TypeDef* UART, DMA_TypeDef* DMA, uint32_t DMA_CHANNEL_STREAM);
 
 /* USER CODE END Prototypes */
 

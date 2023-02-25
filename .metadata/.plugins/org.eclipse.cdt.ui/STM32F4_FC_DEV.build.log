@@ -1,41 +1,29 @@
-09:59:02 **** Incremental Build of configuration Debug for project STM32F4_FC_DEV ****
+16:42:55 **** Incremental Build of configuration Debug for project STM32F4_FC_DEV ****
 make -j8 all 
-arm-none-eabi-gcc "../Core/Src/SBUS_Receiver.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32F405xx -DUSE_FULL_LL_DRIVER -DHSE_VALUE=8000000 -DHSE_STARTUP_TIMEOUT=100 -DLSE_STARTUP_TIMEOUT=5000 -DLSE_VALUE=32768 -DEXTERNAL_CLOCK_VALUE=12288000 -DHSI_VALUE=16000000 -DLSI_VALUE=32000 -DVDD_VALUE=3300 -DPREFETCH_ENABLE=1 -DINSTRUCTION_CACHE_ENABLE=1 -DDATA_CACHE_ENABLE=1 -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/SBUS_Receiver.d" -MT"Core/Src/SBUS_Receiver.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/SBUS_Receiver.o"
-../Core/Src/SBUS_Receiver.c: In function 'SBUS_Parsing':
-../Core/Src/SBUS_Receiver.c:64:3: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
-   64 |   printf("cnt: %d\t ch[1]:%d\t ch[2]:%d\t ch[3]:%d\t ch[4]:%d\t ch[5]:%d\t ch[6]:%d\t ch[7]:%d\t ch[8]:%d\t FL:%d FS:%d\n",rx_recv_cnt[0], msg_sbus->rx_channel[0],msg_sbus->rx_channel[1],msg_sbus->rx_channel[2],msg_sbus->rx_channel[3],msg_sbus->rx_channel[4],msg_sbus->rx_channel[5],msg_sbus->rx_channel[6],msg_sbus->rx_channel[7], msg_sbus->frame_lost, msg_sbus->failsafe);
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32F405xx -DUSE_FULL_LL_DRIVER -DHSE_VALUE=8000000 -DHSE_STARTUP_TIMEOUT=100 -DLSE_STARTUP_TIMEOUT=5000 -DLSE_VALUE=32768 -DEXTERNAL_CLOCK_VALUE=12288000 -DHSI_VALUE=16000000 -DLSI_VALUE=32000 -DVDD_VALUE=3300 -DPREFETCH_ENABLE=1 -DINSTRUCTION_CACHE_ENABLE=1 -DDATA_CACHE_ENABLE=1 -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fcommon -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:124:3: warning: implicit declaration of function 'memset' [-Wimplicit-function-declaration]
+  124 |   memset(&rx_buf,0,100);
       |   ^~~~~~
-../Core/Src/SBUS_Receiver.c:64:3: warning: incompatible implicit declaration of built-in function 'printf'
-../Core/Src/SBUS_Receiver.c:10:1: note: include '<stdio.h>' or provide a declaration of 'printf'
-    9 | #include "SBUS_Receiver.h"
-  +++ |+#include <stdio.h>
-   10 | 
-../Core/Src/SBUS_Receiver.c:37:29: warning: unused variable 'messageID' [-Wunused-variable]
-   37 |  unsigned char classID = 0, messageID = 0;
-      |                             ^~~~~~~~~
-../Core/Src/SBUS_Receiver.c:37:16: warning: unused variable 'classID' [-Wunused-variable]
-   37 |  unsigned char classID = 0, messageID = 0;
-      |                ^~~~~~~
-../Core/Src/SBUS_Receiver.c:36:33: warning: unused variable 'checksum' [-Wunused-variable]
-   36 |  unsigned short msg_length = 0, checksum = 0;
-      |                                 ^~~~~~~~
-../Core/Src/SBUS_Receiver.c:36:17: warning: unused variable 'msg_length' [-Wunused-variable]
-   36 |  unsigned short msg_length = 0, checksum = 0;
-      |                 ^~~~~~~~~~
-../Core/Src/SBUS_Receiver.c:35:10: warning: unused variable 'temp' [-Wunused-variable]
-   35 |  int32_t temp;
-      |          ^~~~
+../Core/Src/main.c:124:3: warning: incompatible implicit declaration of built-in function 'memset'
+../Core/Src/main.c:34:1: note: include '<string.h>' or provide a declaration of 'memset'
+   33 | #include "SBUS_Receiver.h"
+  +++ |+#include <string.h>
+   34 | //#include "cli.h"
+../Core/Src/main.c:269:5: warning: implicit declaration of function 'GetRPY' [-Wimplicit-function-declaration]
+  269 |     GetRPY(&sampleFreq);
+      |     ^~~~~~
 arm-none-eabi-gcc -o "STM32F4_FC_DEV.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/STM32F405RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="STM32F4_FC_DEV.map" -Wl,--gc-sections -static -u_printf_float --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 Finished building target: STM32F4_FC_DEV.elf
  
 arm-none-eabi-size   STM32F4_FC_DEV.elf 
 arm-none-eabi-objdump -h -S  STM32F4_FC_DEV.elf  > "STM32F4_FC_DEV.list"
    text	   data	    bss	    dec	    hex	filename
-  36560	    496	   2112	  39168	   9900	STM32F4_FC_DEV.elf
+  36984	    496	   2144	  39624	   9ac8	STM32F4_FC_DEV.elf
 Finished building: default.size.stdout
  
 Finished building: STM32F4_FC_DEV.list
  
 
-09:59:03 Build Finished. 0 errors, 7 warnings. (took 1s.246ms)
+16:42:56 Build Finished. 0 errors, 3 warnings. (took 1s.99ms)
 

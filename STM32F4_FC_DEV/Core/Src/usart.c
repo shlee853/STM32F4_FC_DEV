@@ -21,7 +21,7 @@
 #include "usart.h"
 
 /* USER CODE BEGIN 0 */
-
+CIRCULAR_BUFFER circular_buffer = {0,};
 /* USER CODE END 0 */
 
 /* USART1 init function */
@@ -217,5 +217,19 @@ void USART_Transmit(USART_TypeDef *USARTx, uint8_t * data, uint16_t length){
         while(!LL_USART_IsActiveFlag_TXE(USARTx));
     }
 }
+
+void USART_DMA_Transmit_INIT(USART_TypeDef* UART, DMA_TypeDef* DMA, uint32_t DMA_CHANNEL_STREAM){
+//	circular_buffer.UART = UART;
+//	circular_buffer.DMA = DMA;
+//	circular_buffer.DMA_CHANNEL_STREAM = DMA_CHANNEL_STREAM;
+
+	LL_DMA_SetPeriphAddress(DMA,DMA_CHANNEL_STREAM,(uint32_t)&(UART->DR));
+    LL_DMA_EnableIT_TC(DMA, DMA_CHANNEL_STREAM);
+	LL_USART_EnableIT_TC(UART);
+	LL_USART_EnableDMAReq_TX(UART);
+}
+
+
+
 
 /* USER CODE END 1 */
