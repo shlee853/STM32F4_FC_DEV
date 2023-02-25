@@ -1,4 +1,4 @@
-16:42:55 **** Incremental Build of configuration Debug for project STM32F4_FC_DEV ****
+17:26:23 **** Incremental Build of configuration Debug for project STM32F4_FC_DEV ****
 make -j8 all 
 arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32F405xx -DUSE_FULL_LL_DRIVER -DHSE_VALUE=8000000 -DHSE_STARTUP_TIMEOUT=100 -DLSE_STARTUP_TIMEOUT=5000 -DLSE_VALUE=32768 -DEXTERNAL_CLOCK_VALUE=12288000 -DHSI_VALUE=16000000 -DLSI_VALUE=32000 -DVDD_VALUE=3300 -DPREFETCH_ENABLE=1 -DINSTRUCTION_CACHE_ENABLE=1 -DDATA_CACHE_ENABLE=1 -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fcommon -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
 ../Core/Src/main.c: In function 'main':
@@ -10,8 +10,8 @@ arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -D
    33 | #include "SBUS_Receiver.h"
   +++ |+#include <string.h>
    34 | //#include "cli.h"
-../Core/Src/main.c:269:5: warning: implicit declaration of function 'GetRPY' [-Wimplicit-function-declaration]
-  269 |     GetRPY(&sampleFreq);
+../Core/Src/main.c:270:5: warning: implicit declaration of function 'GetRPY' [-Wimplicit-function-declaration]
+  270 |     GetRPY(&sampleFreq);
       |     ^~~~~~
 arm-none-eabi-gcc -o "STM32F4_FC_DEV.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/STM32F405RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="STM32F4_FC_DEV.map" -Wl,--gc-sections -static -u_printf_float --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 Finished building target: STM32F4_FC_DEV.elf
@@ -19,11 +19,11 @@ Finished building target: STM32F4_FC_DEV.elf
 arm-none-eabi-size   STM32F4_FC_DEV.elf 
 arm-none-eabi-objdump -h -S  STM32F4_FC_DEV.elf  > "STM32F4_FC_DEV.list"
    text	   data	    bss	    dec	    hex	filename
-  36984	    496	   2144	  39624	   9ac8	STM32F4_FC_DEV.elf
+  37096	    496	   2144	  39736	   9b38	STM32F4_FC_DEV.elf
 Finished building: default.size.stdout
  
 Finished building: STM32F4_FC_DEV.list
  
 
-16:42:56 Build Finished. 0 errors, 3 warnings. (took 1s.99ms)
+17:26:24 Build Finished. 0 errors, 3 warnings. (took 1s.51ms)
 

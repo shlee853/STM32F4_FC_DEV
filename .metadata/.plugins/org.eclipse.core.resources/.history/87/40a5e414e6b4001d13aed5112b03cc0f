@@ -203,7 +203,7 @@ int main(void)
   LL_USART_EnableIT_IDLE(USART6);
 //  LL_USART_EnableIT_TC(USART6);
 
-  LL_GPIO_TogglePin(GPIOB, LL_GPIO_PIN_5);
+
 
   /* USER CODE END 2 */
 

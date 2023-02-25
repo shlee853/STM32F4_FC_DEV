@@ -164,7 +164,7 @@ int main(void)
   LL_TIM_CC_EnableChannel(TIM5, LL_TIM_CHANNEL_CH3);	// M4
 
   // ESC Calibration
-/*  TIM3->CCR3 = MAX_TIM_PWM;
+  TIM3->CCR3 = MAX_TIM_PWM;
   TIM3->CCR4 = MAX_TIM_PWM;
   TIM5->CCR4 = MAX_TIM_PWM;
   TIM5->CCR3 = MAX_TIM_PWM;
@@ -175,7 +175,7 @@ int main(void)
   TIM5->CCR4 = MIN_TIM_PWM;
   TIM5->CCR3 = MIN_TIM_PWM;
   usDelay(8000000);	// 7sec
-*/
+
 
 
 
@@ -203,7 +203,7 @@ int main(void)
   LL_USART_EnableIT_IDLE(USART6);
 //  LL_USART_EnableIT_TC(USART6);
 
-  LL_GPIO_TogglePin(GPIOB, LL_GPIO_PIN_5);
+
 
   /* USER CODE END 2 */
 
@@ -285,31 +285,23 @@ int main(void)
 	  // Radio Control
 	  else	  {
 
-		  if(radio_safe==0) {
-			  if((msg_sbus.rx_channel[0] < MIN_RADIO_CH1_PWM + 5)&&(msg_sbus.rx_channel[0] > 0)) {
+		  while(radio_safe==0) {
+			  if(msg_sbus.rx_channel[0] < MIN_RADIO_CH1_PWM + 5) {
 				   LL_GPIO_TogglePin(GPIOB, LL_GPIO_PIN_5);
-				   usDelay(500000);
+				   usDelay(1000000);
 				   LL_GPIO_TogglePin(GPIOB, LL_GPIO_PIN_5);
-				   usDelay(500000);
+				   usDelay(1000000);
 				   LL_GPIO_TogglePin(GPIOB, LL_GPIO_PIN_5);
-				   usDelay(500000);
-				   LL_GPIO_TogglePin(GPIOB, LL_GPIO_PIN_5);
-				   usDelay(500000);
-				   LL_GPIO_TogglePin(GPIOB, LL_GPIO_PIN_5);
-				   usDelay(500000);
-				   LL_GPIO_TogglePin(GPIOB, LL_GPIO_PIN_5);
-				   usDelay(500000);
+				   usDelay(1000000);
 				   radio_safe = 1;
+				  break;
 			  }
 		  }
 
-		  else {
-			  TIM3->CCR3 = MIN_TIM_PWM + RANGE_TIM_PWM/RANGE_RADIO_CH1_PWM*(msg_sbus.rx_channel[0]-MIN_RADIO_CH1_PWM);
-			  TIM3->CCR4 = MIN_TIM_PWM + RANGE_TIM_PWM/RANGE_RADIO_CH1_PWM*(msg_sbus.rx_channel[0]-MIN_RADIO_CH1_PWM);
-			  TIM5->CCR4 = MIN_TIM_PWM + RANGE_TIM_PWM/RANGE_RADIO_CH1_PWM*(msg_sbus.rx_channel[0]-MIN_RADIO_CH1_PWM);
-			  TIM5->CCR3 = MIN_TIM_PWM + RANGE_TIM_PWM/RANGE_RADIO_CH1_PWM*(msg_sbus.rx_channel[0]-MIN_RADIO_CH1_PWM);
-		  }
-
+		  TIM3->CCR3 = MIN_TIM_PWM + RANGE_TIM_PWM/RANGE_RADIO_CH1_PWM*(msg_sbus.rx_channel[0]-MIN_RADIO_CH1_PWM);
+		  TIM3->CCR4 = MIN_TIM_PWM + RANGE_TIM_PWM/RANGE_RADIO_CH1_PWM*(msg_sbus.rx_channel[0]-MIN_RADIO_CH1_PWM);
+		  TIM5->CCR4 = MIN_TIM_PWM + RANGE_TIM_PWM/RANGE_RADIO_CH1_PWM*(msg_sbus.rx_channel[0]-MIN_RADIO_CH1_PWM);
+		  TIM5->CCR3 = MIN_TIM_PWM + RANGE_TIM_PWM/RANGE_RADIO_CH1_PWM*(msg_sbus.rx_channel[0]-MIN_RADIO_CH1_PWM);
 	  }
 
 
