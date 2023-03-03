@@ -2,6 +2,7 @@
 "./Core/Src/ICM20602.o"
 "./Core/Src/Quaternion.o"
 "./Core/Src/SBUS_Receiver.o"
+"./Core/Src/W25Qxx_Flash.o"
 "./Core/Src/dma.o"
 "./Core/Src/gpio.o"
 "./Core/Src/main.o"

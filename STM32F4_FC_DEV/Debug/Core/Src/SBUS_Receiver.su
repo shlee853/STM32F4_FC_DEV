@@ -5,4 +5,4 @@
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_usart.h:2316:22:LL_USART_EnableDMAReq_RX	40	static,ignoring_inline_asm
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_usart.h:2383:26:LL_USART_DMA_GetRegAddr	16	static
 ../Core/Src/SBUS_Receiver.c:16:6:SBUS_Receiver_DMA_init	24	static
-../Core/Src/SBUS_Receiver.c:32:6:SBUS_Parsing	40	static
+../Core/Src/SBUS_Receiver.c:32:6:SBUS_Parsing	96	static

@@ -43,7 +43,7 @@
 /* USER CODE BEGIN PV */
 uint8_t flag_INT_USART6, flag_INT_UART6_RX_DONE,  flag_INT_UART3_GPS, flag_DMA1_DONE, flag_DMA2_DONE,  flag_INT_UART1_RX, flag_INT_UART1_RX_DONE,  flag_INT_UART4_RX;
 uint8_t rxd,rxd2, rxd_gps;
-uint8_t rx_buf[200];		// Rx 수신데이터 버퍼
+uint8_t rx_buf[256];		// Rx 수신데이터 버퍼
 uint8_t rx_cnt = 0;
 
 unsigned int TimingDelay;
@@ -315,6 +315,19 @@ void USART3_IRQHandler(void)
   /* USER CODE BEGIN USART3_IRQn 1 */
 
   /* USER CODE END USART3_IRQn 1 */
+}
+
+/**
+  * @brief This function handles SPI3 global interrupt.
+  */
+void SPI3_IRQHandler(void)
+{
+  /* USER CODE BEGIN SPI3_IRQn 0 */
+
+  /* USER CODE END SPI3_IRQn 0 */
+  /* USER CODE BEGIN SPI3_IRQn 1 */
+
+  /* USER CODE END SPI3_IRQn 1 */
 }
 
 /**

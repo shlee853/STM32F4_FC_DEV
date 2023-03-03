@@ -31,6 +31,7 @@
 #include "Quaternion.h"
 #include "GPS_Receiver.h"
 #include "SBUS_Receiver.h"
+#include "W25Qxx_Flash.h"
 //#include "cli.h"
 /* USER CODE END Includes */
 
@@ -61,8 +62,15 @@ extern uint8_t flag_INT_UART4_RX;	// S.Port 수신기 인터럽트 플래그 변
 extern uint8_t flag_DMA1_DONE, flag_DMA2_DONE;		// DMA1_STREAM1 DMA완료 플래그
 
 extern uint8_t rxd, rxd_gps;		// UART 수신데이터 버퍼
-extern uint8_t rx_buf[100];		// Rx 수신데이터 버퍼
+extern uint8_t rx_buf[256];		// Rx 수신데이터 버퍼
 uint8_t cnt1=0, cnt2 = 0, radio_safe=0;
+
+//Flash
+uint8_t flash_data[8]= {0x01,0x02,0x03,0x04, 0xAA,0x55,0xA5,0x5A};
+uint8_t read_flash=0;
+uint8_t read_flash_arr[256], write_flash_arr[256];
+uint8_t flash_byte = 0x05, read_byte=0;
+
 
 extern unsigned int TimingDelay;
 
@@ -82,6 +90,8 @@ MSG_SBUS 		msg_sbus;
 //unsigned char M8N_CFG_MSG[16] = {0xB5, 0x62, 0x06, 0x01, 0x08, 0x00, 0x29, 0x02, 0x00, 0x01, 0x00, 0x00, 0x00, 0x00, 0x3B, 0xFE};
 //unsigned char M8N_CFG_RAT[14] = {0xB5, 0x62, 0x06, 0x08, 0x06, 0x00, 0xC8, 0x00, 0x01, 0x00, 0x01, 0x00, 0xDE, 0x6A};
 //unsigned char M8N_CFG_CFG[21] = {0xB5, 0x62, 0x06, 0x09, 0x0D, 0x00, 0x00, 0x00, 0x00, 0x00, 0xFF, 0xFF, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x17, 0x31, 0xBF};
+
+
 
 
 
@@ -121,7 +131,11 @@ int main(void)
   NVIC_SetPriority(SysTick_IRQn, NVIC_EncodePriority(NVIC_GetPriorityGrouping(),15, 0));
 
   /* USER CODE BEGIN Init */
-  memset(&rx_buf,0,100);
+  memset(&read_flash_arr,0,256);
+  for(int i=0; i<256;i++){
+	  write_flash_arr[i]=i;
+  }
+
   /* USER CODE END Init */
 
   /* Configure the system clock */
@@ -140,7 +154,23 @@ int main(void)
   MX_USART3_UART_Init();
   MX_USART1_UART_Init();
   MX_TIM5_Init();
+  MX_SPI3_Init();
   /* USER CODE BEGIN 2 */
+
+
+  W25QXX_SPI_Initialization();
+//  W25qxx_EraseChip();
+  W25qxx_EraseSector(0);
+  W25qxx_IsEmptyBlock(0, 0, 256);
+
+//  W25qxx_WriteByte(0x05,5);
+//  W25qxx_ReadBytes(read_flash_arr, 0, 10);
+
+  W25qxx_WritePage(write_flash_arr, 0, 0, 256);
+  W25qxx_ReadPage(read_flash_arr, 0, 0,  256);
+//  W25qxx_ReadBytes(read_flash_arr, 0, 256);
+//  W25qxx_ReadBytes(read_flash_arr, 5, 5);
+
 
   // Buzzer
 /*  LL_TIM_EnableCounter(TIM3);
@@ -242,6 +272,7 @@ int main(void)
 
 	  // UART3에서 한 프레임 GPS 데이터 수신완료에 인터럽트 발생, GPS데이터가 수신될 때마다 DMA는 데이터카운트를 하나씩 감소하면서 0이 될 때까지 전송
 	  if(flag_INT_UART3_GPS == 1){
+
 //		  cnt=(uint8_t)(MSG_LENGTH_NAV_SOL-LL_DMA_GetDataLength(DMA1,LL_DMA_STREAM_1));
 		  LL_DMA_DisableStream(DMA1,LL_DMA_STREAM_1);
 		  LL_DMA_ClearFlag_TC1(DMA1);

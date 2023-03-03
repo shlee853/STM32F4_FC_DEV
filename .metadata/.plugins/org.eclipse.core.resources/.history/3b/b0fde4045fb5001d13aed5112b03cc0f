@@ -1,0 +1,79 @@
+/*
+ * W25QXX_Flash.c
+ *
+ *  Created on: Feb 26, 2023
+ *      Author: swift
+ */
+
+
+#include "W25Qxx_Flash.h"
+
+
+
+void W25QXX_GPIO_SPI_Initialization(void)
+{
+	LL_SPI_Enable(W25QXX_SPI_CHANNEL);
+	CHIP_DESELECT(W25QXX);
+}
+
+
+unsigned char SPI3_SendByte(unsigned char data)
+{
+	while(LL_SPI_IsActiveFlag_TXE(W25QXX_SPI_CHANNEL)==RESET);
+	LL_SPI_TransmitData8(W25QXX_SPI_CHANNEL, data);
+
+	while(LL_SPI_IsActiveFlag_RXNE(W25QXX_SPI_CHANNEL)==RESET);
+	return LL_SPI_ReceiveData8(W25QXX_SPI_CHANNEL);
+}
+
+//////////////////////////////////////////////////////////////
+
+uint8_t W25QXX_Readbyte(uint8_t reg_addr)
+{
+	uint8_t val;
+
+	CHIP_SELECT(W25QXX);
+	SPI3_SendByte(reg_addr | REG_READ_DATA); //Register. MSB 1 is read instruction.
+	val = SPI3_SendByte(0x00); //Send DUMMY to read data
+	CHIP_DESELECT(W25QXX);
+
+	return val;
+}
+
+void W25QXX_Readbytes(unsigned char reg_addr, unsigned char len, unsigned char* data)
+{
+	unsigned int i = 0;
+
+	CHIP_SELECT(W25QXX);
+	SPI3_SendByte(reg_addr | REG_READ_DATA); //Register. MSB 1 is read instruction.
+	while(i < len)
+	{
+		data[i++] = SPI3_SendByte(0x00); //Send DUMMY to read data
+	}
+	CHIP_DESELECT(W25QXX);
+}
+
+void W25QXX_Writebyte(uint8_t reg_addr, uint8_t val)
+{
+	CHIP_SELECT(W25QXX);
+	SPI3_SendByte(REG_WRITE_ENBALE); // write enable
+	CHIP_DESELECT(W25QXX);
+
+	CHIP_SELECT(W25QXX);
+
+	SPI3_SendByte(reg_addr & REG_PAGE_PROGRAM); //Register. MSB 0 is write instruction.
+	SPI3_SendByte(val); //Send Data to write
+}
+
+void W25QXX_Writebytes(unsigned char reg_addr, unsigned char len, unsigned char* data)
+{
+	unsigned int i = 0;
+	CHIP_SELECT(W25QXX);
+	SPI3_SendByte(reg_addr & 0x7F); //Register. MSB 0 is write instruction.
+	while(i < len)
+	{
+		SPI3_SendByte(data[i++]); //Send Data to write
+	}
+	CHIP_DESELECT(W25QXX);
+}
+

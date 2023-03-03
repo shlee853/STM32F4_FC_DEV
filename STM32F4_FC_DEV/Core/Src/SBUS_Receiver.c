@@ -61,7 +61,7 @@ void SBUS_Parsing(SBUS_RAW_MESSAGE* raw, MSG_SBUS* msg_sbus, int* rx_recv_cnt, i
 
 		rx_recv_cnt[0]++;
 
-//		printf("cnt: %d\t ch[1]:%d\t ch[2]:%d\t ch[3]:%d\t ch[4]:%d\t ch[5]:%d\t ch[6]:%d\t ch[7]:%d\t ch[8]:%d\t FL:%d FS:%d\n",rx_recv_cnt[0], msg_sbus->rx_channel[0],msg_sbus->rx_channel[1],msg_sbus->rx_channel[2],msg_sbus->rx_channel[3],msg_sbus->rx_channel[4],msg_sbus->rx_channel[5],msg_sbus->rx_channel[6],msg_sbus->rx_channel[7], msg_sbus->frame_lost, msg_sbus->failsafe);
+		printf("cnt: %d\t ch[1]:%d\t ch[2]:%d\t ch[3]:%d\t ch[4]:%d\t ch[5]:%d\t ch[6]:%d\t ch[7]:%d\t ch[8]:%d\t FL:%d FS:%d\n",rx_recv_cnt[0], msg_sbus->rx_channel[0],msg_sbus->rx_channel[1],msg_sbus->rx_channel[2],msg_sbus->rx_channel[3],msg_sbus->rx_channel[4],msg_sbus->rx_channel[5],msg_sbus->rx_channel[6],msg_sbus->rx_channel[7], msg_sbus->frame_lost, msg_sbus->failsafe);
 	}
 
 	else

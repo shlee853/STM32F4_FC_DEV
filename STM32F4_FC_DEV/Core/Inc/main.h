@@ -92,6 +92,7 @@ void usDelay(unsigned int nTime);
 
 /* USER CODE BEGIN Private defines */
 #define CLOCK_PER_USEC 				168
+#define CLOCK_PER_MSEC 				168000
 
 typedef uint8_t bool;
 #define true   1
