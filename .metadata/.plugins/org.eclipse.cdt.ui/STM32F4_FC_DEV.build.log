@@ -1,45 +1,10 @@
-07:04:36 **** Incremental Build of configuration Debug for project STM32F4_FC_DEV ****
+08:54:27 **** Incremental Build of configuration Debug for project STM32F4_FC_DEV ****
 make -j8 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32F405xx -DUSE_FULL_LL_DRIVER -DHSE_VALUE=8000000 -DHSE_STARTUP_TIMEOUT=100 -DLSE_STARTUP_TIMEOUT=5000 -DLSE_VALUE=32768 -DEXTERNAL_CLOCK_VALUE=12288000 -DHSI_VALUE=16000000 -DLSI_VALUE=32000 -DVDD_VALUE=3300 -DPREFETCH_ENABLE=1 -DINSTRUCTION_CACHE_ENABLE=1 -DDATA_CACHE_ENABLE=1 -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fcommon -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-In file included from ../Core/Src/main.c:34:
-../Core/Inc/W25Qxx_Flash.h:38: warning: "CHIP_SELECT" redefined
-   38 | #define CHIP_SELECT(W25QXX)  LL_GPIO_ResetOutputPin(W25QXX_SPI_CS_PORT, W25QXX_SPI_CS_PIN)
-      | 
-In file included from ../Core/Src/main.c:30:
-../Core/Inc/ICM20602.h:63: note: this is the location of the previous definition
-   63 | #define CHIP_SELECT(ICM20602)  LL_GPIO_ResetOutputPin(ICM20602_SPI_CS_PORT, ICM20602_SPI_CS_PIN)
-      | 
-In file included from ../Core/Src/main.c:34:
-../Core/Inc/W25Qxx_Flash.h:39: warning: "CHIP_DESELECT" redefined
-   39 | #define CHIP_DESELECT(W25QXX)  LL_GPIO_SetOutputPin(W25QXX_SPI_CS_PORT, W25QXX_SPI_CS_PIN)
-      | 
-In file included from ../Core/Src/main.c:30:
-../Core/Inc/ICM20602.h:64: note: this is the location of the previous definition
-   64 | #define CHIP_DESELECT(ICM20602)  LL_GPIO_SetOutputPin(ICM20602_SPI_CS_PORT, ICM20602_SPI_CS_PIN)
-      | 
-../Core/Src/main.c: In function 'main':
-../Core/Src/main.c:134:3: warning: implicit declaration of function 'memset' [-Wimplicit-function-declaration]
-  134 |   memset(&read_flash_arr,0,256);
-      |   ^~~~~~
-../Core/Src/main.c:134:3: warning: incompatible implicit declaration of built-in function 'memset'
-../Core/Src/main.c:35:1: note: include '<string.h>' or provide a declaration of 'memset'
-   34 | #include "W25Qxx_Flash.h"
-  +++ |+#include <string.h>
-   35 | //#include "cli.h"
-../Core/Src/main.c:301:5: warning: implicit declaration of function 'GetRPY' [-Wimplicit-function-declaration]
-  301 |     GetRPY(&sampleFreq);
-      |     ^~~~~~
-arm-none-eabi-gcc -o "STM32F4_FC_DEV.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/STM32F405RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="STM32F4_FC_DEV.map" -Wl,--gc-sections -static -u_printf_float --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: STM32F4_FC_DEV.elf
- 
 arm-none-eabi-size   STM32F4_FC_DEV.elf 
-arm-none-eabi-objdump -h -S  STM32F4_FC_DEV.elf  > "STM32F4_FC_DEV.list"
    text	   data	    bss	    dec	    hex	filename
-  43380	    496	   2752	  46628	   b624	STM32F4_FC_DEV.elf
+  47116	    504	   2928	  50548	   c574	STM32F4_FC_DEV.elf
 Finished building: default.size.stdout
  
-Finished building: STM32F4_FC_DEV.list
- 
 
-07:04:37 Build Finished. 0 errors, 5 warnings. (took 923ms)
+08:54:27 Build Finished. 0 errors, 0 warnings. (took 531ms)
 

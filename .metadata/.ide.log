@@ -16017,3 +16017,935 @@
 2023-03-04 07:04:39,120 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
 2023-03-04 07:04:39,121 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
 2023-03-04 07:04:39,121 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-03-04 07:39:51,247 [INFO] McuFinderGlobals:52 - Set McuFinder mode to 2 (CubeIDE integrated)
+2023-03-04 07:39:51,384 [INFO] ApplicationProperties:181 - Using Application install path: /opt/st/stm32cubeide_1.11.2/plugins/com.st.stm32cube.common.mx_6.7.0.202301130839
+2023-03-04 07:39:51,406 [INFO] DbMcusXml:77 - Set database path to: /opt/st/stm32cubeide_1.11.2/plugins/com.st.stm32cube.common.mx_6.7.0.202301130839//db//mcu/
+2023-03-04 07:39:51,407 [INFO] ApiDb:273 - Set plugin database path to: /opt/st/stm32cubeide_1.11.2/plugins/com.st.stm32cube.common.mx_6.7.0.202301130839//db//plugins/boardmanager/
+2023-03-04 07:39:51,411 [WARN] ApiDb:258 - Overriding images path with different value:  => /opt/st/stm32cubeide_1.11.2/plugins/com.st.stm32cube.common.mx_6.7.0.202301130839//db//plugins/mcufinder/images/
+2023-03-04 07:39:51,434 [INFO] ApiDb:249 - Set database path to: /home/swift/.stmcufinder/plugins/mcufinder//mcu/
+2023-03-04 07:39:51,436 [INFO] DbMcusAds:124 - Set database path to: /home/swift/.stmcufinder/plugins/mcufinder//mcu/
+2023-03-04 07:39:52,415 [INFO] CrossReferenceDbSqlite:202 - Set database path to: /home/swift/.stmcufinder/plugins/mcufinder//mcu/cs/
+2023-03-04 07:39:52,550 [INFO] RulesReader:61 - Compatibility file has been processed (283 Rules)
+2023-03-04 07:39:52,638 [INFO] DbMcusXml:77 - Set database path to: /opt/st/stm32cubeide_1.11.2/plugins/com.st.stm32cube.common.mx_6.7.0.202301130839//db//mcu/
+2023-03-04 07:39:52,639 [INFO] ApiDb:273 - Set plugin database path to: /opt/st/stm32cubeide_1.11.2/plugins/com.st.stm32cube.common.mx_6.7.0.202301130839//db//plugins/boardmanager/
+2023-03-04 07:39:52,639 [INFO] ApiDb:260 - Set plugin images path to: /opt/st/stm32cubeide_1.11.2/plugins/com.st.stm32cube.common.mx_6.7.0.202301130839//db//plugins/mcufinder/images/
+2023-03-04 07:39:52,639 [WARN] DbFile:40 - Overriding database path with different value: /home/swift/.stmcufinder/plugins/mcufinder/ => /home/swift/.stmcufinder/plugins/mcufinder
+2023-03-04 07:39:52,640 [INFO] ApiDb:249 - Set database path to: /home/swift/.stmcufinder/plugins/mcufinder//mcu/
+2023-03-04 07:39:52,640 [WARN] DbFile:40 - Overriding database path with different value: /home/swift/.stmcufinder/plugins/mcufinder/ => /home/swift/.stmcufinder/plugins/mcufinder
+2023-03-04 07:39:52,640 [INFO] DbMcusAds:124 - Set database path to: /home/swift/.stmcufinder/plugins/mcufinder//mcu/
+2023-03-04 07:39:52,641 [WARN] DbFile:40 - Overriding database path with different value: /home/swift/.stmcufinder/plugins/mcufinder/ => /home/swift/.stmcufinder/plugins/mcufinder
+2023-03-04 07:39:52,641 [WARN] DbFile:40 - Overriding database path with different value: /home/swift/.stmcufinder/plugins/mcufinder/ => /home/swift/.stmcufinder/plugins/mcufinder
+2023-03-04 07:39:52,641 [INFO] CrossReferenceDbSqlite:202 - Set database path to: /home/swift/.stmcufinder/plugins/mcufinder//mcu/cs/
+2023-03-04 07:39:52,728 [INFO] MainPanel:252 - HeapMemory: 446693376
+2023-03-04 07:39:52,867 [INFO] DbMcusXml:77 - Set database path to: /opt/st/stm32cubeide_1.11.2/plugins/com.st.stm32cube.common.mx_6.7.0.202301130839//db//mcu/
+2023-03-04 07:39:52,867 [INFO] ApiDb:273 - Set plugin database path to: /opt/st/stm32cubeide_1.11.2/plugins/com.st.stm32cube.common.mx_6.7.0.202301130839//db//plugins/boardmanager/
+2023-03-04 07:39:52,867 [INFO] ApiDb:260 - Set plugin images path to: /opt/st/stm32cubeide_1.11.2/plugins/com.st.stm32cube.common.mx_6.7.0.202301130839//db//plugins/mcufinder/images/
+2023-03-04 07:39:52,868 [WARN] DbFile:40 - Overriding database path with different value: /home/swift/.stmcufinder/plugins/mcufinder/ => /home/swift/.stmcufinder/plugins/mcufinder
+2023-03-04 07:39:52,868 [INFO] ApiDb:249 - Set database path to: /home/swift/.stmcufinder/plugins/mcufinder//mcu/
+2023-03-04 07:39:52,868 [WARN] DbFile:40 - Overriding database path with different value: /home/swift/.stmcufinder/plugins/mcufinder/ => /home/swift/.stmcufinder/plugins/mcufinder
+2023-03-04 07:39:52,868 [INFO] DbMcusAds:124 - Set database path to: /home/swift/.stmcufinder/plugins/mcufinder//mcu/
+2023-03-04 07:39:52,868 [WARN] DbFile:40 - Overriding database path with different value: /home/swift/.stmcufinder/plugins/mcufinder/ => /home/swift/.stmcufinder/plugins/mcufinder
+2023-03-04 07:39:52,868 [WARN] DbFile:40 - Overriding database path with different value: /home/swift/.stmcufinder/plugins/mcufinder/ => /home/swift/.stmcufinder/plugins/mcufinder
+2023-03-04 07:39:52,869 [INFO] CrossReferenceDbSqlite:202 - Set database path to: /home/swift/.stmcufinder/plugins/mcufinder//mcu/cs/
+2023-03-04 07:39:52,893 [INFO] ApplicationProperties:181 - Using Application install path: /opt/st/stm32cubeide_1.11.2/plugins/com.st.stm32cube.common.mx_6.7.0.202301130839
+2023-03-04 07:39:52,895 [INFO] PluginManage:193 - Search for loadable plugins [exclusion list=, ]
+2023-03-04 07:39:52,897 [INFO] PluginManage:307 - Check plugin analytics
+2023-03-04 07:39:53,098 [INFO] AnalyticsPlugin:262 - Accepted Software Licenses: 
+2023-03-04 07:39:53,099 [INFO] AnalyticsPlugin:264 - Accepted CMSIS Pack Licenses: 
+2023-03-04 07:39:53,100 [INFO] AnalyticsPlugin:266 - Accepted Firmware Licenses: FW.F4.1.27.0
+2023-03-04 07:39:53,105 [INFO] PluginManage:356 - Loaded plugin analytics (category:tool,tabindex:-1)
+2023-03-04 07:39:53,106 [INFO] PluginManage:307 - Check plugin cadmodel
+2023-03-04 07:39:53,163 [INFO] CADModel:104 - Init CAD model plugin
+2023-03-04 07:39:53,163 [INFO] PluginManage:356 - Loaded plugin cadmodel (category:power,tabindex:5)
+2023-03-04 07:39:53,163 [INFO] PluginManage:307 - Check plugin clock
+2023-03-04 07:39:53,175 [INFO] PluginManage:356 - Loaded plugin clock (category:base,tabindex:2)
+2023-03-04 07:39:53,175 [INFO] PluginManage:307 - Check plugin ddr
+2023-03-04 07:39:53,178 [INFO] PluginManage:356 - Loaded plugin ddr (category:tool,tabindex:6)
+2023-03-04 07:39:53,178 [INFO] PluginManage:307 - Check plugin filemanager
+2023-03-04 07:39:53,333 [INFO] PluginManage:356 - Loaded plugin filemanager (category:base,tabindex:10)
+2023-03-04 07:39:53,333 [INFO] PluginManage:307 - Check plugin ipmanager
+2023-03-04 07:39:53,340 [INFO] PluginManage:356 - Loaded plugin ipmanager (category:base,tabindex:5)
+2023-03-04 07:39:53,340 [INFO] PluginManage:307 - Check plugin lpbam
+2023-03-04 07:39:53,352 [INFO] PluginManage:356 - Loaded plugin lpbam (category:base,tabindex:0)
+2023-03-04 07:39:53,353 [INFO] PluginManage:307 - Check plugin pinoutandconfiguration
+2023-03-04 07:39:53,362 [INFO] PluginManage:356 - Loaded plugin pinoutandconfiguration (category:base,tabindex:1)
+2023-03-04 07:39:53,362 [INFO] PluginManage:307 - Check plugin pinoutconfig
+2023-03-04 07:39:53,396 [INFO] PluginManage:356 - Loaded plugin pinoutconfig (category:base,tabindex:0)
+2023-03-04 07:39:53,397 [INFO] PluginManage:307 - Check plugin power
+2023-03-04 07:39:53,410 [INFO] PluginManage:356 - Loaded plugin power (category:power,tabindex:4)
+2023-03-04 07:39:53,410 [INFO] PluginManage:307 - Check plugin projectmanager
+2023-03-04 07:39:53,429 [INFO] PluginManage:356 - Loaded plugin projectmanager (category:projectmanager,tabindex:3)
+2023-03-04 07:39:53,429 [INFO] PluginManage:307 - Check plugin thirdparty
+2023-03-04 07:39:53,554 [WARN] IntegrityCheckThread:82 - waiting for thirdparty lock release [integrity check]
+2023-03-04 07:39:53,555 [INFO] PluginManage:356 - Loaded plugin thirdparty (category:base,tabindex:-1)
+2023-03-04 07:39:53,555 [INFO] IntegrityCheckThread:84 - entering critical section [integrity check]
+2023-03-04 07:39:53,556 [INFO] PluginManage:307 - Check plugin tools
+2023-03-04 07:39:53,558 [INFO] ThirdPartyUpdaterWithRetryManager:70 - Updater plugin not ready yet. [1/15]
+2023-03-04 07:39:53,558 [INFO] PluginManage:356 - Loaded plugin tools (category:base,tabindex:7)
+2023-03-04 07:39:53,558 [INFO] PluginManage:307 - Check plugin tutovideos
+2023-03-04 07:39:53,802 [INFO] PluginManage:356 - Loaded plugin tutovideos (category:base,tabindex:-1)
+2023-03-04 07:39:53,803 [INFO] PluginManage:307 - Check plugin updater
+2023-03-04 07:39:53,819 [INFO] PluginManage:356 - Loaded plugin updater (category:base,tabindex:12)
+2023-03-04 07:39:53,819 [INFO] PluginManage:280 - PluginManage : Loaded plugins [15]
+2023-03-04 07:39:54,050 [INFO] PinOutPanel:1477 - setPackage(No Configuration,No Configuration)
+2023-03-04 07:39:54,107 [INFO] CADModel:164 - CPN selected for project level
+2023-03-04 07:39:54,108 [INFO] CADModel:113 - Register for checkConnection events
+2023-03-04 07:39:54,129 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-03-04 07:39:54,130 [INFO] PluginManager:219 - loadIPPluginJar : add fmc
+2023-03-04 07:39:54,133 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-03-04 07:39:54,133 [INFO] PluginManager:219 - loadIPPluginJar : add hash
+2023-03-04 07:39:54,137 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-03-04 07:39:54,138 [INFO] PluginManager:219 - loadIPPluginJar : add nvic
+2023-03-04 07:39:54,142 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-03-04 07:39:54,142 [INFO] PluginManager:219 - loadIPPluginJar : add pdm2pcm
+2023-03-04 07:39:54,146 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-03-04 07:39:54,147 [INFO] PluginManager:219 - loadIPPluginJar : add resmgrutility
+2023-03-04 07:39:54,150 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-03-04 07:39:54,150 [INFO] PluginManager:219 - loadIPPluginJar : add i2c
+2023-03-04 07:39:54,156 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-03-04 07:39:54,156 [INFO] PluginManager:219 - loadIPPluginJar : add gic
+2023-03-04 07:39:54,159 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-03-04 07:39:54,160 [INFO] PluginManager:219 - loadIPPluginJar : add usart
+2023-03-04 07:39:54,168 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-03-04 07:39:54,169 [INFO] PluginManager:219 - loadIPPluginJar : add linkedlist
+2023-03-04 07:39:54,172 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-03-04 07:39:54,173 [INFO] PluginManager:219 - loadIPPluginJar : add sai
+2023-03-04 07:39:54,175 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-03-04 07:39:54,176 [INFO] PluginManager:219 - loadIPPluginJar : add lorawan
+2023-03-04 07:39:54,182 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-03-04 07:39:54,183 [INFO] PluginManager:219 - loadIPPluginJar : add adc
+2023-03-04 07:39:54,185 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-03-04 07:39:54,186 [INFO] PluginManager:219 - loadIPPluginJar : add dma3
+2023-03-04 07:39:54,189 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-03-04 07:39:54,189 [INFO] PluginManager:219 - loadIPPluginJar : add aes
+2023-03-04 07:39:54,191 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-03-04 07:39:54,191 [INFO] PluginManager:219 - loadIPPluginJar : add fatfs
+2023-03-04 07:39:54,194 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-03-04 07:39:54,195 [INFO] PluginManager:219 - loadIPPluginJar : add openamp
+2023-03-04 07:39:54,196 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-03-04 07:39:54,197 [INFO] PluginManager:219 - loadIPPluginJar : add quadspi
+2023-03-04 07:39:54,202 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-03-04 07:39:54,202 [INFO] PluginManager:219 - loadIPPluginJar : add gpio
+2023-03-04 07:39:54,204 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-03-04 07:39:54,205 [INFO] PluginManager:219 - loadIPPluginJar : add tim
+2023-03-04 07:39:54,209 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-03-04 07:39:54,209 [INFO] PluginManager:219 - loadIPPluginJar : add ipddr
+2023-03-04 07:39:54,211 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-03-04 07:39:54,212 [INFO] PluginManager:219 - loadIPPluginJar : add tsc
+2023-03-04 07:39:54,213 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-03-04 07:39:54,213 [INFO] PluginManager:219 - loadIPPluginJar : add comp
+2023-03-04 07:39:54,216 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-03-04 07:39:54,216 [INFO] PluginManager:219 - loadIPPluginJar : add i2s
+2023-03-04 07:39:54,219 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-03-04 07:39:54,220 [INFO] PluginManager:219 - loadIPPluginJar : add can
+2023-03-04 07:39:54,227 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-03-04 07:39:54,231 [INFO] PluginManager:219 - loadIPPluginJar : add plateformsettings
+2023-03-04 07:39:54,234 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-03-04 07:39:54,234 [INFO] PluginManager:219 - loadIPPluginJar : add gfxmmu
+2023-03-04 07:39:54,236 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-03-04 07:39:54,237 [INFO] PluginManager:219 - loadIPPluginJar : add ts
+2023-03-04 07:39:54,239 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-03-04 07:39:54,239 [INFO] PluginManager:219 - loadIPPluginJar : add spi
+2023-03-04 07:39:54,244 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-03-04 07:39:54,245 [INFO] PluginManager:219 - loadIPPluginJar : add stm32_wpan
+2023-03-04 07:39:54,248 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-03-04 07:39:54,249 [INFO] PluginManager:219 - loadIPPluginJar : add touchsensing
+2023-03-04 07:39:54,251 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-03-04 07:39:54,251 [INFO] PluginManager:219 - loadIPPluginJar : add tracer_emb
+2023-03-04 07:39:54,254 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-03-04 07:39:54,255 [INFO] PluginManager:219 - loadIPPluginJar : add usbx
+2023-03-04 07:39:54,257 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-03-04 07:39:54,257 [INFO] PluginManager:219 - loadIPPluginJar : add ucpd
+2023-03-04 07:39:54,259 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-03-04 07:39:54,259 [INFO] PluginManager:219 - loadIPPluginJar : add ltdc
+2023-03-04 07:39:54,261 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-03-04 07:39:54,262 [INFO] PluginManager:219 - loadIPPluginJar : add opamp
+2023-03-04 07:39:54,269 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-03-04 07:39:54,269 [INFO] PluginManager:219 - loadIPPluginJar : add mdma
+2023-03-04 07:39:54,271 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-03-04 07:39:54,271 [INFO] PluginManager:219 - loadIPPluginJar : add genericplugin
+2023-03-04 07:39:54,278 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-03-04 07:39:54,278 [INFO] PluginManager:219 - loadIPPluginJar : add freertos
+2023-03-04 07:39:54,281 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-03-04 07:39:54,281 [INFO] PluginManager:219 - loadIPPluginJar : add cryp
+2023-03-04 07:39:54,288 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-03-04 07:39:54,288 [INFO] PluginManager:219 - loadIPPluginJar : add dma
+2023-03-04 07:39:54,291 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-03-04 07:39:54,291 [INFO] PluginManager:219 - loadIPPluginJar : add dfsdm
+2023-03-04 07:39:54,294 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-03-04 07:39:54,295 [INFO] PluginManager:219 - loadIPPluginJar : add gtzc
+2023-03-04 07:39:54,412 [INFO] CADModel:164 - CPN selected for project level
+2023-03-04 07:39:54,412 [INFO] CADModel:113 - Register for checkConnection events
+2023-03-04 07:39:54,412 [FATAL] Updater:308 - Updater called before beeing initialized
+2023-03-04 07:39:54,413 [ERROR] CADModel:124 - Updater not yet initialized, retry later 
+2023-03-04 07:39:54,601 [INFO] CADModel:164 - CPN selected for project level
+2023-03-04 07:39:54,601 [INFO] CADModel:113 - Register for checkConnection events
+2023-03-04 07:39:54,602 [FATAL] Updater:308 - Updater called before beeing initialized
+2023-03-04 07:39:54,602 [ERROR] CADModel:124 - Updater not yet initialized, retry later 
+2023-03-04 07:39:54,606 [FATAL] Updater:308 - Updater called before beeing initialized
+2023-03-04 07:39:54,713 [FATAL] Updater:308 - Updater called before beeing initialized
+2023-03-04 07:39:54,721 [INFO] DbMcusAds:52 - JSON generation date=Thu Sep 30 15:55:09 KST 2021 (1632984909247)
+2023-03-04 07:39:54,722 [FATAL] Updater:308 - Updater called before beeing initialized
+2023-03-04 07:39:54,775 [WARN] DetailPanel:344 - Failed to get advertising image, set to default
+2023-03-04 07:39:54,912 [FATAL] Updater:308 - Updater called before beeing initialized
+2023-03-04 07:39:54,915 [FATAL] Updater:308 - Updater called before beeing initialized
+2023-03-04 07:39:54,915 [FATAL] Updater:308 - Updater called before beeing initialized
+2023-03-04 07:39:54,915 [WARN] DetailPanel:344 - Failed to get advertising image, set to default
+2023-03-04 07:39:54,916 [FATAL] Updater:308 - Updater called before beeing initialized
+2023-03-04 07:39:54,964 [ERROR] Updater:1120 - MainUpdater not yet initialized. External WinMGr cannot be set.
+2023-03-04 07:39:54,966 [INFO] Updater:1056 - Updater Version found : 6.7.0
+2023-03-04 07:39:54,987 [INFO] ApplicationProperties:181 - Using Application install path: /opt/st/stm32cubeide_1.11.2/plugins/com.st.stm32cube.common.mx_6.7.0.202301130839
+2023-03-04 07:39:55,202 [INFO] MainUpdater:2800 - connection check result : 10
+2023-03-04 07:39:55,203 [INFO] MainUpdater:3494 - Updater definition file requires update
+2023-03-04 07:39:55,204 [INFO] MainUpdater:282 - Updater Check For Update Now.
+2023-03-04 07:39:55,205 [INFO] MicroXplorer:481 - Change Database Version : DB.6.0.70
+2023-03-04 07:39:55,270 [INFO] ServerAccessManage:474 - Download File updaters.zip
+2023-03-04 07:39:55,469 [INFO] FileExtend:239 - Unzip File : updaters.zip
+2023-03-04 07:39:55,470 [INFO] FileExtend:254 - Standard Zip Deflate
+2023-03-04 07:39:55,699 [INFO] ServerAccessManage:474 - Download File PacksControlFlags.xml
+2023-03-04 07:39:55,775 [INFO] ServerAccessManage:474 - Download File cubemx.pidx
+2023-03-04 07:39:55,856 [INFO] LoadServerUpdatesThread:367 - End of LoadServerUpdate Thread
+2023-03-04 07:39:56,011 [INFO] CheckServerUpdateThread:119 - End of CheckServer Thread
+2023-03-04 07:39:56,041 [INFO] MainUpdater:2800 - connection check result : 10
+2023-03-04 07:39:56,042 [INFO] MainUpdater:2800 - connection check result : 10
+2023-03-04 07:39:56,083 [INFO] MicroXplorer:451 - Change Database Path : 
+2023-03-04 07:39:56,083 [INFO] MicroXplorer:481 - Change Database Version : DB.6.0.70
+2023-03-04 07:39:56,084 [WARN] ThirdParty:845 - waiting for thirdparty lock release [close project]
+2023-03-04 07:39:56,707 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-GNSS1.6.0.0
+2023-03-04 07:39:56,755 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-AZRTOS-F4.1.1.0
+2023-03-04 07:39:56,785 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-AZRTOS-F7.1.1.0
+2023-03-04 07:39:56,796 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-BLE1.6.2.4
+2023-03-04 07:39:56,809 [WARN] PackLoader:242 - Cannot read IP mode file for emotas.I-CUBE-CANOPEN.1.1.3
+2023-03-04 07:39:56,818 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-DISPLAY.3.0.0
+2023-03-04 07:39:56,828 [WARN] PackLoader:242 - Cannot read IP mode file for wolfSSL.I-CUBE-wolfSSL.5.5.4
+2023-03-04 07:39:56,834 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-NFC7.1.0.0
+2023-03-04 07:39:56,841 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-EEPRMA1.4.1.0
+2023-03-04 07:39:56,852 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-SFXS2LP1.4.0.0
+2023-03-04 07:39:56,861 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-BLE2.3.3.0
+2023-03-04 07:39:56,873 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-TOF1.3.2.0
+2023-03-04 07:39:56,911 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-AZRTOS-H7.3.0.0
+2023-03-04 07:39:56,920 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-ISPU.1.1.0
+2023-03-04 07:39:56,929 [WARN] PackLoader:242 - Cannot read IP mode file for RoweBots.I-CUBE-UNISONRTOS.5.5.0-4
+2023-03-04 07:39:56,933 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-AI.8.0.0
+2023-03-04 07:39:56,937 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-TOUCHGFX.4.21.1
+2023-03-04 07:39:56,992 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-MEMS1.9.4.0
+2023-03-04 07:39:57,150 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-AI.7.3.0
+2023-03-04 07:39:57,155 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-ALGOBUILD.1.3.0
+2023-03-04 07:39:57,171 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-AZRTOS-L5.1.1.0
+2023-03-04 07:39:57,191 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-AZRTOS-G0.1.1.0
+2023-03-04 07:39:57,204 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-SUBG2.5.0.0
+2023-03-04 07:39:57,215 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-NFC4.3.0.0
+2023-03-04 07:39:57,220 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.FP-ATR-ASTRA1.1.1.1
+2023-03-04 07:39:57,228 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-BLEMGR.1.3.0
+2023-03-04 07:39:57,242 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-AZRTOS-G4.1.0.0
+2023-03-04 07:39:57,248 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.FP-ATR-SIGFOX1.3.2.0
+2023-03-04 07:39:57,264 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-AZRTOS-L4.1.0.0
+2023-03-04 07:39:57,277 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-AZRTOS-WL.1.0.0
+2023-03-04 07:39:57,282 [WARN] PackLoader:242 - Cannot read IP mode file for portGmbH.I-Cube-SoM-uGOAL.1.1.0
+2023-03-04 07:39:57,286 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-ALS.1.0.1
+2023-03-04 07:39:57,332 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-MEMS1.9.5.0
+2023-03-04 07:39:57,514 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-AZRTOS-WB.1.1.0
+2023-03-04 07:39:57,571 [WARN] PackLoader:242 - Cannot read IP mode file for SEGGER.I-CUBE-embOS.1.3.0
+2023-03-04 07:39:57,614 [INFO] ThirdParty:947 - Integrity check success = true
+2023-03-04 07:39:57,614 [INFO] IntegrityCheckThread:98 - exiting critical section [integrity check]
+2023-03-04 07:39:57,614 [INFO] IntegrityCheckThread:101 - End integrity checks thread
+2023-03-04 07:39:57,614 [INFO] ThirdParty:847 - entering critical section [close project]
+2023-03-04 07:39:57,616 [INFO] ThirdParty:857 - exiting critical section [close project]
+2023-03-04 07:39:57,619 [INFO] PinOutPanel:1477 - setPackage(No Configuration,No Configuration)
+2023-03-04 07:39:57,626 [INFO] UtilMem:74 - Begin LoadConfig() Used Memory: 199986064 Bytes (557842432)
+2023-03-04 07:39:57,627 [INFO] MicroXplorer:451 - Change Database Path : 
+2023-03-04 07:39:57,627 [INFO] MicroXplorer:481 - Change Database Version : DB.6.0.70
+2023-03-04 07:39:57,628 [INFO] OpenFileManager:307 - Change cursor
+2023-03-04 07:39:57,674 [INFO] Mcu:1925 - Initializing MCU STM32F405RGTx STM32F405RGTx STM32F405RGT6
+2023-03-04 07:39:59,702 [INFO] Context:654 - Trying to add GPIOservice into a context  which must be forbidden
+2023-03-04 07:40:00,582 [INFO] RtosManager:489 - Registered RTOS mode: class=CMSIS, group=RTOS, mode=CMSIS_V1, owner=FREERTOS
+2023-03-04 07:40:00,582 [INFO] RtosManager:489 - Registered RTOS mode: class=CMSIS, group=RTOS2, mode=CMSIS_V2, owner=FREERTOS
+2023-03-04 07:40:00,582 [INFO] RtosManager:489 - Registered RTOS mode: class=RTOS, group=Core, mode=CMSIS_V1, owner=FREERTOS
+2023-03-04 07:40:00,582 [INFO] RtosManager:489 - Registered RTOS mode: class=RTOS, group=Core, mode=CMSIS_V2, owner=FREERTOS
+2023-03-04 07:40:00,583 [WARN] ModelIntegratedComponent:185 - Missing modes for component STMicroelectronics:FreeRTOS:0.0.1:STMicroelectronics:RTOS:FreeRTOS:Core:::10.2.0:
+2023-03-04 07:40:00,608 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2023-03-04 07:40:00,608 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2023-03-04 07:40:00,608 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2023-03-04 07:40:00,608 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2023-03-04 07:40:00,608 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2023-03-04 07:40:00,608 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2023-03-04 07:40:00,608 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2023-03-04 07:40:00,608 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2023-03-04 07:40:00,608 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2023-03-04 07:40:00,609 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2023-03-04 07:40:00,609 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2023-03-04 07:40:00,609 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2023-03-04 07:40:00,609 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2023-03-04 07:40:00,609 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2023-03-04 07:40:00,609 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2023-03-04 07:40:00,609 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2023-03-04 07:40:00,609 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2023-03-04 07:40:00,609 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2023-03-04 07:40:00,609 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2023-03-04 07:40:00,609 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2023-03-04 07:40:00,609 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2023-03-04 07:40:00,609 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2023-03-04 07:40:00,610 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2023-03-04 07:40:00,610 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2023-03-04 07:40:00,610 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2023-03-04 07:40:00,610 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2023-03-04 07:40:00,610 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2023-03-04 07:40:00,610 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2023-03-04 07:40:00,610 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2023-03-04 07:40:00,610 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2023-03-04 07:40:00,610 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2023-03-04 07:40:00,610 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2023-03-04 07:40:00,610 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2023-03-04 07:40:00,748 [INFO] ThirdPartyModel:294 - Start build external matchings
+2023-03-04 07:40:01,168 [INFO] ThirdPartyModel:310 - End build external matchings
+2023-03-04 07:40:01,211 [INFO] ImportTextPane:193 - (OptionalMessage_ERROR) IP (DMA) : Parameter (Instance) has Id (USART3_RX) currently not set
+2023-03-04 07:40:01,211 [INFO] ImportTextPane:193 - (OptionalMessage_ERROR) IP (DMA) : Parameter (Channel) has Id (USART3_RX) currently not set
+2023-03-04 07:40:01,211 [INFO] ImportTextPane:193 - (OptionalMessage_ERROR) IP (DMA) : Parameter (Direction) has Id (USART3_RX) currently not set
+2023-03-04 07:40:01,211 [INFO] ImportTextPane:193 - (OptionalMessage_ERROR) IP (DMA) : Parameter (PeriphInc) has Id (USART3_RX) currently not set
+2023-03-04 07:40:01,211 [INFO] ImportTextPane:193 - (OptionalMessage_ERROR) IP (DMA) : Parameter (MemInc) has Id (USART3_RX) currently not set
+2023-03-04 07:40:01,212 [INFO] ImportTextPane:193 - (OptionalMessage_ERROR) IP (DMA) : Parameter (PeriphDataAlignment) has Id (USART3_RX) currently not set
+2023-03-04 07:40:01,212 [INFO] ImportTextPane:193 - (OptionalMessage_ERROR) IP (DMA) : Parameter (MemDataAlignment) has Id (USART3_RX) currently not set
+2023-03-04 07:40:01,212 [INFO] ImportTextPane:193 - (OptionalMessage_ERROR) IP (DMA) : Parameter (Mode) has Id (USART3_RX) currently not set
+2023-03-04 07:40:01,212 [INFO] ImportTextPane:193 - (OptionalMessage_ERROR) IP (DMA) : Parameter (Priority) has Id (USART3_RX) currently not set
+2023-03-04 07:40:01,212 [INFO] ImportTextPane:193 - (OptionalMessage_ERROR) IP (DMA) : Parameter (FIFOMode) has Id (USART3_RX) currently not set
+2023-03-04 07:40:01,215 [INFO] ImportTextPane:193 - (OptionalMessage_ERROR) IP (RCC) : Parameter (48MHZClocksFreq_Value) has invalid value (84000000)
+2023-03-04 07:40:01,216 [INFO] ImportTextPane:193 - (OptionalMessage_ERROR) IP (RCC) : Parameter (RTCHSEDivFreq_Value) has invalid value (4000000)
+2023-03-04 07:40:01,569 [INFO] UtilMem:74 - End LoadConfig() Used Memory: 202995448 Bytes (557842432)
+2023-03-04 07:40:01,717 [INFO] ApiDb:580 - Connected to CubeFinder SQLite database (/home/swift/.stmcufinder/plugins/mcufinder/mcu/cube-finder-db.db)
+2023-03-04 07:40:01,791 [INFO] ApiDb:667 - CubeFinder database Data Model version=2.1
+2023-03-04 07:40:01,791 [INFO] ApiDb:668 - CubeFinder database Configuration version=3.0.35
+2023-03-04 07:40:01,791 [INFO] ApiDb:669 - CubeFinder database generation date=2023-01-11 (1673424164)
+2023-03-04 07:40:01,791 [INFO] ApiDb:670 - CubeFinder database FW Pack versions=[FP-ATR-ASTRA1_V1.1.1, STM32Cube_FW_C0_V1.0.0, STM32Cube_FW_F4_V1.27.1, STM32Cube_FW_F7_V1.17.0, STM32Cube_FW_G0_V1.6.1, STM32Cube_FW_G4_V1.5.0, STM32Cube_FW_H5_V0.5.1, STM32Cube_FW_H7_V1.11.0, STM32Cube_FW_L5_V1.5.0, STM32Cube_FW_U5_V1.1.1, STM32Cube_FW_WBA_V0.2.0, STM32Cube_FW_WB_V1.15.0, STM32Cube_FW_WB_V1.15.0RC1, STM32Cube_FW_WL_V1.3.0, X-CUBE-ALGOBUILD_V1.3.0, X-CUBE-ALS_V1.0.1, X-CUBE-AZRTOS-F4_V1.1.0, X-CUBE-AZRTOS-F7_V1.1.0, X-CUBE-AZRTOS-G0_V1.1.0, X-CUBE-AZRTOS-G4_V1.0.0, X-CUBE-AZRTOS-H7_V2.1.0, X-CUBE-AZRTOS-L4_V1.0.0, X-CUBE-AZRTOS-L5_V1.0.0, X-CUBE-AZRTOS-WL_V1.0.0, X-CUBE-BLE1_V6.2.4, X-CUBE-BLE2_V3.3.0, X-CUBE-BLEMGR_V1.3.0, X-CUBE-EEPRMA1_V4.1.0, X-CUBE-GNSS1_V6.0.0, X-CUBE-MEMS1_V9.1.0, X-CUBE-MEMS1_V9.3.0, X-CUBE-MEMS1_V9.4.0, X-CUBE-NFC4_V3.0.0, X-CUBE-NFC7_V1.0.0, X-CUBE-SFXS2LP1_V4.0.0, X-CUBE-SUBG2_V5.0.0]
+2023-03-04 07:40:04,289 [INFO] ApiDb:239 - Found 143 in-development CPN: [B-WB1M-WPAN1, B-WL5M-SUBG1, NUCLEO-C031C6, STEVAL-PROTEUS1, STEVAL-STWINBX1, STM320518-EVAL, STM32C0116-DK, STM32C011D6Y3TR, STM32C011D6Y6TR, STM32C011F4P3, STM32C011F4P6, STM32C011F4U3, STM32C011F4U6TR, STM32C011F6P3, STM32C011F6P6, STM32C011F6U3, STM32C011F6U6TR, STM32C011J4M3, STM32C011J4M6, STM32C011J6M3, STM32C011J6M6, STM32C0316-DK, STM32C031C4T3, STM32C031C4T6, STM32C031C4U3, STM32C031C4U6, STM32C031C6T3, STM32C031C6T6, STM32C031C6U3, STM32C031C6U6, STM32C031F4P3, STM32C031F4P6, STM32C031F6P3, STM32C031F6P6, STM32C031G4U3, STM32C031G4U6, STM32C031G6U3, STM32C031G6U6, STM32C031K4T3, STM32C031K4T6, STM32C031K4U3, STM32C031K4U6, STM32C031K6T3, STM32C031K6T6, STM32C031K6U3, STM32C031K6U6, STM32G071K8TXN, STM32G071K8UXN, STM32G081GBU6N, STM32G081KBT6N, STM32G081KBUXN, STM32G0B1CCT6N, STM32G0B1KCT6, STM32G0B1NEY6TR, STM32G0B1RCT6N, STM32G0C1CCT6, STM32G0C1CCT6N, STM32G0C1CCU6N, STM32G0C1CET6N, STM32G0C1CEU6N, STM32G0C1KCT6, STM32G0C1NEY6TR, STM32G0C1RCI6N, STM32G0C1RCT6N, STM32G0C1REI6N, STM32G0C1RET6N, STM32G0C1VCI6, STM32G0C1VEI6, STM32G471CCT6, STM32G471CCU6, STM32G471CET3, STM32G471CET6, STM32G471CEU3, STM32G471CEU6, STM32G471MCT6, STM32G471MET3, STM32G471MET6, STM32G471MEY6TR, STM32G471QCT6, STM32G471QET3, STM32G471RCT6, STM32G471RET3, STM32G471RET6, STM32G471VCH6, STM32G471VCI6, STM32G471VCT6, STM32G471VEH3, STM32G471VEH6, STM32G471VEI3, STM32G471VEI6, STM32G471VET3, STM32G471VET6, STM32G474CCT6, STM32L476VGY6PTR, STM32L4R5QGI6STR, STM32MP131AAE3, STM32MP131AAF3, STM32MP131AAG3, STM32MP131CAE3, STM32MP131CAF3, STM32MP131CAG3, STM32MP131DAE7, STM32MP131DAF7, STM32MP131DAG7, STM32MP131FAE7, STM32MP131FAF7, STM32MP131FAG7, STM32MP133AAE3, STM32MP133AAF3, STM32MP133AAG3, STM32MP133CAE3, STM32MP133CAF3, STM32MP133CAG3, STM32MP133DAE7, STM32MP133DAF7, STM32MP133DAG7, STM32MP133FAE7, STM32MP133FAF7, STM32MP133FAG7, STM32MP135AAE3, STM32MP135AAF3, STM32MP135AAG3, STM32MP135CAE3, STM32MP135CAF3, STM32MP135CAG3, STM32MP135DAE7, STM32MP135DAF7, STM32MP135DAG7, STM32MP135F-DK, STM32MP135FAE7, STM32MP135FAF7, STM32MP135FAF7T, STM32MP135FAF7U, STM32MP135FAG7, STM32U595ZJT6Q, STM32U599BJY6QTR, STM32U599NIH6Q, STM32U599NJH6Q, STM32U5A5ZJT6Q, STM32U5A9BJY6QTR, STM32U5A9NJH6Q, STM32WB1MMCH6, STM32WL5MOCH6TR]
+2023-03-04 07:40:04,293 [INFO] DbMcus:215 - Found 3582 MCUs, 3582 are supported
+2023-03-04 07:40:04,296 [INFO] ApiDb:422 - Load user favorites file /home/swift/.stm32cubeide/favorites.mcus.txt: 0 item(s)
+2023-03-04 07:40:04,296 [INFO] ApiDb:426 - User favorites MCUs=[]
+2023-03-04 07:40:04,296 [INFO] DbMcus:221 - Set 0 / 0 favorites MCUs
+2023-03-04 07:40:04,703 [WARN] ThirdParty:807 - waiting for thirdparty lock release [change project]
+2023-03-04 07:40:04,703 [INFO] ThirdParty:809 - entering critical section [change project]
+2023-03-04 07:40:04,704 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-ISPU 1.1.0
+2023-03-04 07:40:04,704 [INFO] ThirdParty:999 - CMSIS Pack Vendor :RoweBots I-CUBE-UNISONRTOS 5.5.0-4
+2023-03-04 07:40:04,704 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-GNSS1 6.0.0
+2023-03-04 07:40:04,704 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics USB_HOST 2.0.0
+2023-03-04 07:40:04,704 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-F4 1.1.0
+2023-03-04 07:40:04,704 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics LIBJPEG 8.0.0
+2023-03-04 07:40:04,704 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics USB_DEVICE 3.0.0
+2023-03-04 07:40:04,704 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AI 8.0.0
+2023-03-04 07:40:04,704 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-TOUCHGFX 4.21.1
+2023-03-04 07:40:04,704 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-F7 1.1.0
+2023-03-04 07:40:04,705 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-MEMS1 9.4.0
+2023-03-04 07:40:04,705 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics USB_DEVICE 2.0.0
+2023-03-04 07:40:04,705 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AI 7.3.0
+2023-03-04 07:40:04,705 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-ALGOBUILD 1.3.0
+2023-03-04 07:40:04,705 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-BLE1 6.2.4
+2023-03-04 07:40:04,705 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-L5 1.1.0
+2023-03-04 07:40:04,705 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics FreeRTOS 0.0.1
+2023-03-04 07:40:04,705 [INFO] ThirdParty:999 - CMSIS Pack Vendor :emotas I-CUBE-CANOPEN 1.1.3
+2023-03-04 07:40:04,705 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-G0 1.1.0
+2023-03-04 07:40:04,705 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-SUBG2 5.0.0
+2023-03-04 07:40:04,705 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-NFC4 3.0.0
+2023-03-04 07:40:04,705 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics STM32_WPAN 1.0.0
+2023-03-04 07:40:04,705 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics lwIP 2.0.3
+2023-03-04 07:40:04,705 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics USB_HOST 1.0.0
+2023-03-04 07:40:04,705 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics PDM2PCM 3.1.0
+2023-03-04 07:40:04,706 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics FP-ATR-ASTRA1 1.1.1
+2023-03-04 07:40:04,706 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics PDM2PCM 3.3.0
+2023-03-04 07:40:04,706 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-DISPLAY 3.0.0
+2023-03-04 07:40:04,706 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-BLEMGR 1.3.0
+2023-03-04 07:40:04,706 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-G4 1.0.0
+2023-03-04 07:40:04,706 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics FP-ATR-SIGFOX1 3.2.0
+2023-03-04 07:40:04,706 [INFO] ThirdParty:999 - CMSIS Pack Vendor :wolfSSL I-CUBE-wolfSSL 5.5.4
+2023-03-04 07:40:04,706 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-L4 1.0.0
+2023-03-04 07:40:04,706 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics HAL Drivers 0.0.0
+2023-03-04 07:40:04,706 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics MBEDTLS 2.16.2
+2023-03-04 07:40:04,706 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics MBEDTLS 2.14.1
+2023-03-04 07:40:04,706 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-NFC7 1.0.0
+2023-03-04 07:40:04,706 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-WL 1.0.0
+2023-03-04 07:40:04,706 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-EEPRMA1 4.1.0
+2023-03-04 07:40:04,706 [INFO] ThirdParty:999 - CMSIS Pack Vendor :portGmbH I-Cube-SoM-uGOAL 1.1.0
+2023-03-04 07:40:04,706 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-ALS 1.0.1
+2023-03-04 07:40:04,707 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-MEMS1 9.5.0
+2023-03-04 07:40:04,707 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics ThreadX 1.0.0
+2023-03-04 07:40:04,707 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-WB 1.1.0
+2023-03-04 07:40:04,707 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics USB_DEVICE 1.0.0
+2023-03-04 07:40:04,707 [INFO] ThirdParty:999 - CMSIS Pack Vendor :SEGGER I-CUBE-embOS 1.3.0
+2023-03-04 07:40:04,707 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics ThreadX 0.0.2
+2023-03-04 07:40:04,707 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics lwIP 2.1.2
+2023-03-04 07:40:04,707 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-SFXS2LP1 4.0.0
+2023-03-04 07:40:04,707 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-BLE2 3.3.0
+2023-03-04 07:40:04,707 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-TOF1 3.2.0
+2023-03-04 07:40:04,707 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics PDM2PCM 3.2.0
+2023-03-04 07:40:04,707 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-H7 3.0.0
+2023-03-04 07:40:04,707 [INFO] ThirdParty:815 - exiting critical section [change project]
+2023-03-04 07:40:05,266 [INFO] PinOutPanel:1477 - setPackage(No Configuration,No Configuration)
+2023-03-04 07:40:05,267 [INFO] PinOutPanel:1477 - setPackage(STM32F405RGTx,LQFP64)
+2023-03-04 07:40:06,438 [INFO] UtilMem:74 - Before build in PCC Used Memory: 270723072 Bytes (557842432)
+2023-03-04 07:40:07,482 [INFO] UtilMem:74 - After build in PCC Used Memory: 391309312 Bytes (557842432)
+2023-03-04 07:40:07,542 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-03-04 07:40:07,542 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-03-04 07:40:07,543 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-03-04 07:40:07,543 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-03-04 07:40:07,543 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-03-04 07:40:07,544 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-03-04 07:40:07,544 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-03-04 07:40:07,545 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-03-04 07:40:07,545 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-03-04 07:40:07,545 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-03-04 07:40:07,546 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-03-04 07:40:07,546 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-03-04 07:40:07,546 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-03-04 07:40:07,546 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-03-04 07:40:07,547 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-03-04 07:40:07,547 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-03-04 07:40:07,547 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-03-04 07:40:07,548 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-03-04 07:40:07,549 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-03-04 07:40:07,549 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-03-04 07:40:07,549 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-03-04 07:40:07,549 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-03-04 07:40:07,550 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-03-04 07:40:07,551 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-03-04 07:40:07,551 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-03-04 07:40:07,552 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-03-04 07:40:07,552 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-03-04 07:40:07,553 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-03-04 07:40:07,553 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-03-04 07:40:07,554 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-03-04 07:40:07,554 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-03-04 07:40:07,555 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-03-04 07:40:07,555 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-03-04 07:40:07,556 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-03-04 07:40:07,556 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-03-04 07:40:07,557 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-03-04 07:40:07,557 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-03-04 07:40:07,558 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-03-04 07:40:07,558 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-03-04 07:40:07,558 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-03-04 07:40:07,559 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-03-04 07:40:07,559 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-03-04 07:40:07,560 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-03-04 07:40:07,560 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-03-04 07:40:07,561 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-03-04 07:40:07,561 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-03-04 07:40:07,561 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-03-04 07:40:07,562 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-03-04 07:40:07,562 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-03-04 07:40:07,563 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-03-04 07:40:07,564 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-03-04 07:40:07,564 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-03-04 07:40:07,565 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-03-04 07:40:07,567 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-03-04 07:40:07,636 [INFO] ApiDbMcu:505 - Load IP Config File for PDM2PCM
+2023-03-04 07:40:07,952 [INFO] CADModel:164 - CPN selected for project levelSTM32F405RGT6
+2023-03-04 07:40:07,953 [INFO] CADModel:113 - Register for checkConnection events
+2023-03-04 07:40:07,993 [INFO] OpenFileManager:327 - Restore cursor
+2023-03-04 07:43:02,888 [INFO] ParamManager:821 - [Generic UI] PropertyChangeEvent: TAB_STATUS_CHANGED , "dont care", "never mind"
+2023-03-04 07:43:02,946 [INFO] ParamManager:821 - [Generic UI] PropertyChangeEvent: TAB_STATUS_CHANGED , "dont care", "never mind"
+2023-03-04 07:43:02,966 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-04 07:43:03,103 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-04 07:43:03,103 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-04 07:43:03,104 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-04 07:43:03,104 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-04 07:43:03,104 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-04 07:43:03,105 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-04 07:43:03,105 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-04 07:43:03,105 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-04 07:43:03,105 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-04 07:43:03,106 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-04 07:43:03,106 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-04 07:43:03,106 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-04 07:43:03,106 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-04 07:43:03,107 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-04 07:43:03,128 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-04 07:43:03,310 [INFO] NvicIntPanel:100 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2023-03-04 07:43:03,542 [INFO] NvicIntPanel:100 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2023-03-04 07:43:03,900 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-04 07:43:03,901 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-04 07:43:03,901 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-04 07:43:03,902 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-04 07:43:03,902 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-04 07:43:03,902 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-04 07:43:03,902 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-04 07:43:03,903 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-04 07:43:03,903 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-04 07:43:03,903 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-04 07:43:03,903 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-04 07:43:03,904 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-04 07:43:03,904 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-04 07:43:03,904 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-04 07:43:03,946 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-04 07:43:04,007 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-04 07:43:04,008 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-04 07:43:04,008 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-04 07:43:04,008 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-04 07:43:04,009 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-04 07:43:04,009 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-04 07:43:04,009 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-04 07:43:04,010 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-04 07:43:04,010 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-04 07:43:04,010 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-04 07:43:04,010 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-04 07:43:04,010 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-04 07:43:04,011 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-04 07:43:04,011 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-04 07:43:04,054 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-04 07:43:28,277 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-04 07:43:28,282 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-04 07:43:28,283 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-04 07:43:28,283 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-04 07:43:28,283 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-04 07:43:28,284 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-04 07:43:28,284 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-04 07:43:28,285 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-04 07:43:28,285 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-04 07:43:28,285 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-04 07:43:28,286 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-04 07:43:28,286 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-04 07:43:28,286 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-04 07:43:28,286 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-04 07:43:28,306 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-04 07:43:28,343 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-04 07:43:28,346 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-04 07:43:28,346 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-04 07:43:28,346 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-04 07:43:28,347 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-04 07:43:28,347 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-04 07:43:28,347 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-04 07:43:28,347 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-04 07:43:28,348 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-04 07:43:28,348 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-04 07:43:28,348 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-04 07:43:28,348 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-04 07:43:28,349 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-04 07:43:28,349 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-04 07:43:28,368 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-04 07:43:28,452 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-04 07:43:28,455 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-04 07:43:28,456 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-04 07:43:28,456 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-04 07:43:28,456 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-04 07:43:28,457 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-04 07:43:28,457 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-04 07:43:28,458 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-04 07:43:28,458 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-04 07:43:28,458 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-04 07:43:28,459 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-04 07:43:28,459 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-04 07:43:28,460 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-04 07:43:28,460 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-04 07:43:28,501 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-04 07:44:10,670 [INFO] NvicIntPanel:100 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2023-03-04 07:44:10,760 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-04 07:44:10,763 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-04 07:44:10,763 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-04 07:44:10,764 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-04 07:44:10,764 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-04 07:44:10,764 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-04 07:44:10,764 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-04 07:44:10,765 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-04 07:44:10,765 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-04 07:44:10,765 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-04 07:44:10,765 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-04 07:44:10,765 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-04 07:44:10,765 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-04 07:44:10,766 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-04 07:44:10,804 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-04 07:45:00,127 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-04 07:45:00,132 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-04 07:45:00,132 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-04 07:45:00,133 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-04 07:45:00,133 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-04 07:45:00,134 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-04 07:45:00,134 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-04 07:45:00,134 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-04 07:45:00,135 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-04 07:45:00,135 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-04 07:45:00,135 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-04 07:45:00,136 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-04 07:45:00,136 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-04 07:45:00,136 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-04 07:45:00,171 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-04 07:45:00,172 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-04 07:45:00,174 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-04 07:45:00,174 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-04 07:45:00,175 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-04 07:45:00,175 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-04 07:45:00,175 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-04 07:45:00,175 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-04 07:45:00,175 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-04 07:45:00,175 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-04 07:45:00,175 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-04 07:45:00,176 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-04 07:45:00,176 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-04 07:45:00,176 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-04 07:45:00,176 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-04 07:45:00,211 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-04 07:47:34,425 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-04 07:47:40,406 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-04 07:47:43,833 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:48:00,747 [INFO] NvicIntPanel:100 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2023-03-04 07:48:00,807 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:48:00,809 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:48:00,810 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:48:00,810 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:48:00,810 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:48:00,810 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:48:00,810 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:48:00,810 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:48:00,811 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:48:00,811 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:48:00,811 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:48:00,811 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:48:00,811 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:48:00,811 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:48:00,845 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:49:19,605 [INFO] NvicIntPanel:100 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2023-03-04 07:49:28,599 [INFO] NvicIntPanel:100 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2023-03-04 07:49:41,105 [INFO] NvicIntPanel:100 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2023-03-04 07:50:17,069 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:50:17,072 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:50:17,072 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:50:17,072 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:50:17,072 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:50:17,073 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:50:17,073 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:50:17,073 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:50:17,073 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:50:17,073 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:50:17,073 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:50:17,073 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:50:17,073 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:50:17,074 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:50:17,106 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:50:17,108 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:50:17,110 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:50:17,110 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:50:17,110 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:50:17,110 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:50:17,110 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:50:17,111 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:50:17,111 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:50:17,111 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:50:17,111 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:50:17,111 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:50:17,111 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:50:17,111 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:50:17,111 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:50:17,145 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:50:17,146 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:50:17,147 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:50:17,148 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:50:17,148 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:50:17,148 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:50:17,148 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:50:17,148 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:50:17,148 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:50:17,148 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:50:17,149 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:50:17,149 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:50:17,149 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:50:17,149 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:50:17,149 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:50:17,182 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:50:17,183 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:50:17,185 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:50:17,185 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:50:17,185 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:50:17,185 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:50:17,185 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:50:17,185 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:50:17,185 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:50:17,186 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:50:17,186 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:50:17,186 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:50:17,186 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:50:17,186 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:50:17,186 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:50:17,220 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:50:17,221 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:50:17,223 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:50:17,223 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:50:17,223 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:50:17,223 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:50:17,223 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:50:17,223 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:50:17,224 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:50:17,224 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:50:17,224 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:50:17,224 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:50:17,224 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:50:17,224 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:50:17,224 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:50:17,256 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:50:17,258 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:50:17,260 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:50:17,261 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:50:17,261 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:50:17,261 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:50:17,261 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:50:17,261 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:50:17,261 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:50:17,261 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:50:17,261 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:50:17,262 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:50:17,262 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:50:17,262 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:50:17,262 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:50:17,296 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:50:22,671 [INFO] NvicIntPanel:100 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2023-03-04 07:50:22,736 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:50:22,739 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:50:22,739 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:50:22,740 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:50:22,740 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:50:22,740 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:50:22,740 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:50:22,740 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:50:22,740 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:50:22,740 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:50:22,741 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:50:22,741 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:50:22,741 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:50:22,741 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:50:22,775 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:50:42,450 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:50:42,452 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:50:42,452 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:50:42,452 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:50:42,453 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:50:42,453 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:50:42,453 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:50:42,453 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:50:42,453 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:50:42,453 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:50:42,453 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:50:42,454 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:50:42,454 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:50:42,454 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:50:42,489 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:50:42,560 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:50:42,562 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:50:42,562 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:50:42,562 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:50:42,562 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:50:42,562 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:50:42,563 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:50:42,563 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:50:42,563 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:50:42,563 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:50:42,563 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:50:42,563 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:50:42,564 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:50:42,564 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:50:42,611 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:50:42,784 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:50:42,785 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:50:42,786 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:50:42,786 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:50:42,786 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:50:42,786 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:50:42,786 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:50:42,787 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:50:42,787 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:50:42,787 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:50:42,787 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:50:42,787 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:50:42,787 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:50:42,787 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:50:42,821 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:50:42,871 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:50:42,873 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:50:42,873 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:50:42,873 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:50:42,873 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:50:42,873 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:50:42,873 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:50:42,874 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:50:42,874 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:50:42,874 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:50:42,874 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:50:42,874 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:50:42,874 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:50:42,874 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:50:42,907 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:50:43,054 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:50:43,056 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:50:43,056 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:50:43,057 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:50:43,057 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:50:43,057 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:50:43,057 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:50:43,057 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:50:43,057 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:50:43,057 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:50:43,058 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:50:43,058 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:50:43,058 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:50:43,058 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:50:43,100 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:50:43,156 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:50:43,158 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:50:43,158 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:50:43,158 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:50:43,159 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:50:43,159 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:50:43,159 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:50:43,159 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:50:43,159 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:50:43,159 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:50:43,160 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:50:43,160 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:50:43,160 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:50:43,160 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:50:43,193 [INFO] ADCParametersView:113 -                Rank 1 : true
+2023-03-04 07:51:52,872 [INFO] NvicIntPanel:100 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,580x541,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2023-03-04 07:52:41,403 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 333998320 Bytes (557842432)
+2023-03-04 07:52:41,506 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 352872688 Bytes (557842432)
+2023-03-04 07:52:41,958 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 391147760 Bytes (557842432)
+2023-03-04 07:52:42,738 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SPI
+2023-03-04 07:52:42,738 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SPI
+2023-03-04 07:52:42,738 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM1_8
+2023-03-04 07:52:42,739 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM1_8
+2023-03-04 07:52:42,739 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: ADC
+2023-03-04 07:52:42,739 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RCC
+2023-03-04 07:52:42,739 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC
+2023-03-04 07:52:42,739 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USART
+2023-03-04 07:52:42,739 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USART
+2023-03-04 07:52:42,739 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USART
+2023-03-04 07:52:42,739 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: DMA
+2023-03-04 07:52:42,740 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: GPIO
+2023-03-04 07:52:42,741 [INFO] CodeGenerator:692 - code generatio: config db path: /opt/st/stm32cubeide_1.11.2/plugins/com.st.stm32cube.common.mx_6.7.0.202301130839//db/
+2023-03-04 07:52:43,263 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/MXTmpFiles/license.tmp_save
+2023-03-04 07:52:43,757 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/MXTmpFiles/license.tmp
+2023-03-04 07:52:43,893 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/gpio.c_save
+2023-03-04 07:52:44,092 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/gpio.c
+2023-03-04 07:52:44,094 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/gpio.h_save
+2023-03-04 07:52:44,209 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/gpio.h
+2023-03-04 07:52:46,125 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/adc.c_save
+2023-03-04 07:52:46,361 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/adc.c
+2023-03-04 07:52:46,363 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/adc.h_save
+2023-03-04 07:52:46,477 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/adc.h
+2023-03-04 07:52:46,617 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/dma.c_save
+2023-03-04 07:52:46,724 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/dma.c
+2023-03-04 07:52:46,726 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/dma.h_save
+2023-03-04 07:52:46,805 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/dma.h
+2023-03-04 07:52:46,809 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/spi.c_save
+2023-03-04 07:52:46,952 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/spi.c
+2023-03-04 07:52:46,954 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/spi.h_save
+2023-03-04 07:52:47,035 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/spi.h
+2023-03-04 07:52:47,041 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/tim.c_save
+2023-03-04 07:52:47,211 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/tim.c
+2023-03-04 07:52:47,213 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/tim.h_save
+2023-03-04 07:52:47,289 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/tim.h
+2023-03-04 07:52:47,293 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/usart.c_save
+2023-03-04 07:52:47,429 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/usart.c
+2023-03-04 07:52:47,431 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/usart.h_save
+2023-03-04 07:52:47,510 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/usart.h
+2023-03-04 07:52:47,517 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/stm32f4xx_it.c_save
+2023-03-04 07:52:47,671 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/stm32f4xx_it.c
+2023-03-04 07:52:47,673 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/stm32f4xx_it.h_save
+2023-03-04 07:52:47,761 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/stm32f4xx_it.h
+2023-03-04 07:52:47,797 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/stm32f4xx_hal_msp.c_save
+2023-03-04 07:52:47,951 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/stm32f4xx_hal_msp.c
+2023-03-04 07:52:47,952 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/MXTmpFiles/system.tmp_save
+2023-03-04 07:52:48,028 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/MXTmpFiles/system.tmp
+2023-03-04 07:52:48,029 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/stm32_assert.h_save
+2023-03-04 07:52:48,102 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/stm32_assert.h
+2023-03-04 07:52:48,107 [INFO] CodeEngine:303 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/stm32f4xx_hal_conf.h_save
+2023-03-04 07:52:48,197 [INFO] CodeEngine:327 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/stm32f4xx_hal_conf.h
+2023-03-04 07:52:48,236 [WARN] IPConfigManager:2928 - Warning: the RefConfig RCC_PLL_PLLM_CONFIG is not available in your config.xml file
+2023-03-04 07:52:48,236 [WARN] IPConfigManager:2928 - Warning: the RefConfig RCC_PLL_PLLSOURCE_CONFIG is not available in your config.xml file
+2023-03-04 07:52:48,236 [WARN] IPConfigManager:2928 - Warning: the RefConfig RCC_ConfigVoltageScaling is not available in your config.xml file
+2023-03-04 07:52:48,245 [WARN] IPConfigManager:2928 - Warning: the RefConfig RCC_ClockConfig is not available in your config.xml file
+2023-03-04 07:52:48,245 [WARN] IPConfigManager:2928 - Warning: the RefConfig RCC_MCO1Config is not available in your config.xml file
+2023-03-04 07:52:48,245 [WARN] IPConfigManager:2928 - Warning: the RefConfig RCC_MCO2Config is not available in your config.xml file
+2023-03-04 07:52:48,245 [WARN] IPConfigManager:2928 - Warning: the RefConfig RCC_interrupt_Time_SYSTICK_Config is not available in your config.xml file
+2023-03-04 07:52:48,245 [WARN] IPConfigManager:2928 - Warning: the RefConfig RCC_SYSTICK_CONFIG is not available in your config.xml file
+2023-03-04 07:52:48,280 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/main.h_save
+2023-03-04 07:52:48,390 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Inc/main.h
+2023-03-04 07:52:48,393 [INFO] CodeEngine:247 - oldGeneratedFile, /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/main.c_save
+2023-03-04 07:52:48,576 [INFO] CodeEngine:271 - Generated code: /home/swift/workspace/STM32CubeIDE/dev/STM32F4_FC_DEV/Core/Src/main.c
+2023-03-04 07:52:49,542 [INFO] ProjectBuilder:2919 - Time for Copy HAL[1] : 75mS.
+2023-03-04 07:52:49,561 [INFO] ProjectBuilder:4183 - Project Generator version: 3.18.0-B7
+2023-03-04 07:52:50,083 [INFO] ConfigFileManager:1396 - The Die is : DIE413
+2023-03-04 07:52:50,100 [INFO] ApiDbMcu:505 - Load IP Config File for FATFS
+2023-03-04 07:52:50,140 [INFO] ApiDbMcu:505 - Load IP Config File for FREERTOS
+2023-03-04 07:52:50,147 [INFO] ApiDbMcu:505 - Load IP Config File for LIBJPEG
+2023-03-04 07:52:50,205 [INFO] ApiDbMcu:505 - Load IP Config File for MBEDTLS
+2023-03-04 07:52:50,256 [INFO] ApiDbMcu:505 - Load IP Config File for USB_DEVICE
+2023-03-04 07:52:50,270 [INFO] ApiDbMcu:505 - Load IP Config File for USB_HOST
+2023-03-04 07:52:52,285 [INFO] ProjectBuilder:4351 - Time for Generating toolchain IDE Files: 2723mS.
+2023-03-04 07:52:52,287 [INFO] ProjectBuilder:2790 - Time for Copy CMSIS : 0mS.
+2023-03-04 07:52:52,288 [INFO] ProjectBuilder:2790 - Time for Copy CMSIS : 0mS.
+2023-03-04 08:21:32,593 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-03-04 08:21:32,596 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-03-04 08:21:32,597 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-03-04 08:21:32,995 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-03-04 08:21:32,995 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-03-04 08:21:32,996 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-03-04 08:22:02,260 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-03-04 08:22:02,262 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-03-04 08:22:02,263 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-03-04 08:26:26,534 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-03-04 08:26:26,537 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-03-04 08:26:26,538 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-03-04 08:26:26,860 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-03-04 08:26:26,860 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-03-04 08:26:26,861 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-03-04 08:27:57,733 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-03-04 08:27:57,736 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-03-04 08:27:57,737 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-03-04 08:27:58,307 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-03-04 08:27:58,307 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-03-04 08:27:58,308 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-03-04 08:34:23,541 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-03-04 08:34:23,543 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-03-04 08:34:23,544 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-03-04 08:34:23,913 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-03-04 08:34:23,914 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-03-04 08:34:23,914 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-03-04 08:42:16,173 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-03-04 08:42:16,174 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-03-04 08:42:16,174 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-03-04 08:42:16,577 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-03-04 08:42:16,577 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-03-04 08:42:16,577 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-03-04 08:42:36,142 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-03-04 08:42:36,143 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-03-04 08:42:36,143 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-03-04 08:44:58,398 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-03-04 08:44:58,399 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-03-04 08:44:58,399 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-03-04 08:44:58,764 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-03-04 08:44:58,765 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-03-04 08:44:58,765 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-03-04 08:48:27,839 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-03-04 08:48:27,840 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-03-04 08:48:27,841 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-03-04 08:48:29,561 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-03-04 08:48:29,562 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-03-04 08:48:29,562 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-03-04 08:49:39,914 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-03-04 08:49:39,916 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-03-04 08:49:39,917 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-03-04 08:49:40,453 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-03-04 08:49:40,455 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-03-04 08:49:40,456 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-03-04 08:52:06,260 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-03-04 08:52:06,262 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-03-04 08:52:06,263 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-03-04 08:52:06,664 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-03-04 08:52:06,664 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-03-04 08:52:06,665 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-03-04 08:52:24,940 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-03-04 08:52:24,941 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-03-04 08:52:24,941 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-03-04 08:54:09,856 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-03-04 08:54:09,857 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-03-04 08:54:09,858 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-03-04 08:54:10,354 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-03-04 08:54:10,355 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-03-04 08:54:10,355 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-03-04 08:54:28,538 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-03-04 08:54:28,539 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com
+2023-03-04 08:54:28,540 [ERROR] ConfigurationRetriever:140 - IOException on connection: citools.st.com

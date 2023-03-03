@@ -18,6 +18,7 @@
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
+#include "adc.h"
 #include "dma.h"
 #include "spi.h"
 #include "tim.h"
@@ -71,6 +72,9 @@ uint8_t read_flash=0;
 uint8_t read_flash_arr[256], write_flash_arr[256];
 uint8_t flash_byte = 0x05, read_byte=0;
 
+uint16_t adcVal;
+float BatVol=0;
+
 
 extern unsigned int TimingDelay;
 
@@ -121,14 +125,7 @@ int main(void)
   /* MCU Configuration--------------------------------------------------------*/
 
   /* Reset of all peripherals, Initializes the Flash interface and the Systick. */
-  LL_APB2_GRP1_EnableClock(LL_APB2_GRP1_PERIPH_SYSCFG);
-  LL_APB1_GRP1_EnableClock(LL_APB1_GRP1_PERIPH_PWR);
-
-  /* System interrupt init*/
-  NVIC_SetPriorityGrouping(NVIC_PRIORITYGROUP_4);
-
-  /* SysTick_IRQn interrupt configuration */
-  NVIC_SetPriority(SysTick_IRQn, NVIC_EncodePriority(NVIC_GetPriorityGrouping(),15, 0));
+  HAL_Init();
 
   /* USER CODE BEGIN Init */
   memset(&read_flash_arr,0,256);
@@ -155,19 +152,20 @@ int main(void)
   MX_USART1_UART_Init();
   MX_TIM5_Init();
   MX_SPI3_Init();
+  MX_ADC1_Init();
   /* USER CODE BEGIN 2 */
 
 
   W25QXX_SPI_Initialization();
 //  W25qxx_EraseChip();
-  W25qxx_EraseSector(0);
-  W25qxx_IsEmptyBlock(0, 0, 256);
+//  W25qxx_EraseSector(0);
+//  W25qxx_IsEmptyBlock(0, 0, 256);
 
 //  W25qxx_WriteByte(0x05,5);
 //  W25qxx_ReadBytes(read_flash_arr, 0, 10);
 
-  W25qxx_WritePage(write_flash_arr, 0, 0, 256);
-  W25qxx_ReadPage(read_flash_arr, 0, 0,  256);
+//  W25qxx_WritePage(write_flash_arr, 0, 0, 256);
+//  W25qxx_ReadPage(read_flash_arr, 0, 0,  256);
 //  W25qxx_ReadBytes(read_flash_arr, 0, 256);
 //  W25qxx_ReadBytes(read_flash_arr, 5, 5);
 
@@ -207,10 +205,10 @@ int main(void)
   usDelay(8000000);	// 7sec
 */
 
-
-
-
   ICM20602_Initialization();
+
+  // Batery ADC Check
+  HAL_ADC_Start_DMA(&hadc1, &adcVal, 1);
 
 
   // 시간측정을 위한 레지스터 초기화 값
@@ -285,6 +283,12 @@ int main(void)
 	  if(flag_DMA1_DONE == 1)
 	  {
 //		  cnt=(uint8_t)(MSG_LENGTH_NAV_SOL-LL_DMA_GetDataLength(DMA1,LL_DMA_STREAM_1));
+
+		  // Batery Checker
+		  BatVol = adcVal*ADC_BAT_COEFF;
+		  printf("Battery Check: ADC[%d], Voltage[%f]\n", adcVal, BatVol);
+
+		  // GPS Parsing
 		  GPS_Parsing(&raw_gps, &msg_nav, &recv_cnt, &err_cnt);
 		  LL_DMA_EnableStream(DMA1,LL_DMA_STREAM_1);
 		  flag_DMA1_DONE = 0;
@@ -388,8 +392,13 @@ void SystemClock_Config(void)
   {
 
   }
-  LL_Init1msTick(168000000);
   LL_SetSystemCoreClock(168000000);
+
+   /* Update the time base */
+  if (HAL_InitTick (TICK_INT_PRIORITY) != HAL_OK)
+  {
+    Error_Handler();
+  }
 }
 
 /* USER CODE BEGIN 4 */
