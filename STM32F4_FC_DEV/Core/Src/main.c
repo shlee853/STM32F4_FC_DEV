@@ -86,6 +86,7 @@ float sampleFreq;
 extern int recv_cnt, rx_recv_cnt;
 extern int err_cnt, rx_err_cnt;
 
+
 GPS_RAW_MESSAGE raw_gps;
 SBUS_RAW_MESSAGE raw_rx;
 MSG_NAV 		msg_nav;
@@ -228,10 +229,14 @@ int main(void)
   // UART6 문자열 인터페이스 DMA 및  인터럽트 설정
 //  USART_DMA_Transmit_INIT(USART6, DMA2, LL_DMA_STREAM_6);
   LL_USART_EnableIT_RXNE(USART6);	// UART6 인터럽트 활성화
-  LL_USART_EnableIT_IDLE(USART6);
+//  LL_USART_EnableIT_IDLE(USART6);
 //  LL_USART_EnableIT_TC(USART6);
 
   LL_GPIO_TogglePin(GPIOB, LL_GPIO_PIN_5);
+
+  CliInit(&huart6);
+  FLASH_If_Init();
+
 
   /* USER CODE END 2 */
 
@@ -263,6 +268,10 @@ int main(void)
 
 	  if(flag_INT_USART6 == 1){
 		  flag_INT_USART6 =0;
+
+		  CliDo(&huart6);
+
+
 //		  LL_USART_TransmitData8(USART3,rxd); // 터미널에서 수신된 데이터를 GPS로 전달
 //		  LL_USART_TransmitData8(USART6,rxd); // 호스트로부터 수신한 데이터를 그대로 다시 보냄
 //		  LL_GPIO_TogglePin(GPIOB, LL_GPIO_PIN_5);
@@ -286,7 +295,7 @@ int main(void)
 
 		  // Batery Checker
 		  BatVol = adcVal*ADC_BAT_COEFF;
-		  printf("Battery Check: ADC[%d], Voltage[%f]\n", adcVal, BatVol);
+//		  printf("Battery Check: ADC[%d], Voltage[%f]\n", adcVal, BatVol);
 
 		  // GPS Parsing
 		  GPS_Parsing(&raw_gps, &msg_nav, &recv_cnt, &err_cnt);

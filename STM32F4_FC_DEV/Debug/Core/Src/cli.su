@@ -1,0 +1,5 @@
+../Core/Src/cli.c:20:6:CliInit	16	static
+../Core/Src/cli.c:31:6:CliDisplayInfo	8	static
+../Core/Src/cli.c:45:6:CliDo	16	static
+../Core/Src/cli.c:58:6:CLiParseCmdLine	48	static
+../Core/Src/cli.c:82:6:CliMatchCommand	16	static

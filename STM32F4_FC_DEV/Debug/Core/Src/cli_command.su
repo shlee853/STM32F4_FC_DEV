@@ -1,0 +1,10 @@
+../Core/Src/cli_command.c:28:6:CommandInit	16	static
+../Core/Src/cli_command.c:49:6:CommnadDo	24	static
+../Core/Src/cli_command.c:60:6:CommandHistory	24	static
+../Core/Src/cli_command.c:73:6:CommandHelp	24	static
+../Core/Src/cli_command.c:86:6:CommandMd	48	static
+../Core/Src/cli_command.c:135:6:CommandFwDownload	16	static
+../Core/Src/cli_command.c:147:6:CommandRunApplication	16	static
+../Core/Src/cli_command.c:154:6:CommandErase	16	static
+../Core/Src/cli_command.c:159:6:CommandLed	16	static
+../Core/Src/cli_command.c:198:5:FindCommands	48	static

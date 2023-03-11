@@ -1,0 +1,10 @@
+../Core/Src/cli_uart.c:24:6:UartInit	16	static
+../Core/Src/cli_uart.c:43:5:UartReceiveBuffer	32	static
+../Core/Src/cli_uart.c:79:5:UartTransmitBuffer	24	static
+../Core/Src/cli_uart.c:87:6:UartWriteCmdBuffer	24	static
+../Core/Src/cli_uart.c:137:6:UartWriteSpecialKey	16	static
+../Core/Src/cli_uart.c:168:6:UartWriteDirKey	16	static
+../Core/Src/cli_uart.c:192:6:UartWriteTabKey	72	static
+../Core/Src/cli_uart.c:221:6:UartEraseCmdBuffer	24	static
+../Core/Src/cli_uart.c:241:6:UartWriteHistoryOnCmdBuffer	16	static
+../Core/Src/cli_uart.c:251:6:RxCpltCallback	16	static

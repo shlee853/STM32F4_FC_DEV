@@ -1,0 +1,7 @@
+../Core/Src/circular_queue.c:15:6:QueueInit	16	static
+../Core/Src/circular_queue.c:23:5:IsEmpty	16	static
+../Core/Src/circular_queue.c:29:5:IsFull	16	static
+../Core/Src/circular_queue.c:35:6:Enqueue	24	static
+../Core/Src/circular_queue.c:45:5:Dequeue	16	static
+../Core/Src/circular_queue.c:57:5:move_cursor	16	static
+../Core/Src/circular_queue.c:83:6:print_history	24	static

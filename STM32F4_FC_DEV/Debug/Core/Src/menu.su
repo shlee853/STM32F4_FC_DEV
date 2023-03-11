@@ -1,0 +1,4 @@
+../Core/Src/menu.c:57:6:SerialDownload	24	static
+../Core/Src/menu.c:98:6:SerialUpload	16	static
+../Core/Src/menu.c:126:6:RunApplication	16	static,ignoring_inline_asm
+../Core/Src/menu.c:148:6:Main_Menu	16	static,ignoring_inline_asm

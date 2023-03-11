@@ -32,6 +32,8 @@ extern "C" {
 
 /* USER CODE END Includes */
 
+extern UART_HandleTypeDef huart6;
+
 /* USER CODE BEGIN Private defines */
 #define CIRCULAR_BUFFER_SIZE 1024
 
